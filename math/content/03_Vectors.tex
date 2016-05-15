@@ -1,0 +1,141 @@
+\documentclass[../main]{subfiles}
+
+\newcommand*\colvec[3][]{
+    \begin{pmatrix}\ifx\relax#1\relax\else#1\\\fi#2\\#3\end{pmatrix}
+}
+
+\begin{document}
+
+\section{Vectors}
+
+\subsection{Representation}
+
+	\subsubsection{Point Representation}
+	\(O\) is always defined as the origin \\
+	Written: \underline{r} or \( \overrightarrow{OR} \) \\
+	Column: \( \mathbf{r} = \colvec[a]{b}{c} \) \\
+	Unit Vector: \( \mathbf{r} = a\mathbf{i} + b\mathbf{j} + c\mathbf{k} \) where \(\mathbf{i}\),\(\mathbf{j}\) and \(\mathbf{k}\) are unit vectors in the x, y and z dimensions
+	\subsubsection{Line Representation}
+	Vector Equation:
+	\[ l: \mathbf{r} = \mathbf{a} + \lambda \mathbf{b} \quad \lambda \in \mathbb{R} \]
+	Parametric Equation:
+	\begin{equation*}
+		l:\begin{cases}
+			x = a_x + \lambda b_x \\
+			y = a_y + \lambda b_y \quad \lambda \in \mathbb{R} \\
+			z = a_z + \lambda b_z 
+		\end{cases}
+	\end{equation*}
+	Cartesian Equation:
+	\[ \frac{x-a_x}{b_x} = \frac{y-a_y}{b_y} = \frac{z-a_z}{b_z} \]
+	\subsubsection{Plane Representation}
+	Vector Equation:
+	\[ \pi : \mathbf{r} = \mathbf{a} + \lambda \mathbf{b} + \mu \mathbf{c} \]
+	Scalar Product Equation:
+	\[ \pi : \mathbf{r} \cdot \mathbf{n} = d \]
+	Cartesian Equation:
+	\[ \pi: xn_x + y_ny + zn_z = d \]
+
+\subsection{Manipulation}
+
+	\subsubsection{Vector Algebra}
+	Vector Addition: remove same inside or outside terms
+	\[ \overrightarrow{OA} + \overrightarrow{AB} = \overrightarrow{OB} \]
+	Negative Vectors: reverse the points
+	\[ \overrightarrow{AB} = -\overrightarrow{BA} \]
+	Vector Subtraction: reverse points, then add
+	\[ \overrightarrow{OB} - \overrightarrow{OA} = \overrightarrow{OB} + \overrightarrow{AO} = \overrightarrow{AB} \]
+	\subsubsection{Vector Properties}
+	Modulus / Magnitude : The total distance of a vector
+	\[ \bigg|\colvec[x]{y}{z}\bigg| = \sqrt{x^2+y^2+z^2} \]
+	Unit Vector / Cap : A vector which defines a direction and has modulus of 1
+	\[ \mathbf{\hat{a}} = \frac{1}{|\mathbf{a}|}\mathbf{a} \]
+	\subsubsection{Ratio Theorem}
+	\subsubsection{Scalar Product}
+	Scalar/Dot product produces a scalar which is a representation of how inline two vectors are with each other
+	\[ \colvec[x_1]{y_1}{z_1} \cdot \colvec[x_2]{y_2}{z_2} = x_1x_2 + y_1y_2 + z_1z_2 \]
+	\[ \mathbf{a} \cdot \mathbf{b} = | \mathbf{a}| | \mathbf{b}| cos(\theta) \]
+	\[ \mathbf{a} \cdot \mathbf{a} = | \mathbf{a}| ^2 \]
+	\[ \mathbf{a} \cdot (\perp \mathbf{a}) = 0 \]
+	\[ \mathbf{a} \cdot (\mathbf{b \pm c}) = \mathbf{a} \cdot \mathbf{b} + \mathbf{a} \cdot \mathbf{c} \]
+	\[ (\lambda \mathbf{a}) \cdot \mathbf{b} = \lambda (\mathbf{a} \cdot \mathbf{b}) \]
+	\subsubsection{Vector Product}
+	Vector/Cross product produces a vector which has direction perpendicular to its input vectors and has magnitude similar to area subtended by its input vectors
+	\[ \colvec[x_1]{y_1}{z_1} \times \colvec[x_2]{y_2}{z_2} = \colvec[y_1z_2-z_1y_2]{z_1x_2-x_1z_2}{x_1y_2-y_1x_2} \]
+	\[ \mathbf{a} \times \mathbf{b} = \mathbf{\hat{n}}| \mathbf{a}| | \mathbf{b}| sin(\theta) \]
+	\[ \mathbf{a} \times \mathbf{a} = 0 \]
+	\[ \mathbf{a} \times (\perp \mathbf{a}) = \mathbf{\hat{n}}| \mathbf{a}| | \mathbf{b}|  \]
+	\[ \mathbf{a} \times (\mathbf{b \pm c}) = \mathbf{a} \times \mathbf{b} + \mathbf{a} \times \mathbf{c} \]
+	\[ (\lambda \mathbf{a}) \times \mathbf{b} = \lambda (\mathbf{a} \times \mathbf{b}) \]
+
+\subsection{Angles Between Vectors}
+	General formula:
+	\[ cos(\theta) = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}||\mathbf{b}|} \]
+	Lesser used formula:
+	\[ sin(\theta) = \frac{|\mathbf{a} \times \mathbf{b}|}{|\mathbf{a}||\mathbf{b}|} \]
+	\subsubsection{Point-Point Angle}
+	Let \(\mathbf{a}\) and \(\mathbf{b}\) be point vectors
+	\subsubsection{Line-Line Angle}
+	Let \(\mathbf{a}\) and \(\mathbf{b}\) be direction vectors of lines
+	\subsubsection{Line-Plane Angle}
+	Let \(\mathbf{a}\) be direction vector of line and \(\mathbf{b}\) be normal vector of plane \\
+	Angle between line and plane will be \(90 \degree - \theta\)
+	\subsubsection{Plane-Plane Angle}
+	Let \(\mathbf{a}\) and \(\mathbf{b}\) be normal vectors of planes
+
+\subsection{Intersection}
+	
+	\subsubsection{Point-Line Intersection}
+	Solve series of parametric equations or find \(\lambda\) which lets point equal to point on line
+	\subsubsection{Line-Line Intersection}
+	If direction vectors are scalar multiples of each other, lines are parallel \\
+	Find a point which satisfies both lines, solving parametric equations of both line equations \\
+	\[ \mathbf{a_1} + \lambda \mathbf{b_1} = \mathbf{a_2} + \mu \mathbf{b_2} \quad \lambda, \mu \in \mathbb{R} \]
+	If lines are both non-parallel and non-intersecting, lines are skew
+	\subsubsection{Line-Plane Intersection}
+	If dot product of direction vector of line and normal of plane equals to \(0\), line is parallel to plane \\
+	Substitute line equation into plane equation and expand to solve for \(\lambda\)
+	\begin{equation*} \begin{split}
+		p & = (\mathbf{a} + \lambda \mathbf{b}) \cdot \mathbf{n}  \\
+		  & = \mathbf{a} \cdot \mathbf{n} + \lambda (\mathbf{b} \cdot \mathbf{n})
+	\end{split} \end{equation*}
+	\subsubsection{Plane-Plane Intersection}
+	If normal of planes are scalar multiples of each other, planes are parallel \\
+	Equating two planes results in a line \\ 
+	Cross product of normal vectors of two planes produces the direction vector of line \\ 
+	Position vector of line can be observed from equations, find a vector which satisfies both plane equations \\ 
+
+\subsection{Projections}
+
+	\subsubsection{Point-Point Projection}
+	To find distance \(d\) of projection of point vector \(\mathbf{a}\) on point vector \(\mathbf{b}\) :
+	\[ d = \mathbf{a} \cdot \mathbf{\hat{b}} \]
+	\subsubsection{Point-Line Projection}
+	To find distance \(d\) of projection of point vector \(\mathbf{a}\) on direction vector of line \(\mathbf{b}\), similar to Point-Point Projection
+	\subsubsection{Point-Line Perpendicular}
+	To find perpendicular of point vector \(\mathbf{a}\) on line \(l: \mathbf{r} = \mathbf{b} + \lambda \mathbf{c}\), let \(\mathbf{P}\) be a point on the line such that \(\overrightarrow{AP}\) is perpendicular to \(\mathbf{c}\) and solve for \(\lambda\) : 
+	\begin{equation*}
+		\begin{split}
+		0 & = \overrightarrow{AP} \cdot \mathbf{c} \\
+		  & = (\mathbf{b} + \lambda \mathbf{c} - \mathbf{a} ) \cdot \mathbf{c} \\
+		  & = \lambda \mathbf{c} \cdot \mathbf{c} + (\mathbf{b} - \mathbf{a}) \cdot \mathbf{c}
+		\end{split}
+		\lambda | \mathbf{c} |^2 = (\mathbf{a} - \mathbf{b}) \cdot \mathbf{c}
+	\end{equation*}
+	To find distance \(d\) between point vector \(\mathbf{a}\) and its perpendicular on line with direction vector \(\mathbf{b}\), find magnitude of the cross product of \(\mathbf{a}\) and unit vector of \(\mathbf{b}\) :
+	\[ d = |\mathbf{a} \times \mathbf{\hat{b}}| \]
+	\subsubsection{Point-Plane Perpendicular}
+	To find perpendicular of point vector \(\mathbf{a}\) on plane \( \pi : \mathbf{r} \cdot \mathbf{n} = d \), consider a line containing \(\mathbf{a}\) and with direction vector \(\mathbf{n}\), equate the two equations and then solve for \(\lambda\)
+	\[ l = \mathbf{a} + \lambda \mathbf{n} \]
+	\begin{equation*}
+		\begin{split}
+		d & = (\mathbf{a} + \lambda \mathbf{n}) \cdot \mathbf{n} \\
+		  & = \mathbf{a} \cdot \mathbf{n} + \lambda \mathbf{n} \cdot \mathbf{n}
+		\end{split}
+		\lambda | \mathbf{n} |^2 = d - \mathbf{a} \cdot \mathbf{n}
+	\end{equation*}
+	To find distance \(d\) between point vector \(\mathbf{a}\) and plane with normal vector \(\mathbf{n}\), find projection of \(\mathbf{a}\) on unit vector of \(\mathbf{n}\):
+	\[ d = |\mathbf{a} \cdot \mathbf{\hat{n}}| \]
+
+
+\end{document}
