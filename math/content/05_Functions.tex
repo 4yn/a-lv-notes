@@ -2,18 +2,57 @@
 
 \begin{document}
 
-\section{Assumed Knowledge}
+\section{Functions}
 
-\subsection{Algebra}
+\subsection{Properties of a Function}
 
-	\subsubsection{Completing the Square}
-	\subsubsection{Polynomials and Partal Fractions}
-	\subsubsection{Exponent and Log}
+	\subsubsection{Individual Properties}
+	A function \(f\) is a relation which maps input of a set \(D_f\) to outputs of a set \(R_f\) using a certain rule \\
+	Multiple elements in the input set can have the same output, but one single element in the input set can only have one output.
+	\subsubsection{Function Presentation}
+	When questions ask for functions in a similar form, be sure to maintain presentation
+	\[ f(x) = x^2 \quad x \in (-\infty,\infty) \]
+	\[ f: x \mapsto x^2 \quad x \in (-\infty,\infty) \]
+	\begin{equation*}
+		g(x)=\begin{cases}
+			x^2 \quad x\in\mathbb{R}, x>0 \\
+			-x \quad x\in\mathbb{R}, x<0
+		\end{cases}
+	\end{equation*}
+	\[ D_f = (-\infty,\infty) \quad R_f = [0,\infty) \]
+	Note: infinity is always written as non-inclusive
 
-\subsection{Trigonometry}
-	
-	\subsubsection{Sine and Cosine Rule}
-	\subsubsection{Sum of Angles}
-	\subsubsection{Factor and Reverse Factor Formula}
+\subsection{Inverse Functions}
+	Inverse functions map the output of a function to the input of a function. Inverse functions only exist when each element of the output set of the original function is mapped to one and only one element in the input set, i.e. inverse functions only exist if a function is one-one \\ 
+	Inverse functions are written as \(f^{-1}\) and 
+	\[ D_{f^{-1}} = R_f \quad R_{f^{-1}} = D_f \]
+	\subsubsection{Proving existence and inexistence}
+	\(f(x)\) cuts each line \(y=k\), \(k\in R_f\) at one and only one point, \(f\) is one-one, hence \(f^{-1}\) exists \\
+	Replace \(R_f\) with the actual set \\
+	The line \(y=k\) cuts \(f(x)\) at more than one point, \(f\) is not one-one, hence \(f^{-1}\) does not exist \\
+	Replace \(k\) with the actual edge case
+	\subsubsection{Finding Inverse Functions}
+	\begin{equation*} \begin{gathered}
+		f(x) = x^2 + 1 \quad x \in [0,\infty)
+		\text{Let} \quad y = f(x) = x^2 + 1 \\
+		x^2 = y - 1 \\
+		x = \sqrt{y - 1} \\
+		f^{-1}(y) = \sqrt{y-1} \\
+		f^{-1}(x) = \sqrt{y-1} \\
+		D_{f^{-1}} = R_f = [1,\infty) \\
+		R_{f^{-1}} = D_f = [0,\infty) 
+	\end{gathered} \end{equation*}
+	\subsubsection{Graphical Relationships Between Functions and Inverse Functions}
+	Inverse functions are, in essence, a function reflected along the line \(y=x\) \\
+	Intersections of functions with their inverse also satisfy the condition \(f(x)=x\) 
+
+\subsection{Composite Functions}
+	Considering two functions \(f\) and \(g\), the composite function \(fg\) is obtained when inputs of g are mapped to their outputs of g, which are then used as inputs to f and mapped to outputs of f:
+	\[ fg(x) = f(g(x)) \]
+	\subsubsection{Deriving Composite Functions}
+	For the composite function \(fg\) to exist, \(R_g \subseteq D_f\) \\
+	The domain of function \(fg\) follows the domain of function \(g\), i.e. \(D_{fg} = D_g\) \\
+	The rule of \(fg\) is obtained by substituting the rule of \(g\) into the rule of \(f\) \\
+	The range of \(fg\) is a subset of \(R_f\) and may be limited due to the fact that \(R_g\) may be smaller than  \(D_f\), hence \(R_{fg}\) must be reevaluated after creating its rule
 
 \end{document}
