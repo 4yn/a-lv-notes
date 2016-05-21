@@ -5,7 +5,7 @@ cleanregex = ".+\(aux\|log\|synctex.gz\|fls\|fdb_latexmk\|bbl\|blg\)$$"
 
 .PHONY: clean $(FILE).pdf
 
-$(FILE).pdf: $(FILE).tex ./content
+$(FILE).pdf: $(FILE).tex
 	pdflatex $(FILE)
 
 all:

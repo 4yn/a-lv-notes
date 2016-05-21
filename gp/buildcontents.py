@@ -34,8 +34,9 @@ cwdchar = len(os.getcwd())
 
 for a,b,c in os.walk(os.getcwd()+"/content"):
     for i in c:
-    	filedict[a[cwdchar:]]
-    	filedict[a[cwdchar:]].append(i)
+    	if i[-3:] == "tex" :
+    		filedict[a[cwdchar:]]
+    		filedict[a[cwdchar:]].append(i)
 
 filelist = []
 for folder in filedict:
