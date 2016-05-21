@@ -1,0 +1,11 @@
+{
+  "packages" : [
+    "geometry",
+    "multicol",
+    "subfiles",
+    "array",
+    "lmodern"],
+  "doctype": "article",
+  "docoptions" : [
+    "a4paper"]
+}

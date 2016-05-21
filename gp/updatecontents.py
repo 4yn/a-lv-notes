@@ -1,6 +1,11 @@
-import os
+#!/usr/bin/python
 
-for dirpath, dirnames, filenames in os.walk("~/a-lv-notes"):
-  #whatever you want to do with these folders
-  if "/data/modules/" in dirpath:
-    print(dirpath, dirnames, filenames)
+import os
+import json
+
+
+
+
+
+for item in os.walk(os.getcwd()+"/content"):
+    print item
