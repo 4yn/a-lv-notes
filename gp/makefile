@@ -14,3 +14,6 @@ all:
 clean:
 	find -regex $(cleanregex) -delete
 
+contents:
+	./buildcontents.py
+
