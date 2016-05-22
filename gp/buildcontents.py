@@ -25,6 +25,8 @@ for i in options["packages"]:
 	out.write("}\n")
 out.write("\n")
 
+out.write(" \\renewcommand{\\familydefault}{\sfdefault}\n\n")
+
 out.write("\\begin{document}\n\n")
 
 out.write("\\subfile{./templates/header.tex}\n\n\\begin{multicols}{2}\n\n")
