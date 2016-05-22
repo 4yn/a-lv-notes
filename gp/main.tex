@@ -5,8 +5,21 @@
 \usepackage{subfiles}
 \usepackage{array}
 \usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{etoolbox}
 
- \renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]{\normalfont\normalsize\em}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}[runin]{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
 
 \begin{document}
 
@@ -27,7 +40,7 @@
 \subfile{./content/02_Social_Issues/02c_Social_Stratification.tex}
 \subfile{./content/02_Social_Issues/02d_Poverty_and_Mobility.tex}
 \subfile{./content/02_Social_Issues/02e_Discrimination.tex}
-\subfile{./content/02_Social_Issues/02f_Ageing_Population.tex}
+\subfile{./content/02_Social_Issues/02f_Aging_Population.tex}
 \subfile{./content/02_Social_Issues/02g_Youth.tex}
 \subfile{./content/02_Social_Issues/02h_Education.tex}
 \subfile{./content/02_Social_Issues/02i_Activism.tex}

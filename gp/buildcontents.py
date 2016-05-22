@@ -25,7 +25,9 @@ for i in options["packages"]:
 	out.write("}\n")
 out.write("\n")
 
-out.write(" \\renewcommand{\\familydefault}{\sfdefault}\n\n")
+formatting = open("./templates/formatting.tex","r")
+out.write(formatting.read())
+out.write("\n")
 
 out.write("\\begin{document}\n\n")
 

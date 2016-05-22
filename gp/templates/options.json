@@ -4,7 +4,9 @@
     "multicol",
     "subfiles",
     "array",
-    "lmodern"],
+    "lmodern",
+    "titlesec",
+    "etoolbox"],
   "doctype": "article",
   "docoptions" : [
     "a4paper"]
