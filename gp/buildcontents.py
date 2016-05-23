@@ -5,7 +5,7 @@ import json
 from collections import defaultdict
 
 def subfile(folder,file):
-	return "\\subfile{."+folder+"/"+file+"}"
+	return "\\subfile{."+folder.replace("\\","/")+"/"+file+"}"
 
 out = open("main.tex","w")
 
