@@ -24,3 +24,4 @@ clean-a:
 
 contents:
 	./buildcontents.py
+

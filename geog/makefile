@@ -7,11 +7,12 @@ cleanallregex = ".+\(aux\|log\|synctex.gz\|fls\|fdb_latexmk\|bbl\|blg\|pdf\)$$"
 
 .PHONY: clean clean-p $(FILE).pdf
 
-$(FILE).pdf: $(FILE).tex
-	pdflatex $(FILE)
+# $(FILE).pdf: $(FILE).tex
+	# pdflatex $(FILE)
 
 all:
-	$(FILE).pdf
+	echo "Nothing Here"
+	# $(FILE).pdf
 
 clean:
 	find -regex $(cleanregex) -delete
@@ -23,4 +24,4 @@ clean-a:
 	find -regex $(cleanallregex) -delete
 
 contents:
-	./buildcontents.py
+	# ./buildcontents.py
