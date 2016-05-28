@@ -1,5 +1,18 @@
 \renewcommand{\familydefault}{\sfdefault}
 
+\mdfdefinestyle{defstyle}{%
+	frametitlebackgroundcolor = gray!20,
+	frametitleaboveskip = 2pt,
+	frametitlebelowskip = 0pt,
+	frametitlerule = true,
+	frametitlerulewidth = 0.5pt,
+	innertopmargin = 3pt,
+}
+
+\mdtheorem[style=defstyle]{definition}{Definition}[section]
+
+\newcommand\physdef[2]{\begin{definition}[#1]#2\end{definition}}
+
 \geometry{a4paper,margin=0.75in}
 
 \pgfplotsset{compat=1.12}

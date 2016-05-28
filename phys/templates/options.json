@@ -9,7 +9,8 @@
     "amssymb",
     "textcomp",
     "gensymb",
-    "pgfplots"],
+    "pgfplots",
+    "mdframed"],
   "doctype": "article",
   "docoptions" : [
     "a4paper"]
