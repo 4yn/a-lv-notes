@@ -18,4 +18,4 @@ clean:
 clean-a:
 	find -regex $(cleanallregex) -delete
 
-ac: all clean
+ac: clean-a all clean
