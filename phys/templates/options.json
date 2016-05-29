@@ -10,7 +10,8 @@
     "textcomp",
     "gensymb",
     "pgfplots",
-    "mdframed"],
+    "mdframed",
+    "siunitx"],
   "doctype": "article",
   "docoptions" : [
     "a4paper"]

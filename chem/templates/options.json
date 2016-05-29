@@ -10,7 +10,9 @@
     "textcomp",
     "gensymb",
     "pgfplots",
-    "mdframed"],
+    "mdframed",
+    "chemformula",
+    "siunitx"],
   "doctype": "article",
   "docoptions" : [
     "a4paper"]
