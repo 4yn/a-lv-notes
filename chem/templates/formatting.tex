@@ -1,5 +1,27 @@
 \renewcommand{\familydefault}{\sfdefault}
 
+\mdfdefinestyle{defstyle}{%
+	frametitlebackgroundcolor = gray!20,
+	frametitleaboveskip = 2pt,
+	frametitlebelowskip = 0pt,
+	frametitlerule = true,
+	frametitlerulewidth = 0.5pt,
+	innertopmargin = 3pt,
+	innerleftmargin = 3pt,
+	innerrightmargin = 3pt,
+}
+
+\mdtheorem[style=defstyle]{definition}{Definition}[section]
+
+\newcommand\scidef[2]{\begin{definition}[#1]#2\end{definition}}
+
 \geometry{a4paper,margin=0.75in}
 
 \pgfplotsset{compat=1.12}
+
+\setlength{\parindent}{0pt}
+
+\newcommand\usub[2]{\(\text{#1}_\text{#2}\)}
+\newcommand\udmcpmol{\(\text{dm}^3 \text{mol}^{-1}\)}
+\newcommand\umolpdmc{\(\text{mol} \text{dm}^{-3}\)}
+\newcommand\ugpdmc{\(\text{g} \text{dm}^{-3}\)}
