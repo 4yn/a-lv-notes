@@ -5,7 +5,10 @@ compiled pdf available at https://drive.google.com/open?id=0B-C1G3_MaVxELWlzU29Z
 
 ## notes
 
-/chem/main.pdf
-/math/main.pdf
-/phys/main.pdf
-/gp/main.pdf
+[Chemistry](/chem/main.pdf)
+
+[Math](/math/main.pdf)
+
+[Physics](/phys/main.pdf)
+
+[General Paper](/gp/main.pdf)
