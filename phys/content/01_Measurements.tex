@@ -4,9 +4,92 @@
 
 \section{Measurements}
 
-	\subsection{SI Base Units}
+	\subsection{Units}
 
-	
+	Physics can be summarized as a collection of mathematical relationships between physical phenomena. Each and every physical quantity has a numerical magnitude and a unit. Note that it is nonsensical to compare a physical quantity to a unit (e.g. time cannot be compared to seconds).
+
+	\[ \underbrace{ F }_\text{Physical Quantity}  = \underbrace{ 5 }_\text{Numerical Magnitude} \underbrace{ N }_\text{Unit} \]
+
+	\physdef{SI Base Units}{SI base units are a selection of fundamental physical quantities, from which all other physical quantities can be represented as a combination of SI Base Units. These quantities have been arbitrarily chosen for accessibility and reproducibility.}
+
+	\physdef{Derived Units}{Derived Units are defined as products or quotients of base units and are obtained as products of base units}
+
+	\begin{center} \begin{tabular}{|c|c|c|} \hline
+	\bf{Base Quantity} 		& 	\bf{Base Unit} 	&	\bf{Symbol}	\\ \hline
+	Time				&	Second		&	s 		\\ \hline
+	Length				&	Meter		&	m 		\\ \hline
+	Mass 				&	Kilogram	& 	kg 		\\ \hline
+	Current 			&	Ampere 		&	A 		\\ \hline
+	Temperature 		&	Kelvin 		& 	K 		\\ \hline
+	Amount of Substance	&	Mole		& 	mol 	\\ \hline
+	\end{tabular} \end{center} 
+
+	For a mathematical operation to be valid, addition and subtraction between physical quantities have to have the same unit and two sides of an equation must have the same unit.
+
+	\physdef{Homogeneous Equations}{An equation is homogeneous if both sides of an equation have the same resultant units. Also called Dimensionally Consistent.}
+
+	The homogeneity of an equation can be used to determine the powers of physical quantities used to derive a value.
+
+	\subsection{Numerical Magnitudes}
+
+	Orders of magnitudes of a physical quantity can be used to represent decimal multiples of a number.
+
+	\begin{center} \begin{tabular}{|c|c|c|} \hline
+	\bf{Prefix}	&	\bf{Symbol}	&	\bf{Power of 10} \\ \hline
+	tera 	&	T 	&	12	\\ \hline
+	giga 	&	G 	&	9	\\ \hline
+	mega 	&	M 	&	6	\\ \hline
+	kilo	&	k 	&	3	\\ \hline
+	deci	&	d 	&	-1	\\ \hline
+	centi	&	c 	&	-2	\\ \hline
+	milli	&	m 	&	-3	\\ \hline
+	micro	&	\(\mu\) &	-6	\\ \hline	
+	nano	&	n 	&	-9	\\ \hline
+	pico 	&	p 	&	-12	\\ \hline
+	\end{tabular} \end{center}
+
+	\physdef{Standard Form}{Standard form is where the numerical magnitude of a physical quantity is written in the form  \( a \times 10^n \) where \( 1 \leq a < 10 \) and \(n\) is an integer.}
+
+	Estimation of the order of magnitude of a physical quantity can be derived from estimating component values of a certain order of magnitude and then applying physical equations.
+
+	\subsection{Error}
+
+	Error in a reading is where there is uncertainty in the exact value of the numerical magnitude of a physical quantity.
+
+	\physdef{Systematic Error}{Systematic errors are caused by lapses in the measurement process, resulting in values consistently erroneous to give always smaller or always larger readings and can be eliminated if the source of error is known and accounted for.}
+
+	\physdef{Random Error}{Random errors are caused by inherent inaccuracy and lack of precision in a reading, resulting in values scattered about a mean and can be mitigated by repeating measurements and finding lines of best fit but otherwise cannot be predicted.}
+
+	\physdef{Accuracy}{Accurate readings are values which are close to the true value of a physical quantity and is influenced by systematic error.}
+
+	\physdef{Precision}{Precise readings are values which agree which other and is influenced by random error.}
+
+	\subsubsection{Measuring Values}
+
+	Precision of a measuring instrument is determined by its least count. Measurements of length and volume are read to their least count, or half their least count if the markings are larger than 1mm such as on a meter rule or a graph. Digital instruments are read and recorded to their displayed value except for tools which depend on other erroneous input such as human reaction time. Do note that the ruler is a special case, where since the error in reading is 0.5mm but two readings are made (don't ask me why this isn't the case in other measurements) the total error is twice that error or 1mm. In questions which specify that the error accompanying each reading is one division, the absolute error is twice the least count (don't ask me why again).
+
+	\subsubsection{Error Propagation}
+
+	\begin{equation*} \begin{gathered}
+		Q = aX + bY \quad \Delta Q = |a| \Delta X + |b| \Delta Y \\
+		Q = k  X^a Y^b \quad \frac{\Delta Q}{Q} = |a|\frac{\Delta X}{X} + |b| \frac{\Delta Y}{Y} \\
+	\end{gathered} \end{equation*}
+
+	Absolute uncertainty is represented to 1 s.f. while fractional and percentage (fractional multipied by 100\%) uncertainty is represented to 2 s.f. . \\
+
+	To find the situation where maximum fractional error occurs, adjust the values such that the value of \(Q\) is its smallest possible value. \\
+
+	\subsubsection{DP and SF}
+
+	Addition and subtraction operations in experimental situations require the result to follow the largest decimal place value of its derivatives. Multiplication and division operations in experimental situations require the result to follow the least significant figures of its derivatives. However, in exam settings seek to maintain all working in 5sf/dp and only reduce sf/dp when obtaining answers.
+
+	\subsubsection{Scalars and Vectors}
+
+	\physdef{Scalar Quantity}{A Scalar Quantity is a physical value with a numerical magnitude, and are represented by a magnitude and a unit.}
+
+	\physdef{Vector Quantity}{A Vector Quantity is a physical value with a numerical magnitude as well as a direction, and are represented by a magnitude, unit and a direction.}
+
+	Before solving questions involving vector quantities, a positive direction should be defined as whichever direction is most convenient.
 
 
 \end{document}
