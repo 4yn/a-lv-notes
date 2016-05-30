@@ -25,3 +25,4 @@ clean-a:
 contents:
 	./buildcontents.py
 
+ac: clean-a all clean
