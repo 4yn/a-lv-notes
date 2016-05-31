@@ -11,7 +11,8 @@
     "gensymb",
     "pgfplots",
     "mdframed",
-    "siunitx"],
+    "siunitx",
+    "xifthen"],
   "doctype": "article",
   "docoptions" : [
     "a4paper"]
