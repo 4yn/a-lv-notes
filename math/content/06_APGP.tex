@@ -9,14 +9,14 @@
 	\subsubsection{Arithmetic Sequence}
 	An arithmetic progression is a sequence of numbers which have the same difference between consecutive elements. Sequences are defined by their initial term \(a\) and their constant difference \(d\)
 	\begin{equation*} \begin{gathered}
-		u_1 = a + (1-1) d = a\\
-		u_2 = a + (2-1) d = a + d \\
-		u_3 = a + (3-1) d = a + 2d \\
+		u_1 = a = a + (1-1) d\\
+		u_2 = u_1 + d = a + d = a + (2-1) d \\
+		u_3 = u_2 + d = a + d + d = a + (3-1) d\\
 		...\\
 		u_n = a + (n-1) d 
 	\end{gathered} \end{equation*} 
 	\subsubsection{Arithmetic Series}
-	Series is defined as the sum of a certain number of consecutive elements in a arithmetic sequence.
+	An Arithmetic Series is defined as the sum of a certain number of consecutive elements in an arithmetic sequence.
 	\begin{equation*} \begin{gathered}
 		S_1 = u_1 \\
 		S_2 = S_1 + u_2 = u_1 + u_2 \\
@@ -24,16 +24,30 @@
 		... \\
 		S_n = u_1 + u_2 + ... + u_{n-1} + u_n
 	\end{gathered} \end{equation*} 
-	For a known arithmetic sequence, the term \(S_n\) can be derived from the equation
+	For an arithmetic sequence of known initial term and constant difference, the term \(S_n\) can be derived from the equation
 	\[ S_n = \frac{n}{2}(2a + (n-1)d) = \frac{n}{2}(u_1 + u_n) \]
 	\subsubsection{Proving a AP}
-	\subsubsection{Exponent and Log}
 
 \subsection{Geometric Progression}
 	
 	\subsubsection{Geometric Sequence}
+	A geometric progression is a sequence of numbers which have the same constant ratio between consecutive elements. Sequences are defined by their initial term \(a\) and their constant ratio \(r\)
+	\begin{equation*} \begin{gathered}
+		u_1 = a = ar^{1-1}\\
+		u_2 = u_1r = ar^{2-1}\\
+		u_3 = u_2r = ar^{3-1} \\
+		...\\
+		u_n = ar^{n-1}
+	\end{gathered} \end{equation*} 
 	\subsubsection{Geometric Series}
+	A Geometric Series is defined as the sum of a certain number of consecutive elements in a geometric sequence. \\
+	For a geometric sequence of known initial term and constant difference, the term \(S_n\) can be derived from the equation
+	\[ S_n = \frac{a(r^n-1)}{r-1} = \frac{a(1-r^n)}{1-r} \]
+	The first equation is typically used for \(r>1\) while the second is used for \(r<1\).
 	\subsubsection{Proving a GP}
 	\subsubsection{Convergence}
+	For a \(r<1\), is can be proven that as \(n\) tends to infinity, the value of \(u_n\) tends to zero and the value of \(S_n\) converges to a certain value and the series of this geometric sequence is said to be convergent. The value to which a series converges to is given by:
+	\[ S_{\infty} = \frac{a}{1-r} \]
+	The equation can be derived from the general formula of a geometric series as the numerator term \(1-r^n\) can be reduced to \(1\) as \(r^n\) tends to zero.
 
 \end{document}
