@@ -21,7 +21,7 @@
 	frametitleaboveskip = 2pt,
 	frametitlebelowskip = 0pt,
 	frametitlerule = true,
-	frametitlerulewidth = 0.5pt,
+	frametitlerulewidth = 1pt,
 	innertopmargin = 3pt,
 	innerleftmargin = 3pt,
 	innerrightmargin = 3pt,
@@ -35,6 +35,7 @@
 
 \newcommand\scieqn[4][]{
 	\begin{sciequation}[#2] 
+	\nobreak
 	#3
 	\[ 	
 		\ifthenelse{\equal{#1}{}}{}{\begin{#1}}

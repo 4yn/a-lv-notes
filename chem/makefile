@@ -25,4 +25,4 @@ clean-a:
 contents:
 	./buildcontents.py
 
-ac: clean-a $(FILE).pdf clean
+ac: contents clean-a $(FILE).pdf clean
