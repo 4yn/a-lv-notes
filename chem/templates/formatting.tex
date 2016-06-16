@@ -15,6 +15,20 @@
 
 \newcommand\scidef[2]{\begin{definition}[#1] \nobreak #2\end{definition}}
 
+\mdtheorem[style=defstyle]{sciequation}{Equation}[section]
+
+\newcommand\scieqn[4][]{
+	\begin{sciequation}[#2] 
+	\nobreak
+	#3
+	\[ 	
+		\ifthenelse{\equal{#1}{}}{}{\begin{#1}}
+		#4
+		\ifthenelse{\equal{#1}{}}{}{\end{#1}}
+	\]
+	\end{sciequation}
+}
+
 \geometry{a4paper,margin=0.75in}
 
 \pgfplotsset{compat=1.12}
