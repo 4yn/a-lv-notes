@@ -1,31 +1,39 @@
 \renewcommand{\familydefault}{\sfdefault}
 
-\mdfdefinestyle{defstyle}{%
-	frametitlebackgroundcolor = gray!20,
-	frametitleaboveskip = 2pt,
-	frametitlebelowskip = 0pt,
-	frametitlerule = true,
-	frametitlerulewidth = 0.5pt,
-	innertopmargin = 3pt,
-	innerleftmargin = 3pt,
-	innerrightmargin = 3pt,
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+
+\newtcolorbox[auto counter,number within=section]{scidefinition}[2][]{
+	sharp corners=all,
+	breakable=true,
+	top = 0.5mm, bottom = 0.5mm,
+	left = 0.5mm, right = 0.5mm,
+	colback = white,
+	title=Definition~\thetcbcounter: #2,
+	#1,
 }
 
-\mdtheorem[style=defstyle]{definition}{Definition}[section]
+\newcommand\scidef[2]{\begin{scidefinition}{#1} #2 \end{scidefinition}}
 
-\newcommand\scidef[2]{\begin{definition}[#1] \nobreak #2\end{definition}}
-
-\mdtheorem[style=defstyle]{sciequation}{Equation}[section]
+\newtcolorbox[auto counter,number within=section]{sciequation}[2][]{
+	sharp corners=all,
+	breakable=true,
+	top = 0.5mm, bottom = 0.5mm,
+	left = 0.5mm, right = 0.5mm,
+	colback = white,
+	title=Equation~\thetcbcounter: #2,
+	#1,
+}
 
 \newcommand\scieqn[4][]{
-	\begin{sciequation}[#2] 
-	\nobreak
-	#3
-	\[ 	
-		\ifthenelse{\equal{#1}{}}{}{\begin{#1}}
-		#4
-		\ifthenelse{\equal{#1}{}}{}{\end{#1}}
-	\]
+	\begin{sciequation}{#2}
+		#3
+		\begin{equation*}
+			\ifthenelse{\equal{#1}{}}{}{\begin{#1}}
+			#4
+			\ifthenelse{\equal{#1}{}}{}{\end{#1}}
+		\end{equation*}
+
 	\end{sciequation}
 }
 
@@ -37,3 +45,7 @@
 
 \newcommand\usub[2]{\(\text{#1}_\text{#2}\)}
 \newcommand\usup[2]{\(\text{#1}^\text{#2}\)}
+
+\DeclareSIUnit\atmosphere{atm}
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\bar{bar}

@@ -4,12 +4,95 @@
 
 \section{Gases}
 
-\subsection{Ideal Gas Law}
+	\subsection{Gases}
 
-\subsection{Deviation from the Ideal Gas Law}
+	Gases are made of particles which are separated by large distances due to weak IMF. The particles in a gas are constantly moving, resulting in collisions with the surface of its container and giving rise to pressure. The average speed of gas particles is dependent on its total internal kinetic energy, AKA its temperature.
 
-\subsection{Partial Pressure}
+	\subsection{Ideal Gas Law}
 
-\subsection{Graphing}
+	The chemical analysis of gases involve the quantities of 
+
+	\begin{itemize}
+		\item Pressure \(p\) measured in \si{\Pa} or \si{\N\per\m\squared} or \si{\kg\per\meter\per\s\squared}
+		\item Volume \(V\) measured in \si{\m\cubed}
+		\item Temperature \(T\) measured in \si{\K}
+		\item Amount of gas \(n\) measured in \si{\mol}
+	\end{itemize}
+
+	\scidef{Boyle's Law}{Boyle's Law states that for a fixed \(n\) and \(T\), \( V \propto p^{-1} \)}
+
+	\scidef{Charles' Law}{Charles' Law states that for a fixed \(n\) and \(p\), \( V \propto K \) }
+
+	\scidef{Gay-Lussac's Law}{Gay-Lussac's Law states that for a fixed \(n\) and \(V\), \( p \propto K \)}
+
+	\scidef{Avogadro's Law}{Avogadro's Law states that for a fixed \(T\) and \(p\), for any gas, \( n \propto V \)}
+
+	A combination of all these laws as well as experimental calculation of their proportionality constants gives us the ideal gas equation:
+
+	\scieqn{Ideal Gas Equation}{Where \(R\) = \SI{8.31}{\J\per\K\per\mol} }{ pV = NRT }
+
+	To sketch graphs related to the ideal gas equation, rearrange the terms algebraically to find the form of the graph.
+
+	\subsection{Kinetic Theory of Gases}
+
+	The Kinetic Theory of gases is a mathematical model to examine the behavior of gases. In order for the equation \(pV=NRT\) to be valid, certain assumptions need to be made:
+
+	\begin{description}
+		\item[Volume of Particles] is assumed to be zero. Particles in an ideal gas are assumed to be point masses which have no volume. In reality, at high concentrations of gas the volume of gas particles is significant as compared to its container, hence using the volume of the container is no longer a suitable estimate of volume.
+		\item[Attraction of Particles] is assumed to be negligible. Particles exert IMF on each other which when strong enough result in dampening of collision between gas particles and the walls of a container as IMF attracts particles away from the walls of a container.
+		\item[Constant Random Motion] assumes that pressure is constant.
+		\item[Elasticity of Collision] assumes that kinetic energy is constant and that no energy is lost to other forms of energy like sound.
+		\item[Energy is Proportional to Temperature]
+	\end{description}
+
+	The main concerns of ideal gas are the first two assumptions, as they cause significant deviation from ideality in most real gases whose values have been experimentally obtained. The last three are precedents for the other gas laws to be valid.
+
+	\subsection{Deviation from the Ideal Gas Law}
+
+	For a gas to approach ideality, there needs to be
+
+	\begin{description}
+	\item[Low Pressure] to ensure that particles are far apart and have negligible volume compared to its container and have negligible IMF due to the large distance,
+	\item[High Temperature] to ensure that particles have high enough kinetic energy to overcome IMF and hence making IMF negligible.
+	\end{description}
+
+	For a gas to deviate from ideality, there can be 
+
+	\begin{description}
+		\item[High Pressure] where gas particles are closer together and occupy a significant volume as compared to the volume of the container, on top of having significant IMF.
+		\item[Low Temperature] where particles have less kinetic energy which is less able to overcome IMF, making the effect of IMF significant.
+	\end{description}
+
+	\subsubsection{Graphs of Deviation from ideality}
+
+	Graphs of pV/RT against p curves typically originate at the value of 1.0, decrease at moderately high pressures of around 150 atm and then rises above 1.0 at higher pressures. \\
+
+	At moderately high pressures, the spaces between particles of real gas are close enough for IMF to become significant, making a particle approaching a wall be attracted by molecules near to it and lessening the impact of the particle on the wall, resulting in a decreased gas pressure. The stronger the IMF of the gas molecules and the lower the temperature, the greater this effect, and the larger the value of p which the pV/RT against p graph cuts the line pV/RT = 1 and the lesser the minimum of the curve. \\
+
+	At high pressures, gas particles are close together and space between them is significantly reduced, the space taken up by gas particles cause free volume to be significantly less than the volume of the container, resulting in an overstated volume. The larger the size of the gas particle, the stronger the effect, and the higher the gradient of the pV/RT graph as p increases beyond a high value. \\
+
+	Gas particles with the same type of IMF and same size electron clouds generally have similar pV/RT against p graphs. \\
+
+	Note that graphs which show gases decreasing without a minimum usually have the rightmost bound of the x axis at a moderately high p, where the minimum has not yet been drawn.
+
+	\subsection{Partial Pressure}
+
+	\scidef{Dalton's Law of Partial Pressures}{Dalton's Law of Partial Pressures states that the total pressure of a mixture of non-reacting gases is equal to the sum of the pressure of the individual gases as if each gas alone occupies the container.}
+
+	\scieqn{Dalton's Law of Partial Pressures}{For pressure p, of gases A B and C, the total pressure is given by the equation}{p_\text{total} = p_A + p_B + p_C}
+
+	Because of Avogadro's law, the total pressure of a mixture of gases can be calculated by using the sum of the amount of gas particles to obtain \(p_\text{total}\). The partial pressures of a gas like \(p_A\) can be calculated by \(p_\text{total} \times \frac{n_A}{n_total}\). \\
+
+	Questions using this concept are usually basic stoichiometry questions, just with the added dimension of using volumes of gas and pressure of gas to obtain amount of gas.
+
+	\subsection{Vapor Pressure}
+
+	\scidef{Volatility}{The Volatility of a liquid is its tendency to evaporate.}
+
+	\scidef{Vapor Pressure}{Vapor Pressure is the pressure that particles of an evaporated liquid exerts.}
+
+	\scidef{Saturated Vapor Pressure}{Saturated Vapor Pressure the pressure of vapor particles when the rate of evaporation is the same as the rate of condensation.}
+
+	``Boiling'' occurs when temperature is sufficient for liquid particles to evaporate and establish a saturated vapor pressure equal to that of its surroundings. Substances with strong IMF are less volatile and have lesser saturated vapor pressures, meaning more energy is required to overcome IMF for boiling to occur and hence increasing its boiling point.
 
 \end{document}

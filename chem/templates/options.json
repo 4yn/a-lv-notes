@@ -10,9 +10,9 @@
     "textcomp",
     "gensymb",
     "pgfplots",
-    "mdframed",
     "chemformula",
-    "siunitx"],
+    "siunitx",
+    "tcolorbox"],
   "doctype": "article",
   "docoptions" : [
     "a4paper"]
