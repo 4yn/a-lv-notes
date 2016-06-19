@@ -193,13 +193,104 @@
 
 	\subsection{Entropy}
 
+	\scidef{Entropy}{Entropy is the measure of disorder of a system. A system with higher entropy has more ways to organize itself.}
+
+	Zero entropy is defined as the entropy of any substance at absolute zero. For the purposes of chemical energetics, entropy is treated as a state function where change in entropy is derived from comparing its initial and final states. Negative entropy change indicates that the final state is more ordered, while a positive entropy change indicates that the final state is more disordered.
+
 	\subsubsection{Entropy Changes}
+
+	An increase in the number of gas particles in a system increases the entropy of a system as an increase in gas particles creates an increase in particles in random motion, hence reactions which have a net increase of gas particles have a positive entropy change. \\
+
+	Mixing of particles increases entropy as there are more ways to organize particles. Mixing gas particles causes these particles to occupy a larger container, allowing them more ways to be arranged in the larger volume. Mixing soluble liquid particles cause these liquid particles to have greater disorder than their unmixed state. \\
+
+	Dissolution of ionic solids in water can cause both increases and decreases in entropy. Disruption of the ordered ionic lattice structure which causes ionic solids to lose their orderly form increases entropy significantly as they are free to move about the solvent, however there is also a decrease in entropy due to the process of hydration as ion-dipole interactions between water and ions puts these particles into an orderly arrangement. For \ch{NaCl},the dissolution process results in a net increase in randomness as breaking of ionic structure is more predominant than the process of hydration. For \ch{CaSO4},the dissolution process decreases entropy as the process of hydration is more predominant than breaking of ionic structure. \\
+
+	\scidef{Maxwell-Boltzmann Distribution}{The Maxwell-Boltzmann Distribution graph is a plot of number of molecules with a given energy level against kinetic energy. Though the temperature of a substance is constant, its individual particles still have differing energy levels. Increasing the temperature of a substance will broaden the Maxwell-Boltzmann Distribution and also shift the peak lower and to the right.}
+
+	An increase in temperature results in an increase in entropy. As temperature increases, there is a broadening of the Maxwell-Boltzmann distribution of the particles, providing more energy states which any individual particle can hold at one point in time and hence causing an increase in entropy. \\
+
+	State changes from solid to liquid to gas cause an increase in entropy, since the structural order in a solid is destroyed by melting into a liquid and since changes to the gaseous state are accompanied with a large increase in volume. The entropy in a similar amount of gas is significantly higher than that of a liquid, which is higher than that of a solid.
 
 	\subsection{Gibbs Free Energy}
 
+	\scidef{Standard Gibbs Free Energy Change}{The Standard Gibbs Free Energy Change \(\Delta G^\plimsoll\) of a reaction is the overall change in the total energy content of a reaction, once accounted for both changes in enthalpy and changes in entropy.}
+
+	\scieqn{Standard Gibbs Free Energy Change}{For the enthalpy change \(\Delta H^\plimsoll\), entropy change \(\Delta S^\plimsoll\) and current temperature \(T\) of a reaction, the Standard Gibbs Free Energy Change \(\Delta G^\plimsoll\) of a reaction is given as:}{\Delta G^\plimsoll = \Delta H^\plimsoll - T \Delta S^\plimsoll }
+
+	Note that in most calculations \(\Delta H\) is in \si{\kJ} while \(\Delta S\) is in \si{J}, do remember to convert units. \\
+
+	Note that in most cases where reactions take place in standard conditions, all \(\Delta G\), \(\Delta H\) and \(\Delta S\) values should be followed by a superscript \plimsoll to indicate standard conditions or the use of values obtained at standard conditions, despite temperature being different. \(\Delta H^\plimsoll\) and \(\Delta S^\plimsoll\) are assumed to not vary with different temperature. When in doubt, follow the notation of the question.
+
 	\subsubsection{Thermodynamic Feasibility}
 
+	\scidef{Thermodynamic Spontaneity}{A Thermodynamically Spontaneous reaction is a irreversible reaction that can occur without any external assistance in terms of energy input, involving a system which moves from a unstable to a stable state.}
+
+	\scidef{Endergonic}{An Endergonic reaction has a positive \(\Delta G\) value and is not thermodynamically spontaneous.}
+
+	\scidef{Exergonic}{An Exergonic reaction has a negative \(\Delta G\) value and is thermodynamically spontaneous.}
+
+	\begin{tikzpicture}
+	\begin{axis}[
+		axis x line=center,
+		axis y line=center,
+		xmin=-3,xmax=3,ymin=-3,ymax=3,
+		xlabel={\(\Delta H\)},
+		ylabel={\(\Delta S\)},
+		ticks=none,
+		title={Types of Thermodynamic Feasibility}
+	]
+	\node [anchor=north east] (0,0) {0};
+	\node [anchor=south] at (-1.5,1.5) {\(\Delta H < 0 \quad \Delta S > 0\)};
+	\node [anchor=north] at (-1.5,1.5) {\small Spontaneous at all \(T\)};
+	\node [anchor=south] at (1.5,1.5) {\(\Delta H > 0 \quad \Delta S > 0\)};
+	\node [anchor=north] at (1.5,1.5) {\small Spontaneous at high \(T\)};
+	\node [anchor=south] at (-1.5,-1.5) {\(\Delta H < 0 \quad \Delta S < 0\)};
+	\node [anchor=north] at (-1.5,-1.5) {\small Spontaneous at low \(T\)};
+	\node [anchor=south] at (1.5,-1.5) {\(\Delta H > 0 \quad \Delta S < 0\)};
+	\node [anchor=north] at (1.5,-1.5) {\small Not spontaneous};
+	\end{axis}
+	\end{tikzpicture}
+
+	To explain the thermodynamic feasibility of a reaction:
+	\begin{enumerate}
+		\item State and explain sign of \(\Delta H\)
+		\item State and explain sign of \(\Delta S\)
+		\item Comment on sign on \(\Delta G\):
+		\begin{description}
+			\item[(Not) Spontaneous at all T] is because \(\Delta H\) and \(T \Delta S\) both have the same sign, hence \(\Delta G\) will be (positive/negative) regardless of T
+			\item[T dependent] is because at low T \(\Delta G\) is (positive/negative) since \_ outweighs \_, but at high T \(\Delta G\) is (negative/positive) since \_ outweighs \_.
+		\end{description}
+	\end{enumerate}
+
 	\subsection{Experimental Energetics}
+
+	Experimental methods to find \(\Delta H\) of reactions are in syllabus.
+
+	\subsubsection{Highest Reading Method}
+
+	This method involves the derivation of enthalpy change by direct reading of temperature change. A reaction is conducted in an insulated environment with known volumes and amount of reactants. The maximum/minimum temperature reading of the system is then read and used to calculate \(\Delta H\) through calculating the heat capacity of the system, using temperature change to find the total amount of heat change and finally calculating heat change per unit of reaction. \\
+
+	\scieqn[gathered]{Highest Reading Method}{For a resultant volume of system \(V\), density of water \(\rho_\text{\ch{H2O}}\), specific heat capacity of water \(c_\text{water}\), measured temperature change \(\Delta T\) which then gives the amount of heat transfer \(q\), and finally amount of reaction \(n\), the enthalpy of a reaction \(\Delta H\) is given by the equations:}{
+		q = mc \Delta T \\
+		\Delta H = -\frac{q}{n}
+	}
+
+	This experiment assumes that:
+	\begin{itemize}
+		\item There is negligible heat loss to surroundings
+		\item The resultant solution is infinitely dilute: its density and its heat capacity  is equal to that of water
+	\end{itemize}
+
+	\subsubsection{Graph Method}
+
+	This method involves the derivation of enthalpy change by estimating temperature change and compensating for heat loss through using a graphical method. A reaction is conducted in an insulated environment with known volumes and amount of reactants, and the temperature of the system is taken at regular intervals before and after reaction takes place. A graph of temperature against time is plotted, and the temperature change reading is obtained through intersecting two lines: one line of \(x = \text{time of start of reaction}\) and one best fit line of the temperature readings after reaction takes place and temperature change due to reaction is complete. This experiment, after graphing, uses similar equations to the Highest Reading method to obtain \(\Delta H\).\\
+
+	This experiment assumes that:
+	\begin{itemize}
+		\item Heat loss to surroundings is at a constant rate and is accounted for via extrapolation
+		\item Reaction is instantaneous
+		\item The resultant solution is infinitely dilute: its density and its heat capacity  is equal to that of water
+	\end{itemize}
 
 	\subsection{Exam Technique}
 
