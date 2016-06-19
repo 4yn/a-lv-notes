@@ -10,7 +10,6 @@
 \usepackage{textcomp}
 \usepackage{gensymb}
 \usepackage{pgfplots}
-\usepackage{mdframed}
 \usepackage{chemformula}
 \usepackage{siunitx}
 \usepackage{tcolorbox}
@@ -54,11 +53,6 @@
 	\end{sciequation}
 }
 
-
-
-
-
-
 \geometry{a4paper,margin=0.75in}
 
 \pgfplotsset{compat=1.12}
@@ -67,6 +61,7 @@
 
 \newcommand\usub[2]{\(\text{#1}_\text{#2}\)}
 \newcommand\usup[2]{\(\text{#1}^\text{#2}\)}
+\newcommand*{\plimsoll}{{\ensuremath{-\kern-4pt{\ominus}\kern-4pt-}}}
 
 \DeclareSIUnit\atmosphere{atm}
 \DeclareSIUnit\atm{atm}

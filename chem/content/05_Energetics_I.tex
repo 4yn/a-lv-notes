@@ -2,24 +2,207 @@
 
 \begin{document}
 
-\section{Energetics}
+\section{Energetics} 
 
-\subsection{Standard Enthalpy Definitions}
+	\subsection{Chemical Reactions and Energy}
 
-\subsection{Energy Cycles}
+	\scidef{Chemical Energetics}{Chemical Energetics is the study of energy changes that occurs during reactions and phase changes.}
 
-\subsection{Energy Level Diagrams}
+	\scidef{State Function}{A State Function is a function whose values only depend on the state of a system, rather than the pathway used to reach a state.}
 
-\subsection{Energetic Feasibility}
+	\scieqn{State Function Change}{The change in a state function \(\Delta f\) is obtained using its beginning \(f_\text{initial}\) and final \(f_\text{final}\) values by the equation:}{\Delta f = f_\text{final} - f_\text{initial}}
 
-\subsection{Solubility}
+	\subsubsection{Enthalpy}
 
-\subsection{Entropy}
+	\scidef{Enthalpy}{The Enthalpy \(H\) of a substance is a quantification of its energy content. Substances with lower \(H\) or lower enthalpy have less energy and are more stable. Enthalpy is a state function. Measured in \si{\J}}
 
-\subsubsection{Entropy Changes}
+	Absolute enthalpy cannot be obtained, but rather the change in enthalpy \(\Delta H\) has a real value and is calculated like a state function.
 
-\subsection{Gibbs Free Energy}
+	\scidef{Endothermic}{An Endothermic reaction is one where energy is released to the surroundings, i.e. \(\Delta > 0\)}
 
-\subsubsection{Thermodynamic Feasibility}
+	\scidef{Exothermic}{An Exothermic reaction is one where energy is released to the surroundings, i.e. \(\Delta H < 0\)}
+
+	\scidef{Activation Energy}{Activation Energy \usub{E}{A} is the amount of energy required for reactant particles to possess before they can collide successfully to form products.}
+
+	As particles form bonds, they become more stable and release energy, whereas when breaking bonds particles are excited and absorb energy. Hence, bond formation is typically exothermic and bond breaking is endothermic. \\
+
+	Exothermic reactions are energetically feasible and are more likely to occur. However, energetic stability is insufficient to assess the speed of which reactions will happen, which can be very slow (like \ch{C_{Diamond} -> C_{Graphite}})
+
+	\subsection{Energy Profile Diagram}
+
+	Energy profile diagrams describe the potential energy stored in a substance as a reaction progresses, showing the relative energy levels of its reactants, products and the activation energy required.
+
+	\begin{tikzpicture}
+	\begin{axis}[
+		axis x line=bottom,
+		axis y line=left,
+		xmin=0,xmax=6,ymin=0,ymax=5,
+		xlabel={Progress of Reaction},
+		ylabel={Energy},
+		ticks=none,
+		title={Endothermic Reaction}
+	]
+	\addplot [] coordinates { (0.5,1) (1.5,1) }
+		node [pos=0.5,anchor=south] {\(H_\text{initial}\)};
+	\addplot [] coordinates { (4.5,2.5) (5.5,2.5) }
+		node [pos=0.5,anchor=south] {\(H_\text{final}\)};
+	\addplot [dashed] coordinates { (1.5,1) (5.5,1)};
+	\addplot [samples=100,domain=1.5:3] {2.5+1.5*sin(x*120+90)};
+	\addplot [samples=100,domain=3:4.5] {3.25+0.75*sin(x*120+90)};
+	\draw [->] (5,1) -- (5,2.5)
+		node [pos=0.5,anchor=east] {\(\Delta H\)};
+	\draw [<->] (3,1) -- (3,4)
+		node [pos=0.5,anchor=east] {\usub{E}{A}};
+	\end{axis}
+	\end{tikzpicture}
+
+	\begin{tikzpicture}
+	\begin{axis}[
+		axis x line=bottom,
+		axis y line=left,
+		xmin=0,xmax=6,ymin=0,ymax=5,
+		xlabel={Progress of Reaction},
+		ylabel={Energy},
+		ticks=none,
+		title={Exothermic Reaction}
+	]
+	\addplot [] coordinates { (0.5,2.5) (1.5,2.5) }
+		node [pos=0.5,anchor=south] {\(H_\text{initial}\)};
+	\addplot [] coordinates { (4.5,1) (5.5,1) }
+		node [pos=0.5,anchor=north] {\(H_\text{final}\)};
+	\addplot [dashed] coordinates { (1.5,2.5) (5.5,2.5)};
+	\addplot [samples=100,domain=1.5:3] {3.25+0.75*sin(x*120+90)};
+	\addplot [samples=100,domain=3:4.5] {2.5+1.5*sin(x*120+90)};
+	\draw [<-] (5,1) -- (5,2.5)
+		node [pos=0.5,anchor=east] {\(\Delta H\)};
+	\draw [<->] (3,4) -- (3,2.5)
+		node [pos=0.5,anchor=east] {\usub{E}{A}};
+	\end{axis}
+	\end{tikzpicture}
+
+	Note that the arrows for \usub{E}{A} have two arrowheads while \(\Delta H\) only has one.
+
+	\subsection{Standard Enthalpy Definitions}
+
+	\scidef{Standard Conditions}{Standard Conditions (subscript \plimsoll, pronounced naught and symbol is called a plimsoll) refer to situations where temperature is \SI{298}{\K}, pressure is \SI{1}{\bar} and solutions have concentration \SI{1}{\mol\per\dm\cubed}. Standard conditions \(\neq\) s.t.p or r.t.p.}
+
+	\scidef{Standard States}{Standard States are the physical and chemical states at which a substance is most stable at standard conditions. Standard states of substances with the same chemical formula follow their most stable sample (\usub{C}{graphite} rather than \usub{C}{diamond}, \ch{H2O} at liquid rather than gas).}
+
+	Note for each reaction that \(\Delta H\) is defined for \SI{1}{\mol} of the reaction rather than of a product or reactant if not stated, as well as the physical states of all substances. \\
+
+	Definitions of standard enthalpies follow the general form of:
+
+	\begin{center}
+	The standard enthalpy change of \textbf{[process]} is the energy \textbf{(changed/released/absorbed)} when \textbf{[amount to be observed]} of \textbf{[specific substance with physical state]} is \textbf{[description of process]} under conditions of \textbf{[temperature, pressure, concentration and other conditions]}.
+	\end{center}
+
+	\subsubsection{List of Standard Enthalpies}
+
+	\begin{description}
+
+		\item[Standard enthalpy change of reaction] \(\Delta H_\text{r}^\plimsoll\) is the energy change in a reaction when one mole of reaction occurs with stated quantities of a reaction under standard conditions.
+		
+		\item[Standard enthalpy change of formation] \(\Delta H_\text{f}^\plimsoll\) is the energy released when one mole of substance is formed from its elements under standard conditions.
+		
+		\item[Standard enthalpy change of combustion] \(\Delta H_\text{c}^\plimsoll\) is the energy released when one mole of substance is completely burnt under standard conditions.
+		
+		\item[Standard enthalpy change of neutralization] \(\Delta H_\text{neut}^\plimsoll\) is the energy change when one mole of \ch{H2O} is formed through reacting an acid and a base under standard conditions. \\
+		Neutralization between strong acid and strong base typically has enthalpy change of \SI{-57.3}{\kJ\per\mol}. \\
+		Neutralization can be endothermic in the case of a weak acid or base, as the endothermic disassociation of \ch{H+} a nd \ch{OH-} combined with the exothermic hydration of ions may result in a net endothermic effect which is larger than the energy released due to formation of \ch{H2O}, hence it may be endothermic.
+
+		\item[Standard enthalpy change of atomization] \(\Delta H_\text{atom}^\plimsoll\) is the energy required for when gaseous element molecules are atomized into one mole of gaseous atoms or one mole of gaseous compound is atomized into constituent gaseous atoms.
+		
+		\item[Bond Dissociation Energy] BDE is the energy required to break one mole of a particular bond in a compound when the compound is in gaseous state.
+		
+		\item[Bond Energy] BE is the average energy required to break one mole of a type of bond between two atoms. \\
+		BE is obtained when BDE is averaged out.
+		
+		\item[Ionization Energy] IE is the energy required to form one mole of gaseous electrons and one mole of charged gaseous atoms from one mole of gaseous atoms.
+		
+		\item[Electron Affinity] EA is the energy change when one mole of gaseous atoms acquire one mole of gaseous electrons. \\
+		Note that the first EA can be exothermic or endothermic, but the second EA is endothermic because electrons are being introduced to a negatively charged species and will experience repulsion.
+		
+		\item[Lattice Energy] LE is the amount of energy released when gaseous cation and anion  react to form one mole of solid ionic compound under standard conditions.
+		
+		\item[Standard enthalpy change of hydration] \(\Delta H_\text{hyd}^\plimsoll\) is the energy released when one mole of gaseous ion is hydrated under standard conditions. \\
+		\(\Delta H_\text{hyd}^\plimsoll\) is proportional to the charge density of an ion, i.e. \(\Delta H_\text{hyd}^\plimsoll \propto | \frac{q}{r} |\)
+		
+		\item[Standard enthalpy change of solution] \(\Delta H_\text{soln}^\plimsoll\) is the energy change when one mole of substance is completely dissolved in solvent to form an infinitely dilute solution under standard conditions.
+
+	\end{description}
+
+	\subsection{Energy Cycles}
+
+	\scidef{Hess' Law}{Hess' Law states that the enthalpy change of a reaction is determined by its initial and final states of the system and independent of the pathways taken. i.e. Enthalpy is a state function.}
+
+	Given a list of \(\Delta H\) and the data from the information booklet, \(\Delta H\) of other reactions can be found by exploiting this rule. No matter how many steps of a reaction is taken, so long as the reactants and products are the same, the total \(\Delta H\) will be the same. \\
+
+	When drawing cycles:
+	\begin{itemize}
+		\item Always show state symbols of substances
+		\item Label reactions/arrows with the correct \(\Delta H_\text{subscript}\), value of enthalpy change and introduced or removed elements (and their state) if there are any
+		\item Only use \plimsoll when data given is applicable to standard conditions
+		\item Ensure that all introduced elements are also removed at some point in a cycle
+		\item Write ``By Hess' Law,'' before calculations of enthalpy change.
+		\item As a worst case scenario, ensure that cycles are complete in order to salvage marks.
+		\item Be especially careful with BE values; For \ch{3/2 Cl2 -> 3 Cl}, \(\Delta H\) is \ch{3/2 BE(Cl-Cl)} rather than \ch{3 BE(Cl-Cl)}
+	\end{itemize}
+
+	\subsubsection{Energy Cycle Shortcuts}
+
+	Given the \(\Delta H_\text{f}\) or \(\Delta H_\text{c}\) of both products and reactants, \(\Delta H_\text{r}\) of a reaction can be calculated with:
+
+	\scieqn{\(\Delta H_\text{r}\) given \(\Delta H_\text{f}\) of products and reactants}{}{\Delta H_\text{r} = - \Delta H_\text{f}(\text{reactants}) + \Delta H_\text{f} (\text{products})}
+	\scieqn{\(\Delta H_\text{r}\) given \(\Delta H_\text{c}\) of products and reactants}{}{\Delta H_\text{r} = + \Delta H_\text{f}(\text{reactants}) - \Delta H_\text{f} (\text{products})}
+
+	\subsubsection{Energy Level Diagrams}
+
+	Energy level diagrams are a special type of energy cycle which are drawn with energy as a vertical axis where each state of a set of substances occupy a vertical position.
+
+	In addition to the above, when drawing energy level diagrams:
+	\begin{itemize}
+		\item Label the vertical axis and the ``/\si{\kJ\per\mol}'' unit.
+		\item Attempt to maintain proportion between changes in enthalpy: larger \(\Delta H\) should have a larger vertical gap than smaller \(\Delta H\)
+		\item One arrow corresponds to one kind of reaction with one \(\Delta H\) value, do not have multiple reactions occurring at once.
+		\item Up arrows show endothermic reactions, down arrows exothermic
+		\item Label a zero at the energy level where all reactants are at its standard state.
+	\end{itemize}
+
+	For drawing energy level diagrams to obtain LE of a substance, follow the steps:
+	\begin{enumerate}
+		\item Draw standard state of metal and nonmetal, label as zero energy.
+		\item Draw state of ionic solid and arrow from standard state to ionic solid for formation of ionic solid.
+		\item Draw state of gaseous atoms of metal and nonmetal from standard state.
+		\item Draw state of cations and anions from gaseous atoms. Note that cations need to be formed first. Gaseous \ch{e-} also needs to be included.
+		\item Join cations and anions to ionic solid with arrow labeled as LE.
+	\end{enumerate}
+
+	Note that the first \usub{E}{A} may be negative for the nonmetal and its corresponding vertical position with respect to the other states needs to be calculated and shown properly. If it dips below a previous state it should be shown properly.
+
+	\subsection{Lattice Energy}
+
+	Theoretical calculations for lattice energy can be obtained through using the previously shown formula of \(| \text{LE} | \propto | \frac{q_+ \times q_-}{r_+ + r_-} | \). This obtains values similar to experimentally obtained results for compounds which are mostly ionic. However, partial covalent character in some ionic compounds (usually involving transition metals) causes measured LE to have a discrepancy with the theoretical equation, where partial covalent character strengthens the bond between anions and cations, causing an increase in LE.
+
+	\subsection{Solubility}
+
+	The process of dissolving an ionic solid involves two steps: the endothermic disassociation of ionic bonds between the solid followed by the exothermic hydration of the ions due to the formation of ion-dipole interactions. Applying Hess' Law:
+
+	\scieqn{Standard Enthalpy of Solution}{For a ionic solid MX:}{ \Delta H_\text{soln}^\plimsoll (\ch{MX}) = \Delta H_\text{hyd}^\plimsoll (\ch{M+}) + \Delta H_\text{hyd}^\plimsoll (\ch{X-}) - LE (\ch{MX})}
+
+	Ionic solids are more likely to be soluble if \(\Delta H_\text{soln}^\plimsoll\) is negative, where the energy released by hydration is sufficient to compensate for the lattice dissociation energy required to break down the ionic solid.
+
+	\subsection{Entropy}
+
+	\subsubsection{Entropy Changes}
+
+	\subsection{Gibbs Free Energy}
+
+	\subsubsection{Thermodynamic Feasibility}
+
+	\subsection{Experimental Energetics}
+
+	\subsection{Exam Technique}
+
+	When a question specifies ``with the use of an energy cycle'' or ``with the use of an energy level diagram'', diagrams must be drawn.
 
 \end{document}
