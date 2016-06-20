@@ -4,10 +4,175 @@
 
 \section{Kinetics}
 
-\subsection{Order of Reaction}
+	\subsection{Reaction Kinetics}
 
-\subsection{Pseudo-Order Reactions}
+	\scidef{Reaction Kinetics}{Reaction Kinetics is the study of rate of chemical reactions, investigating the factors which affect rate of reaction and the mechanisms of reaction.}
 
-\subsection{Kinetic Feasibility}
+	\scidef{Rate of Reaction}{Rate of Reaction is the rate of which a reaction takes place with respect to time, measured through the change in concentration of reactants or products over time, with units \si{\mol\per\s}.}
+
+	Average rate of reaction is the rate of reaction over a large time, calculated by finding the gradient of the line drawn between two points on the concentration-time graph. Instantaneous rate of reaction is rate of reaction over an infinitesimally small amount of time, obtained by reading the gradient of a tangent to the curve at a point in time.
+
+	\subsection{Order of Reaction}
+
+	It can be experimentally observed that the speed of a reaction is dependent on the concentrations of individual reactants.
+
+	\scieqn{Rate Equation}{For a proportionality constant \(k\), concentration of reactants \ch{[A]} and \ch{[B]} and order of reaction w.r.t A and B \(m\) and \(n\), the rate of reaction can be obtained with the equation:}{\text{rate} = k \ch{[A]}^m \ch{[B]}^n}
+
+	\scidef{Rate Equation}{The Rate Equation of a reaction is the mathematical expression which shows the dependence of rate of reaction on concentrations and the powers which concentrations are raised to. Rate equations can only be obtained through experiment, cannot be deduced theoretically or from stoichiometric equation and may not even involve all reactants in a chemical equation.}
+
+	\scidef{Rate Constant}{The Rate Constant of a reaction is the constant of proportionality in the rate equation of the reaction, with sufficient units such that the total RHS ends with units \si{\mol\per\s}, defined for a specific temperature and presence of a certain catalyst.}
+
+	\scidef{Order of Reaction}{The Order of Reaction of a reactant is the power which it is raised to in the rate equation. The order of reaction of a reactant must be found experimentally and must be a rational number. Order of reaction is used to infer reaction mechanism.}
+
+	\scidef{Overall Order of Reaction}{The Overall Order of Reaction is the sum of powers in the rate equation. Overall order of reaction can be used to assess the shape of concentration-time graphs as well as the units of the rate constant.}
+
+	\subsubsection{First order Reactions}
+
+	First order reactions are reactions whose rate is directly proportional to the concentration of a single reactant. First order reactions hold the special property that the half life of its reactants is constant.
+
+	\scidef{Half-life}{The Half-life \usub{t}{1/2} of a system is the time taken for a property to decrease by half.}
+
+	To prove that a reaction is first order from its concentration against time graphs, find different durations at which concentration decreases by half. If these times are the same, \usub{t}{1/2} can be said to be constant and the reaction is said to be first order w.r.t. reactant. Additionally, given the rate constant of a reaction, the half life can also be mathematically calculated.
+
+	\scieqn{Half-Life of First Order Reaction}{For the rate constant of a first-order reaction \(k\), its half life \(t_{1/2}\) is given by the equation:}{t_{1/2} = \frac{ln(2)}{k}}
+
+	\subsection{Pseudo-order Reactions}
+
+	When experimentally studying rates of reaction, the rate of a chemical reaction may appear to be dependent on less concentrations than theoretically examined / reactions appear to be zero order when they are in fact non-zero order:
+
+	\begin{description}
+		\item[Reactant is in excess] causes the rate of a reaction to seemingly be independent of the concentration of the reactant in excess. Usually this occurs when a reactant is present in 1 order of magnitude larger than the limiting reactant.
+		\item[Solvent is reactant] is a special case of having a reactant in excess. Reactions in aqueous solution where \ch{H2O} is involved have \ch{H2O} present in a concentration of about \SI{65}{\mol\per\dm\cubed}.
+		\item[Presence of catalyst] causes the rate of reaction to seemingly be independent of the concentration of a catalyst. The concentration-time graph of a catalyst seems to be a straight line and hence zero order, but since catalysts remain constant in concentration throughout a reaction as they are consumed and regenerated it is in fact non-zero order.
+	\end{description}
+
+	Pseudo-order reactions can have their rate equations simplified. For a reaction psuedo-\(m^\text{th}\)-order to A but in fact is \((m+n)^\text{th}\)-order, its rate equation would be \(\text{rate} = k' \ch{[A]}^m\) where \( k' = k \ch{[B]}^n \).
+
+	\subsection{Deriving Order of Reaction}
+
+	In order to identify the order of a reaction with respect to its reactants, data is obtained to describe the variances of the rate of reaction in scenarios with initial different concentration of reactants, which is then used to find order of reaction. \\
+
+	When comparing two sets of data with one variable changed and the ratio between their (initial) rate of reaction, state that as [reactant] changed by [factor], (initial) rate of reaction changed by [factor], hence the order of reaction with respect to the reactant is [order]. \\
+
+	When comparing two sets of data with more than one variable change (of which all but one has known order) and the ratio between their (initial) rate of reaction, answer in a similar format to:
+
+	\scieqn[gathered]{Deriving Order from Experiments with Multiple Variables}{For a reaction of rate equation \(\text{rate} = k \ch{[A]}^m \ch{[B]}^n\) where \(m\) is known but \(n\) is unknown and given two sets of data with [A], [B] and rate, they are related by the equation}{
+		\frac{\text{rate}_1}{\text{rate}_2} = \frac{k\ch{[A]}_1^m\ch{[B]}_1^n}{k\ch{[A]}_2^m\ch{[B]}_2^n} \\
+		\left( \frac{\ch{[B]}_1}{\ch{[B]}_2} \right) ^n = \frac{\text{rate}_1}{\text{rate}_2} \div \left( \frac{\ch{[A]}_1}{\ch{[A]}_2} \right) ^m
+	}
+
+	\subsection{Reaction Mechanism}
+
+	\scidef{Reaction Mechanism}{The Reaction Mechanism is the collection of elementary steps in sequence showing how reactants are converted into products.}
+
+	\scidef{Elementary Step}{An Elementary Step is a distinct step in a reaction mechanism which describes a single molecular event that involves breaking and/or making bonds, and cannot be broken down into simpler steps.}
+
+	\scidef{Molecularity of a Elementary Step}{The Molecularity of a Elementary Step is a description of the number of reactant molecules that are involved in an elementary step.}
+
+	\scidef{Intermediate}{An Intermediate species is a molecule which is formed in one step and consumed in another, and cannot be observed outside of a reaction.}
+
+	The rate equation of a reaction is governed by its reaction mechanism. For a given reaction mechanism, its ``rate determining step'' or ``slow'' step is the step which is the limiting factor to the speed of reaction and has the largest activation energy. The rate equation is then deduced from the molecules involved in the rate determining step as well as the prior fast steps which produce intermediate species consumed in the rate determining step. \\
+
+	For a elementary reaction of \ch{x A + y B -> C}, its rate equation is \( \text{rate} = k \ch{[A]}^x \ch{[B]}^y \).
+
+	\subsection{Theories of Rate of Reaction}
+
+	\subsubsection{Collisions and Reactions}
+
+	Collision Theory states that reactions occur when reactant particles collide in an effective manner where they are in a favorable orientation with correct collision geometry to form new bonds and where particles have a sufficient amount of energy to allow for re-organization of bonds in colliding particles.
+
+	\subsubsection{Transition State Theory}
+
+	Transition State Theory states that upon successful/effective collision, reactant species form an unstable transition state with a large amount of potential energy which then form the more stable products. This gives rise to the rise observed in energy profile diagrams, where the highest point in a reaction on the potential energy axis is the point at which the transition state exists.
+
+	\subsubsection{Maxwell-Boltzmann Distribution Curves}
+
+	The kinetic energy of particles in a gas always changes due to the large number of collisions which change their speeds, but the overall distribution of molecular speeds / kinetic energy of a system follows the Maxwell-Boltzmann distribution. As temperature increases, the maximum of the curve is displaced to the right and takes a lower value and there is a greater spread of kinetic energies as the curve broadens. As such, there is a larger amount of molecules above a set amount of energy and hence more particles which are able to collide with sufficient energy to form a effective collision.
+
+	\subsection{Factors Affecting Rate of Reaction}
+
+	\subsubsection{Physical State of Reactants}
+
+	In order for a reaction to occur, particles need to mix, collied and react, hence frequency of successful collisions depends on the physical states of reactants. \\
+
+	Reactants in a fluid state or a finely divided solid state have a larger available surface area per unit volume, allowing for a larger frequency of collision and hence a larger probability of effective collision, hence increasing the rate of reaction. \\
+
+	Reactions involving ions are faster than reactions involving molecules as reactions involving molecules require covalent bonds to be broken, rather than in reactions involving ions which usually already have mobile ions.
+
+	\subsubsection{Concentration of Reactants}
+
+	As concentration of a reactant increases, the reactant particles become closer together and the frequency of collisions increase, leading to the increase of probability of effective collisions with the correct geometry and sufficient energy, hence increasing the rate of reaction. \\
+
+	For gases, indicate that the increase of partial pressure of a gas is equivalent to an increase in concentration of a gas on top of the above explanation. Note that this does not apply to zero order reactions.
+
+	\subsubsection{Temperature}
+
+	As temperature increases, the average kinetic energy of the reactant increases, leading to a broadening of the Maxwell-Boltzmann distribution where more particles have energy greater than or equal to the activation energy of the reaction, leading to an increase in effective collision frequency and hence increasing the rate of reaction. \\
+
+	The Arrhenius Equation, the general formula for the rate constant k relating it to temperature and activation energy also shows that an increase in temperature or a decrease in activation energy increases the rate constant.
+
+	\scieqn{Arrhenius Equation}{For Arrhenius constant \(A\), activation energy \(E_a\), molar gas constant \(R\) and temperature \(T\), the rate constant \(k\) is given by the equation:}{k = A e^{-\frac{E_a}{RT}}}
+
+	\subsubsection{Presence of Catalyst}
+
+	\scidef{Catalyst}{A Catalyst is a substance which increases rate of reaction but does not undergo permanent chemical change.}
+
+	The presence of a catalyst provides an alternative reaction pathway with lower activation energy than an uncatalysed reaction, hence more reactants have sufficient energy to have effective collisions as seen by observing a Maxwell-Boltzmann distribution, resulting in increased effective collision frequency and hence an increase in rate of reaction.
+
+	\subsection{Catalysts}
+
+	\scidef{Inhibitor}{An Inhibitor is a substance which decreases the rate of a chemical reaction.}
+
+	\scidef{Promoter}{A Promoter is a substance which increases the efficiency of a catalyst.}
+
+	\scidef{Catalyst Poison}{A Catalyst Poison is a substance which inhibits the efficiency of a catalyst.}
+
+	\scidef{Homogeneous Catalysts}{Homogeneous Catalysts are catalysts in the same physical state as the reactants.}
+
+	Homogeneous catalysts typically act by reacting with some reactants to form an intermediate which is then reacted to form product where the catalyst is regenerated. The reaction mechanism involving a catalyst would have lesser activation energy due to the presence of the intermediate step.
+
+	\scidef{Heterogeneous Catalysts}{Heterogeneous Catalysts are catalysts in different physical states as the reactants.}
+
+	Heterogeneous catalysts involve the reactants adsorbing onto the catalyst surface to form weak bonds between the surface and the reactant, which then weakens the covalent bonds in the adsorbed molecule as well as increasing the concentration of reactant on the surface of the catalyst, hence reducing the activation energy of reaction. Reaction occurs on the surface of the catalyst, after which the reactants desorb from the surface of the catalyst. \\
+
+	Catalyst Poisoning can occur when chemicals uninvolved in the desired reaction are more readily adsorbed onto the catalyst surface than desired reactants, hence reducing the amount of active sites which would otherwise speed up the reaction.
+
+	\scidef{Autocatalysis}{Autocatalysis occurs when a reaction's products catalyzes the reaction itself.}
+
+	For an autocatalytic reaction, its initial rate is slow since it is not catalyzed, but then as product is formed the rate of reaction increases as the product catalyses the reaction. When approaching the end of the reaction, the rate of reaction decreases due to the low concentration of reactants despite the adequate supply of catalyst. To test for autocatalysis, artificially adding product at the start of the reaction would result in a sharp increase of rate of reaction.
+
+	\subsubsection{Enzymes}
+
+	\scidef{Enzymes}{Enzymes are proteins which catalyze chemical reactions in biological systems.}
+
+	Enzymes are globular proteins with active sites in their three dimensional structure. Enzymes are efficient in small amounts as they are regenerated at the end of a reaction. Enzymes are specific to a reaction due to the specialization of its active site. Enzymes require body temperature and a narrow pH range to operate at maximum efficiency, where sub-optimal conditions hinder the activity of a enzyme and too high a temperature will denature enzymes. \\
+
+	Enzymes catalyze reactions by providing an alternative reaction pathway with a lower activation energy by forming a enzyme-substrate complex.
+
+	\subsection{Experimental Technique}
+
+	\subsubsection{Method of Initial Rates}
+
+	The Method of Initial Rates involves the repetition of experiments with varying concentrations of reactant to obtain the initial rates of each iteration and hence assess the order of reactants. Initial rate of reaction can be obtained by varying methods:
+
+	\begin{description}
+		\item[Volumetric Analysis] involves sampling, quenching and titrating a system to obtain the concentration of reactant at different time intervals, after which a graph is plotted and its initial rate is obtained.
+		\item[Clock Reaction] involves the recording of amount of time for a reaction to produce a certain amount of product, at which a physical or chemical cue indicates when a clock has been reached. As the amount of product required to trigger clock stays constant, the initial rate of reaction can be said to be inversely proportional to the amount of time taken for a clock to be reached.
+	\end{description}
+
+	\subsubsection{Method of Isolation}
+
+	The Method of Isolation involves the continuous assessment of data to monitor the change of concentration of a specific reactant over time and hence assess the order of a single reactant. The reaction in question is made psuedo-order with respect to the specified reactant by adding other reactants in excess, and the progress of reaction is then assessed by varying methods:
+
+	\begin{description}
+		\item[Volumetric Analysis] involves sampling, quenching and titrating a system to obtain the concentration of reactant at different time intervals.
+		\item[Volume/Pressure] of a system can be read and then translated into rate of change in volume / partial pressure which then is used to obtain the concentration of reactant or product over time.
+		\item[Conductivity] of a system can be observed to identify change in concentration of charge-carrying particles in a solution over time which is then used to obtain the concentration of reactant or product over time. 
+		\item[Colorimetry] involves the continuous recording of color intensity of a solution due to the presence of a colored reactant or product, after which comparison of concentration readings against a calibration curve allows data to be translated into the concentration of the colored substance over time.
+	\end{description}
+
+	\subsection{Exam Technique}
+
+	When reading instantaneous rate off a concentration-time graph, use a stapler or similar reflective object to simulate the graph before \(t=0\), and use a set square to find the normal to the position of the reflective surface to obtain a tangent at \(t=0\). \\
 
 \end{document}
