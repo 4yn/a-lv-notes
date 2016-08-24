@@ -4,24 +4,93 @@
 
 \section{Calculus I}
 
-\subsection{Standard Differentiation}
+\subsection{Differentiation}
 
-\subsection{Implicit Differentiation}
+	\subsubsection{Standard Differentiation Forms}
 
-\subsubsection{Inverse Trigonometric Derivation}
+	\begin{equation*} \begin{aligned}
+	\frac{d}{dx} f(x) &= f'(x) \\
+	\frac{d}{dx} f(x)^n &= f'(x) \quad n \quad f(x)^{n-1}  \\
+	\frac{d}{dx} ln(f(x)) &= \frac{f(x)}{f'(x)} \\
+	\frac{d}{dx} e^{f(x)} &= f'(x) \quad e^{f(x)}  \\
+	\frac{d}{dx} k^{f(x)} &= \frac{d}{dx} e^{f(x)ln(k)} \\
+	&= k^{f(x)}ln(k) f'(x)
+	\end{aligned} \end{equation*}
 
-\subsection{Minima and Maxima}
+	\subsubsection{Standard Differentiation Methods}
 
-\subsubsection{Table Test}
+	Chain Rule: \( \frac{dy}{dx} = \frac{du}{dx} \frac{dy}{du} \) \\
+	Product Rule: \( \frac{d}{dx} f(x)g(x) = f(x)g'(x) + g(x)f'(x) \) \\
+	Quotient Rule: \( \frac{d}{dx} \frac{f(x)}{g(x)} = \frac{g(x)f'(x) - f(x)g'(x)}{g(x)^2} \) 
 
-\subsubsection{Second Order Derivative Test}
+	\subsubsection{Implicit Differentiation}
 
-\subsection{Graphs with Asymptotes}
+	\begin{equation*} \begin{aligned}
+		f(x) &= g(y) \\
+		\frac{d}{dx} f(x) &= \frac{d}{dx} g(y) \\
+		&= \frac{d}{dx} \frac{dy}{dy} g(y) \\
+		&= \frac{dy}{dx} \frac{d}{dy} g(y) \\
+		\frac{dy}{dx} &= \frac{d}{dx} f(x)/ \frac{d}{dy} g(y) \\
+		&= \frac{f'(x)}{g'(y)}
+	\end{aligned} \end{equation*}
 
-\subsection{Conic Sections}
+	Take differential of both sides and differentiate \(g(y)\) in terms of \(y\) and \(\frac{dy}{dx}\), then isolate \(\frac{dy}{dx}\) to obtain a suitable expression.
 
-\subsubsection{Ellipse}
+	\subsubsection{Inverse Trigonometric Derivative}
 
-\subsubsection{Hyperbola}
+	\subsubsection{Parametric Differentiation}
+
+	\begin{equation*} \begin{aligned}
+		x = f(t) \quad y &= g(t) \\
+		\frac{dx}{dt} &= f'(t) \quad \frac{dy}{dt} = g'(t)  \\
+		\frac{dy}{dx} &= \frac{dy}{dt} / \frac{dx}{dt} \\
+		&= g'(t) / f'(t) 
+	\end{aligned} \end{equation*}
+
+\subsection{Applications of Differentiation}
+
+	\subsubsection{Minima and Maxima}
+
+	Minimum points occur when a graph changes from increasing to decreasing gradient. Maximum points occur when a graph changes from increasing to decreasing gradient. \\
+
+	To find minima and maxima, find where \(\frac{dy}{dx} = 0 \). To test whether a point is a minimum or a maximum, use the first derivative test or second derivative test.
+
+	\subsubsection{First Order Derivative Table Test}
+
+	\subsubsection{Second Order Derivative Test}
+
+	\subsubsection{Concavity and Points of Inflection}
+
+	A range \([u,v]\) of a graph \(f(x)\) is concave down if all points within this range is equal to or above a line passing through \(f(u)\) and \(f(v)\). A range is concave up if all points within this range is equal to or above this line. Strictly concave graphs do not have the property of ``or equal to''. \\
+
+	The concavity of a graph can also be related to gradient. A range \([u,v]\) of a graph \(f(x)\) is concave down if its gradient is  non-increasing across this interval. A range is concave if its gradient is non-decreasing across this interval. \\
+
+	Points of inflection occur when there is a change from concavity. Therefore, to find points of inflection, set the derivative of the gradient to zero, hence set the second derivative to zero and solve: \(\frac{d^2y}{dx^2} = 0\).
+
+\subsection{Graphing Techniques}
+
+	\subsubsection{Graphs with Asymptotes}
+
+	Consider graphs of the form \(y = \frac{f(x)}{g(x)}\). \\
+
+	Observe that if there are points where \(g(k) \rightarrow 0\), there will be a vertical asymptote at the line \(x=k\). \\
+
+	Also notice that if \(f(x)\) and \(g(x)\) are polynomials, partial fractions can be used to simplify the graph if the order of \(f(x)\) is larger than the order of \(g(x)\). \\
+
+	Consider \(f(x) = ax^2 + bx + c\) and \(g(x) = dx + e\). \(y\) can then be simplified using partial fractions to obtain \(y\) in the form \(y = px + r + \frac{s}{dx+e}\). Such a graph will have a vertical asymptote at \(dx+e=0\) and have oblique asymptotes tending towards \(y = px + r\). \\
+
+	Note that if \(a=0\) and hence \(f(x)\) is an order 1 polynomial, the oblique asymptote will become a horizontal asymptote. Also note that \(\lim_{y\to\pm\infty} y = px+r\) does not mean that \(y \neq px + r\) at any \(x\). There can be interceptions of the curve with the asymptote. \\
+
+	To find range of values of \(y\), either locate turning points of the graph using differentiation or equate \(y\) to some constant and solve where discriminant is more than or equal to zero.
+
+	\subsubsection{Conic Sections}
+
+	Circle \\
+
+	Ellipse \\
+
+	Hyperbola \\
+
+\subsection{Mclaurin Series}
 
 \end{document}
