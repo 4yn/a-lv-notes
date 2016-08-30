@@ -11,6 +11,7 @@
     "gensymb",
     "pgfplots",
     "chemformula",
+    "chemfig",
     "siunitx",
     "tcolorbox"],
   "doctype": "article",
