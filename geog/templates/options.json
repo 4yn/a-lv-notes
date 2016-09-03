@@ -1,0 +1,15 @@
+{
+  "packages" : [
+    "geometry",
+    "multicol",
+    "subfiles",
+    "array",
+    "lmodern",
+    "mathtools",
+    "amssymb",
+    "textcomp",
+    "gensymb"],
+  "doctype": "article",
+  "docoptions" : [
+    "a4paper"]
+}

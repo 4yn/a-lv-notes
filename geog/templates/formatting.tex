@@ -1,0 +1,52 @@
+\renewcommand{\familydefault}{\sfdefault}
+
+\tcbuselibrary{skins}
+\tcbuselibrary{breakable}
+
+\newtcolorbox[auto counter,number within=section]{scidefinition}[2][]{
+	sharp corners=all,
+	breakable=true,
+	top = 0.5mm, bottom = 0.5mm,
+	left = 0.5mm, right = 0.5mm,
+	colback = white,
+	title=Definition~\thetcbcounter: #2,
+	#1,
+}
+
+\newcommand\scidef[2]{\begin{scidefinition}{#1} #2 \end{scidefinition}}
+
+\newtcolorbox[auto counter,number within=section]{sciequation}[2][]{
+	sharp corners=all,
+	breakable=true,
+	top = 0.5mm, bottom = 0.5mm,
+	left = 0.5mm, right = 0.5mm,
+	colback = white,
+	title=Equation~\thetcbcounter: #2,
+	#1,
+}
+
+\newcommand\scieqn[4][]{
+	\begin{sciequation}{#2}
+		#3
+		\begin{equation*}
+			\ifthenelse{\equal{#1}{}}{}{\begin{#1}}
+			#4
+			\ifthenelse{\equal{#1}{}}{}{\end{#1}}
+		\end{equation*}
+
+	\end{sciequation}
+}
+
+\geometry{a4paper,margin=0.75in}
+
+\pgfplotsset{compat=1.12}
+
+\setlength{\parindent}{0pt}
+
+\newcommand\usub[2]{\(\text{#1}_\text{#2}\)}
+\newcommand\usup[2]{\(\text{#1}^\text{#2}\)}
+\newcommand*{\plimsoll}{{\ensuremath{-\kern-4pt{\ominus}\kern-4pt-}}}
+
+\DeclareSIUnit\atmosphere{atm}
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\bar{bar}
