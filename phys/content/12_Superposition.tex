@@ -10,24 +10,113 @@
 
 	\subsection{Stationary Waves}
 
+	\scidef{Stationary Waves}{Stationary Waves result from the superposition of two progressive waves of same frequency, amplitude and speed traveling along the same line but in opposite directions.}
+
+	The resultant stationary wave has zero net energy transfer, and is drawn as the envelope of the displaced particles, with one waveform drawn with a solid line and one waveform with a dotted line.
+
+	\begin{center} \begin{tikzpicture}
+	\begin{axis}[
+		axis x line=middle,
+		axis y line=left,
+		xmin=0,xmax=6,ymin=-2,ymax=2,
+		xlabel={x},
+		ylabel={y},
+		ticks=none,
+		samples=200,
+	]
+	\addplot[dotted] {-sin(x*120)};
+	\addplot[] {sin(x*120)};
+	\end{axis}
+	\end{tikzpicture} \end{center}
+
+	\scidef{Node}{The Node is a location in a stationary wave where the particles no longer oscillate, typically when two waves reach the point \(\pi\) radians out of phase.}
+
+	\scidef{Antinode}{The Antinode is a location in a stationary wave where the particles oscillate with the maximum displacement, typically when two waves reach the point in phase.}
+
+	Depending on the environment in which a stationary wave is produced determines the distribution of nodes and antinodes. Since the distribution of nodes and antinodes determine the wavelength of a stationary wave and the speed of the wave in the propagation medium is typically constant, the frequencies at which a stationary wave is produced is now determined.\\
+
+	\scidef{Hard Boundary}{A Hard Boundary is able to supply a restoring force which then causes a reflected wave to undergo a \(\pi\) radian phase shift (due to conservation of energy). A Hard Boundary in a stationary wave creates a node.}
+
+	\scidef{Soft Boundary}{A Soft Boundary is unable to supply a restoring force and hence causes a wave to reflect with the same polarity back. A Soft Boundar in a stationary wave creates an antinode.}
+
+	\scidef{Fundamental Frequency}{The Fundamental Frequency of a stationary wave is the lowest frequency at which a stationary wave can be produced.}
+
+	\scidef{Harmonic}{The \usup{\(n\)}{th} Harmonic of a wave is the frequency where a stationary wave can be produced where \(n = \frac{f_\text{hamonic}}{f_\text{fundamental}}\)}
+
+	\scidef{Overtone}{The \usup{\(n\)}{th} Overtone of a wave is the nth next highest frequency than the fundamental frequency that a stationary wave can be produced.}
+
+	To produce a stationary wave, the relationships between  need to be maintained.
+
+	\scieqn{Frequency for two-node or two-antinode Systems}{Where \(v\) is the speed of wave in a system, \(L\) is the length of system and \(n\) is the overtone number, the fundamental frequency for stationary wave \(f\) is}{f = \frac{(n+1)v}{2L}}
+
+	\scieqn{Frequency for one-node one-antinode Systems}{Where \(v\) is the speed of wave in a system, \(L\) is the length of system and \(n\) is the overtone number, the fundamental frequency for stationary wave \(f\) is}{f = \frac{(2n+1)v}{2L}}
+
 	\subsubsection{Stationary Waves in String}
+
+	Ends of string fixed to a stationary point behave like hard boundaries and create nodes. Ends of string which can oscillate perpendicularly to the direction of the wave (by means of a guide rail or some similar mechanism) behave like soft surfaces and create antinodes. \\
+
+	The speed of the wave in string \(v\) depends on the material of the string and is proportional to the tension on the string.
 
 	\subsubsection{Stationary Waves in Pipes}
 
+	\scidef{End Correction}{The End Correction e of a stationary wave in a pipe is an extra effective length added to open ends, which arises because a antinode occurs slightly outside the end of a pipe.}
+
+	Closed ends of pipes behave like hard boundaries and create nodes. Open ends of pipes behave like soft surfaces because pressure inside a pipe is partially reflected when it comes into contact with an external system, creating antinodes which are one end correction away from the edge of the pipe. Pipes with two open ends have to account for two end corrections.
+
+	The speed of the wave in a pipe \(v\) depends on the speed of wave in the medium inside the pipe, such as the speed of sound in air \SI{334}{\m\per\s} for pipes in air.
+
+	\subsubsection{Diffraction}
+
+	\scidef{Diffraction}{Diffraction is where waves bend when passed through an aperture of comparable length to its wavelength or when passing around an obstacle.}
+
+	For the case of an aperture (also known as Fraunhofer diffraction), waves radiate in a radial fashion. \\
+
+	\scidef{Huygen's Diffraction}{Diffraction occurs as points on a wavefront can be treated as secondary sources of wavelets, where the envelope of the secondary wavelets form the next wavefront of the original wave.}
+	
 	\subsection{Interference}
+
+	\scidef{Coherence}{Two waves or sources are coherent if they have a constant phase difference, implying equal frequency, speed and wavelength.}
+
+	\scidef{Interference}{Interference between two waves occurs when both reach a point in space, where their resultant effect is obtained through the principle of superposition, hence the effective displacement is the vector sum of the displacement due to each waves.}
+
+	\scidef{Constructive Interference}{Destructive Interference occurs when two coherent waves reach a point in phase to form a resultant maximum displacement.}
+
+	\scidef{Destructive Interference}{Destructive Interference occurs when two coherent waves reach a point with a phase difference of \(\pi\) radians to form a resultant minimum displacement.}
+
+	\scidef{Fringe}{A Fringe is a location at which constructive (bright fringe) or destructive (dark fringe) interference can be observed.}
 
 	\subsubsection{Double Source Interference}
 
+	\scidef{Path Difference}{The Path Difference is the difference in the distance that each wave travels fro its source to the point where two waves meet.}
+
+	\scidef{Order}{The Order of a fringe is the rounded-up absolute path difference divided by wavelength between two waves which cause the formation of a fringe.}
+
+	Two coherent sources of radial waves produce a interference pattern of dark and bright fringes on a plane far away from the two sources. \\
+
+	In the case of a double-slit experiment where the distance between source and observation screen is sufficiently large and the angle between \usup{0}{th} order maximum and other fringes are small enough to use small angle approximation, the distance between two successive bright or dark fringes is assumed to be constant.
+
+	\scieqn{Two-Slit Experiment Fringe Septation}{For some wavelength \(\lambda\), distance between source and screen \(D\) and separation of sources \(a\), the separation between two fringes \(x\) is}{x = \frac{\lambda D}{a}}
+
 	\subsubsection{Diffraction Grating}
 
-	\scidef{Diffraction Grating}{A Diffraction Grating is a sheet of material with multiple apertures on its surface. In optics, typical diffraction gratings have around 1000 apertures per cm.}
+	\scidef{Diffraction Grating}{A Diffraction Grating is a sheet of material with multiple apertures on its surface. In optics, typical diffraction gratings have around 100 to 1000 apertures per mm.}
 
-	Light passed through a Diffraction Grating creates interference patterns 
+	Light passed through a Diffraction Grating creates sharp bright fringes.
 
-	\subsubsection{Single Source Diffraction}
+	\scieqn{Condition for Constructive Interference}{For some slit separation \(d\), wavelength \(\lambda\), non-zero integer \(n\) and angular displacement \(\theta_n\), bright fringes form where the following equation is satisfied}{d \sin \theta_n = n \lambda ,\quad n < \frac{d}{\lambda}}
 
-	\scidef{Diffraction}{Diffraction (or more specifically Fraunhofer diffraction in the H2 syllabus) is the phenomena where a wave radiates in a radial fashion when passed through an aperture of comparable length to its wavelength.}
+	\subsubsection{Single Source Interference}
 
-	\subsection{Rayleigh Conditions}
+	A single source of waves when observed on a screen forms a unique interference pattern. The center of the pattern is a diffuse section due to diffraction. However, when considering the aperature source as multiple coherent sources of waves, there arises a difference in path difference which then causes minima to form. 
+
+	\scieqn{Condition for Single-Source Minima}{For some opening of length \(b\), wavelength \(\lambda\) and angular displacement from source \(\theta\), single-source minima form where}{\sin\theta = \frac{\lambda}{b}}
+	
+	\subsection{Rayleigh Condition}
+
+	\scidef{Resolution of Images}{Two images are clearly resolved when they are distinguishable from each other.}
+
+	\scieqn{Rayleigh Condition}{For a image to just be resolved when observed through an aperture, angular separation (crossing both sides of the medial line) \(\theta\), wavelength \(\lambda\) and size of aperture \(b\)}{\theta \approx \frac{\lambda}{b}}
+
+	The Rayleigh Condition was arbitrarily set such that the peak intensity from one image intersects with the minimum of another image. Should the images be any closer the combination of the two graphs will form one single peak (and hence the images are indistinguishable) and should they be any further away the peaks will be even more separated.
 
 \end{document}
