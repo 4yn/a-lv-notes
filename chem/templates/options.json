@@ -12,8 +12,10 @@
     "pgfplots",
     "chemformula",
     "chemfig",
+    "tikzorbital",
     "siunitx",
-    "tcolorbox"],
+    "tcolorbox",
+    "float"],
   "doctype": "article",
   "docoptions" : [
     "a4paper"]

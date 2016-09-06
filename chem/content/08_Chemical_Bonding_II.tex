@@ -10,20 +10,49 @@
 
 	\scidef{Hybridization}{Hybridization occurs when multiple orbitals combine to form hybrid orbitals with intermediate properties of the orbitals.}
 
+	\begin{center} \begin{tikzpicture}
+	\orbital[pos = {(-1.5,0)},color=black]{s};
+	\satom[pos = {(0,0)},scale=0]{
+		black/0/east/0/0.5,
+		black/180/west/0/0.3
+	};
+	\orbital[pos = {(2,0)},pcolor=black,ncolor=black]{py};
+	\end{tikzpicture} \end{center}
+
+
 	Atoms with hybrid orbitals increase the number of lone pairs they have in order to form more bonds, creating a net lower energy state. The hybridization state of a atom is determined by the number of regions of electron density it has. \\
 
-	\ch{sp3} hybridized orbitals are formed by the mixing of 1 s and 3 p orbitals, forming 4 sp3 hybrid orbitals and hence 4 regions of electron density arranged in a tetrahedral orientation.
+	\ch{sp3} hybridized orbitals are formed by the mixing of 1 s and 3 p orbitals, forming 4 sp3 hybrid orbitals and hence 4 regions of electron density arranged in a tetrahedral orientation. \\
 
-	\ch{sp2} hybridized orbitals are formed by the mixing of 1 s and 2 p orbitals, forming 3 sp2 hybrid orbitals and hence 3 regions of electron density arranged in a trigonal planar orientation.
+	\ch{sp2} hybridized orbitals are formed by the mixing of 1 s and 2 p orbitals, forming 3 sp2 hybrid orbitals and hence 3 regions of electron density arranged in a trigonal planar orientation. \\
 
-	\ch{sp} hybridized orbitals are formed by the mixing of 1 s and 1 p orbitals, forming 2 sp hybrid orbitals and hence 2 regions of electron density arranged in a linear orientation.
+	\ch{sp} hybridized orbitals are formed by the mixing of 1 s and 1 p orbitals, forming 2 sp hybrid orbitals and hence 2 regions of electron density arranged in a linear orientation. \\
 
-	\subsubsection{Drawing Hybridized Orbitals}
+	As the s-character of a hybrid orbital increases, the size of the orbital decreases and electrons are more tightly held together, therefore increasing the effectiveness of overlap when this orbital is covalently bonded and therefore increasing bond strength and decreasing bond length.
 
 	\subsection{Resonance}
 
-	\subsubsection{Resonant Structures}
+	\scidef{Resonance}{Resonance is the continuous overlapping of p-orbitals.}
 
-	\subsubsection{Drawing Resonant Structures}
+	In some molecules, \(\pi\) bonds are delocalised over more than two nuclei because multiple p-orbitals are overlapping and are able to share the electrons. The Resonance Hybrid of a molecule describes how electrons are delocalised across its different atoms, as an average of its canonical forms.
 
+	\schemestart
+		\chemleft[
+		\subscheme{
+			\chemfig{\lewis{3:5:7:,O}-[1,,,,<-]\lewis{2:,O}=[7]\lewis{0:6:,O}}
+			\arrow{<->}
+			\chemfig{\lewis{4:6:,O}=[1]\lewis{2:,O}-[7,,,,->]\lewis{1:5:7:,O}}
+		}
+		\chemright]
+		\arrow{0}[,0] \(\equiv\) \arrow{0}[,0]
+		\chemfig{@{a1}O-[1]O-[7]@{a2}O}
+		\chemmove[-]{\draw[dashed] (a1.east).. controls +(45:7mm) and +(135:7mm).. (a2.west);}
+	\schemestop
+
+	Resonant structures are more stable because electrons are able to delocalize onto the overlapping \(\pi\) orbitals.
+
+	\subsection{Graphite}
+
+	With understanding of hybridization and resonance, graphite's high melting point as compared to diamond can be explained. Graphite covalent bonds are stronger due to the orbitals being sp2 hybridized as compared to sp3 in diamond, and resonance in graphite allows delocalised electrons to form a cloud whose additional electron density hold nuclei closer together.
+	
 \end{document}

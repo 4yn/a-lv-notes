@@ -71,13 +71,46 @@
 	Functional groups are selected (in increasing priority):
 	\begin{itemize}
 		\item Carboxylic Acids (-oic acid) \ch{COOH}
-		\item Carboxylic Acid Derivatives: Esters ([Name of R]-yl [Root]-ate) \ch{COR}, Acid Halides (-oyl [halide]-ide) \ch{COX}, Amide (-amine) \ch{CONH2}
+		\item Carboxylic Acid Derivatives: Esters ([Name of R]-yl [Root]-ate) \ch{COR}, Acyl Halides (-oyl [halide]-ide) \ch{COX}, Amide (-amine) \ch{CONH2}
 		\item Nitrile (-nitrile) \ch{C+N}
 		\item ``Oxygen groups'' : Aldehyde (-al) \ch{OH} Ketone (-one) \ch{O} , Alcohol (-ol) \ch{-O-H}
 		\item Amine (-amine) \ch{NH2}
 	\end{itemize}
 
 	Other functional groups not in this list include:
+
+	\begin{itemize}
+		\item Amino Acids
+		\item Halogenarenes
+		\item Phenols
+	\end{itemize}
+
+	All these functional groups have been drawn in order below.
+
+	\begin{figure}[H]
+    \scalebox{.7}{
+		\chemfig{R-[:30](=[2]O)-[:-30]OH}
+		\chemfig{R-[:30]O-[:-30]R}
+		\chemfig{R-[:30](=[2]O)-[:-30]X}
+		\chemfig{R-[:30](=[2]O)-[:-30]NH_2}
+	}
+	\end{figure}
+	\begin{figure}[H]
+    \scalebox{.7}{
+		\chemfig{R~N}
+		\chemfig{R-[:30](=[2]O)-[:-30]H}
+		\chemfig{R-[:30](=[2]O)-[:-30]R}
+		\chemfig{R-[:30]-[:-30]OH}
+		\chemfig{R-NH_2}
+	}
+	\end{figure}
+	\begin{figure}[H]
+    \scalebox{.7}{
+		\chemfig{R-[:30](-[2]NH_2)-[:-30](=[6]O)-[:30]OH}
+		\chemfig{[:30]**6(--(-X)----)}
+		\chemfig{[:30]**6(--(-OH)----)}
+	}
+	\end{figure}
 
 	\subsubsection{Tiebreakers}
 
@@ -111,13 +144,15 @@
 
 	Electrophiles are attracted to electron rich sites of molecules while Nucleophiles are attracted to electron deficient sites.
 
+	\scidef{Degree of Substitution}{The Degree of Substitution of a atom in an organic molecule is determined by how many carbon it is bonded to. The degree of substitution of a hydrogen atom is the degree of the atom which it is bonded to.}
+
 	\subsubsection{Reaction Mechanisms}
 
 	\scidef{Reaction Mechanism}{A Reaction Mechanism describes the movement of electrons and atoms throughout the process of an organic reaction, hence determining the energetics and kinetics of a reaction.}
 
 	\scidef{Homolytic Fission}{Homolytic Fission involves a covalent bond breaking and donating one electron to both previously bonded atoms, creating free radicals. Homolytic Fission is indicated by drawing `Fish-hook' arrows from the bond to the atoms.}
 
-	\scidef{Heterolytic Fission}{Heterolytic Fission involves a covalent bond breaking and donating both electrons to one specific atom, charging both atoms. Heterolytic Fission is indicated by drawing a double-headed arrow from the bond to one atom.}
+	\scidef{Heterolytic Fission}{Heterolytic Fission involves a covalent bond breaking and donating both electrons to one specific atom, charging both atoms. Heterolytic Fission is indicated by drawing a double-headed arrow from the bond to one atom. The recepient of the electron pair is the more electronegative atom, forming a carbocation or a carboanion.}
 
 	A mechanism of a reaction is classified as one of Free Radical, Nucleophillic or Electrophillic depending on what species other than the organic molecule is reacted with in the slow step of a mechanism.
 
@@ -138,6 +173,14 @@
 	\scidef{Reduction}{Reduction involves the addition of \ch{O}, removal of \ch{H}, gain of \ch{e-} or decrease in oxidation number.}
 
 	\scidef{Rearrangement}{Rearrangement involves the migration of functional groups within a chain of carbon atoms.}
+
+	\subsubsection{Miscellaneous Terminology}
+
+	\scidef{Electronic Effect}{Compounds are electron-withdrawing or electron-donating if they decrease or increase the electron density in a compound respectively.}
+
+	Electronic effect arises due to a difference in electronegativity in atoms which may affect delocalize electrons or a contribution to the electrons or the orbitals constituting a \(\pi\) electron cloud.
+
+	\scidef{Steric Effect}{Steric Effect, or Steric Hindrance, is the phenomena where the reactivity of a atom is reduced because it is bonded to groups which are large enough to prevent a reaction.}
 
 	\subsection{Isomerism}
 

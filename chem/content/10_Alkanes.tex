@@ -6,69 +6,91 @@
 
 	\subsection{Structure of Alkanes}
 
-	Structure of Alkanes
-
-	Structure of Cycloalkanes
-
-	\subsection{Nomenclature}
-
-	\subsubsection{Branched Alkanes and Alkyl Groups}
-
-	\subsection{Degree of Carbon}
-
-	\subsection{Isomerism in Alkanes}
+	Alkanes are chains of singly-bonded carbon which are saturated with hydrogen, following the general molecular formula \ch{C_nH_{2n+2}}. Cycloalkanes are rings of singly-bonded carbon which are saturated with hydrogen, following the general molecular formula \ch{C_nH_{2n}}
 
 	\subsection{Physical Properties of Alkanes}
 
-	\subsubsection{Boiling and Melting Points}
+	The boiling points of alkanes increase as the number of carbon increase due to the increase in electron cloud size and later decrease with greater extents of branching due to the decrease in electron cloud surface area. \\
 
-	\subsubsection{Solubility}
+	Even-numbered carbon alkanes are able to pack more closely together than odd-numbered carbon alkanes, hence even-numbered carbon alkanes have generally higher boiling points than odd-numbered carbon alkanes, up until hexane and heptane from which there is a smooth upward trend no matter even or odd number. \\
 
-	\subsubsection{Density}
+	Alkanes are often nonpolar and are generally insoluble in polar solvents. \\
+
+	The density of alkanes increase as the number of carbon increase, but tend toward \SI{0.8}{\g\per\cm\cubed} and hence are always less dense than water.
 
 	\subsection{Reactions with Alkanes}
 
 	\subsubsection{Formation of Alkanes}
 
-	Reduction from hydrocarbons
+	Unsaturated hydrocarbon chains can be hydrogenated in the presence of different catalysts to form alkanes. \\
 
-	Reduction from Haloalkanes
+	\begin{center}
+	\ch{CH2=CH2 + H2 ->[ Ni, heat ] CH3CH3} \\
+	\ch{CH+CH + 2H2 ->[ Pd, heat ] CH3CH3} \\
+	\schemestart
+		\chemfig[scale=.5][scale=.5]{**6(------)}
+		\qquad \arrow{0}[,0] + 3H2 \arrow{->[Raney Ni][\SI{450}{\celsius}]}
+		\chemfig[scale=.5][scale=.5]{*6(------)}
+	\schemestop
+	\end{center}
 
-	Reduction from Carboxylic Acids
+	Alkanes can also be recovered from monohalogenalkanes and monobasic carboxylic acid salts using the Wurtz and Kolbe's reactions respectively.
+
+	\begin{center}
+	\ch{2 R-X + 2Na ->[ "ether~reflux" ] R-R + 2NaX} \\
+	\ch{2 RCOO- Na+ + 2H2O ->[ "electrolysis~with" ][ "platinum~electrodes" ] R-R + 2CO2 + 2NaOH = H2}
+	\end{center}
 
 	\subsubsection{Reaction of Alkanes}
 
-	Unreactivity
+	Alkanes do not react with hydroxide, acid, oxidizing or reducing agents. However, they do burn in the presence of oxygen and alkanes decolorize bromine when exposed to sunlight. \\
 
-	Combustion
+	Alkanes are generally unreactive because they are nonpolar with no centers of electric charge, are saturated with hydrogen and hence have little irregular regions of electron density (no rich or deficient sites) and also because the \ch{C-H} and \ch{C-C} bonds are strong. \\
 
-	Cracking
+	Alkanes can be burnt in air to form carbon dioxide or water. In the event of incomplete combusion due to a limited amount of oxygen, incomplete combusion may occur to produce carbon for a sooty flame and carbon monoxide.
 
-	Halogenation
+	\subsubsection{Free Radical Substitution}
 
-	\subsubsection{Reaction Mechanisms of Halogenation}
+	Free Radical Substitution in Alkanes is the first proper reaction mechanism in the syllabus, involving a three-stage mechanism of initiation, propagation and termination steps. For example, the reaction mechanism for monochlorination of ethane is below.
 
-	\subsection{Alkanes as Fuel}
+	\begin{enumerate}
+		\item Initiation \\
+			\schemestart 
+				\chemfig{@{a1}Cl-[@{a2}]@{a3}Cl} \arrow{->[UV Light]} \lewis{0.,Cl} \+ \lewis{0.,Cl}
+				\chemmove[shorten <=2pt, shorten >=2pt]{
+					\draw[-{Straight Barb[right]}] (a2).. controls +(90:5mm) and +(90:5mm).. (a1);
+					\draw[-{Straight Barb[left]}] (a2).. controls +(90:5mm) and +(90:5mm).. (a3);}
+			\schemestop
+		\item Propagation \\
+			a) \ch{ "\chemfig{-}" + Cl^. -> "\chemfig{-\lewis{0.,}}" + HCl} \\
+			b) \ch{ "\chemfig{-\lewis{0.,}}" + Cl2 -> "\chemfig{-[:30]-[:-30]Cl}" + Cl^.} \\
+			Then a), b), a), b)....
+		\item Termination \\ 
+			\ch{Cl^. + Cl^. -> Cl2} \\
+			\ch{ "\chemfig{-\lewis{0.,}}" + Cl^. -> "\chemfig{-[:30]-[:-30]Cl}"} \\
+			\ch{ "\chemfig{-\lewis{0.,}}" + "\chemfig{-\lewis{0.,}}" -> "\chemfig{-[:30]-[:-30]-[:30]}"}
+	\end{enumerate}
 
-	\subsubsection{Sourcing Alkanes}
+	\subsection{Alkanes and the Environment}
 
-	\subsubsection{Combustion of Alkanes}
+	Burning fuel produces multiple pollutants:
 
-	Knocking \& Reducing Knocking
+	\begin{itemize}
+		\item Carbon Dioxide which has contributed towards global warming due to its property as a greenhouse gas.
+		\item Carbon Monoxide, formed by incomplete combustion, is poisonous to humans by deactivating hemoglobin.
+		\item Excess hydrocarbons can lead to formation of photochemical smog which causes respiratory ailments for both humans and plants.
+		\item Nitrogen Oxides, formed at high temperatures when nitrogen is used in place of oxygen, can contribute towards acid rain.
+		\item Sulfur Oxides, formed due to trace amounts of sulfur being present in crude oil, can contribute towards acid rain.
+		\item Lead Compounds, formed when lead is added to engines to prevent knocking, are harmful to humans due to lead poisoning.
+	\end{itemize}
 
-	Octane Scale
+	Catalytic converters in internal combustion engines help to reduce the production of carbon monoxide, uncombusted hydrocarbons and nitrogen oxides by reacting them to form \ch{CO2}, \ch{N2} and \ch{H2O}.
 
-	\subsubsection{Pollution}
+	\subsubsection{Sustainable Resources}
 
-	Incomplete Combustion
+	Crude oil is a natural source of hydrocarbons but does not regenerate quickly, and can hence be said to be a finite resource. Alternative sources need to be discovered and exploited to keep up with modern day energy demands. \\
 
-	Consequences of combustion effects
-
-	Catalytic Comverters
-
-	Other pollutants
-
-	\subsubsection{Sustainable Petroleum}
+	Recycling, where waste materials are made reusable again, reduces the need for new raw materials and also reduces cost of resource extraction by supplying an alternative, consumes waste in the process and is a net benefit to the environment.
 
 
 \end{document}

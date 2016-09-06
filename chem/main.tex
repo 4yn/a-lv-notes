@@ -12,10 +12,13 @@
 \usepackage{pgfplots}
 \usepackage{chemformula}
 \usepackage{chemfig}
+\usepackage{tikzorbital}
 \usepackage{siunitx}
 \usepackage{tcolorbox}
+\usepackage{float}
 
 \renewcommand{\familydefault}{\sfdefault}
+\renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
 
 \tcbuselibrary{skins}
 \tcbuselibrary{breakable}
@@ -67,6 +70,8 @@
 \DeclareSIUnit\atmosphere{atm}
 \DeclareSIUnit\atm{atm}
 \DeclareSIUnit\bar{bar}
+
+\usetikzlibrary{decorations.markings,arrows,matrix}
 \begin{document}
 
 \subfile{./templates/header.tex}
