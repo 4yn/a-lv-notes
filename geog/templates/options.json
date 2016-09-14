@@ -8,7 +8,11 @@
     "mathtools",
     "amssymb",
     "textcomp",
-    "gensymb"],
+    "gensymb",
+    "pgfplots",
+    "tcolorbox",
+    "siunitx",
+    "float"],
   "doctype": "article",
   "docoptions" : [
     "a4paper"]
