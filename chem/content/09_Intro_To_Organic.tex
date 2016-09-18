@@ -47,7 +47,7 @@
 	\scidef{Condensed Structural}{Condensed Structural formula describes each \ch{C} in the skeletal chain and what groups are bonded to it. For example, \ch{CH2CH1CH3} for but-1-ene.}
 	\scidef{Displayed / Full Structural}{Full Structural formula describes each atom using labels, what bonds form between which atoms  and also the arrangement of groups around carbon (4 groups drawn in orthogonal directions, 3 groups in trigonal).}
 	\scidef{Stereochemical}{Stereochemical formula describes each atom using labels and the 3-dimensional distribution of bonded molecules. Solid lines are parallel to the plane of the paper, wedged bonds move out of the paper while hashed bonds move into the paper.}
-	\scidef{Skeletal}{Skeletal formula describes primarily all atoms which are not carbon or hydrogen in a compound. Lines representing bonds are drawn in a imaginary hexagonal grid with each unlabeled vertice representing a carbon, functional groups are drawn and finally all vacant electron pairs are implicitly filled with hydrogen. Multiple bonds are drawn as multiple parallel lines.}
+	\scidef{Skeletal}{Skeletal formula describes primarily all atoms which are not carbon or hydrogen in a compound. Lines representing bonds are drawn in a imaginary hexagonal grid with each unlabeled vertice representing a carbon, functional groups are drawn and finally all vacant lone electrons are implicitly filled with hydrogen. Multiple bonds are drawn as multiple parallel lines.}
 
 	Cyclic carbon are drawn by their skeletal formula with a line from the cycle to whatever other miscellaneous groups it is bonded to, and all C or H are implicit.
 
@@ -90,7 +90,7 @@
 	\begin{figure}[H]
     \scalebox{.7}{
 		\chemfig{R-[:30](=[2]O)-[:-30]OH}
-		\chemfig{R-[:30]O-[:-30]R}
+		\chemfig{R-[:30](=[2]O)-[:-30]O-[:30]R}
 		\chemfig{R-[:30](=[2]O)-[:-30]X}
 		\chemfig{R-[:30](=[2]O)-[:-30]NH_2}
 	}
@@ -184,10 +184,6 @@
 
 	\subsection{Isomerism}
 
-	\subsubsection{Constitutional Isomerism}
-
-	\scidef{Constitutional Isomers}{Constitutional Isomers contain the same number of constituent atoms.}
-
 	\subsubsection{Cis-trans Isomerism}
 
 	\scidef{Cis-trans Isomers}{Cis-trans Isomers contain the same bonding structure but differ in the arrangement of groups due to a restriction in rotation.}
@@ -196,7 +192,8 @@
 
 	\begin{itemize}
 		\item Restricted rotation due to the presence of a \ch{C=C} double bond or a ring structure
-		\item For alkenes, different functional groups attached to each carbon. For ring, different functional groups attached to different carbon.
+		\item For alkenes, different functional groups attached to each carbon.
+		\item For ring, different functional groups attached to different carbon.
 	\end{itemize}
 
 	By right cis-trans notation should only be used in cases where there are the same two types of groups on each carbon in a alkene, after which cis-trans is used to desribe how the parent carbon chain passes through the double bond and finally cis-trans is deprecated for the IUPAC E-Z notation which is out of syllabus. \\
@@ -205,11 +202,11 @@
 
 	\subsubsection{Enantiomerism}
 
-	\scidef{Enantiomers}{Enantiomers (ee-nan-shi-oh-merh-s) occur when the mirror image of an atom's structure is non-superimposable with its original structure.}
+	\scidef{Enantiomers}{Enantiomers (ee-nan-shi-oh-merh-s) exists where the mirror image of an atom's structure is non-superimposable with its original structure.}
 
 	Enantiomers have similar physical properties except for a noticeable difference in its optical activity, where different enantiomers rotate polarized light an angle specific to a pair of enantiomers. \\
 
-	When drawing enantiomers, draw two structures separated by a plane of symmetry, using wedges and hashes to indicate bonds out of and into the plane of the paper respectively.
+	When drawing enantiomers, draw two structures separated by a plane of symmetry, using wedges and hashes to indicate bonds out of and into the plane of the paper respectively. Orbitals must be in a tetrahedral shape.
 
 	\scidef{Chiral Carbon}{Chiral Carbons have 4 different groups bonded to it, and tend to indicate the presence of an enantiomer.}
 

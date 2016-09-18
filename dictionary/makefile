@@ -7,22 +7,22 @@ cleanallregex = ".+\(aux\|log\|synctex.gz\|fls\|fdb_latexmk\|bbl\|blg\|pdf\)$$"
 
 .PHONY: clean clean-p $(FILE).pdf
 
-$(FILE).pdf: $(FILE).tex
-	pdflatex $(FILE)
+$(FILE).pdf: 
+	echo "dictionary, skipping"
 
 all:
-	$(FILE).pdf
+	echo "dictionary, skipping"
 
 clean:
-	find -regex $(cleanregex) -delete
+	echo "dictionary, skipping"
 
 clean-p:
-	find -regex $(cleanpdfregex) -delete
+	echo "dictionary, skipping"
 
 clean-a:
-	find -regex $(cleanallregex) -delete
+	echo "dictionary, skipping"
 
 contents:
-	./buildcontents.py
+	echo "dictionary, skipping"
 
 ac: contents clean-a $(FILE).pdf clean

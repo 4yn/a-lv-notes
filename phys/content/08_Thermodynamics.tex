@@ -1,0 +1,58 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Thermodynamics}
+
+	\scidef{Internal Kinetic Energy}{Internal Kinetic Energy \usub{E}{K} is the amount of energy stored in an object's molecule's translational and rotational energy.}
+
+	\scidef{Temperature}{Temperature is a quantization of the internal kinetic energy of an object.}
+
+	\scieqn{Thermodynamic Temperature}{For an object with temperature \(T_C\) in \si{\celsius}, its thermodynamic temperature \(T_K\)in \si{\kelvin} is given by the equation:}{T_K = T_C + 273.15}
+
+	\scidef{Kelvin}{The Kelvin \si{\K} is a measurement of temperature. \SI{1}{\K} is \(\frac{1}{273.16}\) of the temperature difference between absolute zero and the triple point of water (\SI{0.01}{\celsius}).}
+
+	\scidef{Heat}{Heat is the flow of internal kinetic energy due to the difference in temperature between them.}
+
+	\scidef{Thermal Equilibrium}{Objects that are in Thermal Equilibrium have no net flow of heat, and occurs if and only if these objects have the same temperature.}
+
+	\subsection{Laws of Thermodynamics}
+
+	\scidef{\usup{0}{th} Law of Thermodynamics}{If an A and B are in thermal equilibrium and B and C are in thermal equilibrium, A and C are in thermal equilibrium.}
+
+	\scidef{\usup{1}{st} Law of Thermodynamics}{The 1 \usup{1}{st} Law of Thermodynamics states that the total energy in a closed system, including internal kinetic energy, is constant.}
+
+	\scidef{\usup{2}{nd} Law of Thermodynamics}{The \usup{2}{nd} Law of Thermodynamics states that the entropy of a closed system increases.}
+
+	\scidef{\usup{3}{rd} Law of Thermodynamics}{The \usup{3}{rd} Law of Thermodynamics states that no object can achieve \SI{0}{\kelvin}.}
+
+	\subsection{Ideal Gas Law}
+
+	\scidef{Ideal Gas}{An Ideal Gas satisifes the relationship of \(pV = nRT\).}
+
+	\scieqn{Ideal Gas Law}{For an ideal gas with pressure \(p\), volume \(V\), amount of gas in \si{\mol} \(n\) and thermodynamic temperature \(T\)}{pV = nRT}
+
+	\subsection{Internal Kinetic Energy of a Gas}
+
+	\scieqn{Internal Kinetic Energy}{The average Internal Kinetic Energy \(\left< E_K \right>\) of a gas molecule with mass \(m\) and mean square speed \(c\) or thermodynamic temperature \(T\) using the Boltzmann constant \(k\) is given by the equation: }{ \left< E_K \right> = \frac{1}{3}m \left< c^2 \right> = \frac{3}{2}kT}
+
+	The derivation of the expression for \(\left< E_K \right>\) is as follows:
+
+	\begin{enumerate}
+		\item Pressure in a container arises when gas molecules collide against a container.
+		\item Model the collision of gas molecules with container as a elastic collision, where a gas molecule has initial momentum \(mc\). Due to conservation of kinetic energy, the final momentum of the molecule is \(-mc\). The total change in momentum is \(\Delta p = -2mc\).
+		\item Model the container as a cube of side length 2d. A collision occurs every time a molecule moves twice distance between two walls of the container, therefore it occurs once every \(\Delta t = \frac{2d}{c}\).
+		\item Since force is defined as change of momentum per unit time, the force exerted of wall on the molecule is \(F = \frac{\Delta p}{\Delta t} = -\frac{2mc^2}{2d} = -\frac{mc^2}{d}\).
+		\item By Newton's third law, the force of molecule on the wall is \(F = \frac{mc^2}{d}\).
+		\item Considering the total force on the wall as a summation of the forces by each molecule, \(F = \sum \frac{mc^2}{d} = \frac{Nm\left<c^2\right>}{d}\)
+		\item Since pressure is force per unit area and the ``unit area'' is modeled as a square side of a container, \(P = \frac{F}{d} = \frac{Nm\left<c^2\right>}{d^3} = \frac{Nm\left<c^2\right>}{V}\)
+		\item Accounting for the fact that each of the three dimensions were arbitrarily chosen, pressure has to be divided by 3. \(P = \frac{1}{3}\frac{Nm\left<c^2\right>}{V}\)
+		\item Rearranging,
+		\begin{equation*} \begin{gathered}
+			\frac{1}{3} Nm\left<c^2\right> = pV = NkT \\
+			m\left<c^2\right> = 3kT \\
+			\left<E_K\right> = \frac{1}{2} m\left<c^2\right> = \frac{3}{2} kT
+		\end{gathered} \end{equation*}
+	\end{enumerate}
+
+\end{document}
