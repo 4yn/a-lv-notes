@@ -1,0 +1,75 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Calculus II}
+
+\subsection{Integration}
+
+	\subsubsection{Standard Integral Forms}
+
+	\begin{equation*} \begin{aligned}
+	\int f'(x) dx &= f(x) + c \\
+	\int f'(x) (f(x))^n dx &= \frac{1}{n+1} \quad f(x)^{n+1} + c\\
+	\int \frac{f'(x)}{f(x)} dx &= \ln(|f(x)|) + c \\
+	\int f'(x) e^{f(x)} dx &= e^{f(x)} + c \\
+	\end{aligned} \end{equation*}
+
+	\subsubsection{Special and Trigonometric Integrals}
+
+	\begin{equation*} \begin{aligned}
+	\int \frac{1}{x^2+a^2} dx &= \frac{1}{a} \tan^-1 \left( \frac{x}{a} \right) + c \\
+	\int \frac{1}{\sqrt{a^2-x^2}} dx &= \sin^-1 \left( \frac{x}{a} \right) + c \\
+	\int \frac{1}{x^2-a^2} dx &= \frac{1}{2a} \ln \left( \frac{x-a}{x+a} \right) + c \\
+	\int \frac{1}{a^2-x^2} dx &= \frac{1}{2a} \ln \left( \frac{a+x}{a-x} \right) + c \\
+	\int \tan(x) dx &= \ln(\sec(x)) \\
+	\int \cot(x) dx &= \ln(\sin(x)) \\
+	\int \csc(x) dx &= -\ln(\csc(x) + \cot(x)) \\
+	\int \sec(x) dx &= \ln(\sec(x) + \tan(x)) \\
+	\end{aligned} \end{equation*}
+
+	\subsubsection{Integration by Substitution}
+
+	\begin{equation*} \begin{aligned}
+		\text{Given a substitution } u(x) \text{ where }  f(x)  = g(u) \\
+		\int f(x) dx = \int g(u) \frac{dx}{du} du \\
+	\end{aligned} \end{equation*}
+
+	For definite integrals, substitute \(u\) back to receive the integral as a function of \(x\). For definite integrals with limits \([a,b]\), change limits to \([u(a),u(b)]\) to evaluate the integral.
+
+	\subsubsection{Integration by Parts}
+
+	Recall the chain rule:
+
+	\begin{equation*} \begin{aligned}
+		\frac{d}{dx} f(x) g(x) &= f(x)g'(x) + f'(x)g(x) \\
+		f(x) g(x) &= \int f(x)g'(x) + f'(x)g(x) dx \\
+		\int f(x)g'(x) &= f(x) g(x) - \int f'(x) g(x) dx \\
+	\end{aligned} \end{equation*}
+
+	To find the indefinite integral of a function involving multiplication, use integration by parts to eliminate one part of the integral.
+
+\subsection{Definite Integrals}
+
+	\subsubsection{Area Under Curve}
+
+	Area bounded by \(x\) axis, \(x=a\), \(x=b\) and \(f(x)\):
+		\[\int_a^b | f(x) | dx \]
+	Area bounded by \(y\) axis, \(y=a\), \(y=b\) and \(f(y)\):
+		\[\int_a^b | f(y) | dy \]
+
+	\subsubsection{Area of Parametric}
+
+	Area bounded by \(x\) axis, \(x=a\), \(x=b\) and parametric curve \((x(t),y(t)\): 
+	\begin{equation*} \begin{gathered}
+		\int_a^b y dx = \int_c^d y(t) \frac{dx}{dt} dt \\
+		\text{Where } x(c) = a , x(d) = b 
+	\end{gathered} \end{equation*}
+
+	\subsubsection{Volume of Rotation}
+
+	Volume enclosed by curve rotated about x axis:
+		\[ \pi \int_a^b (f(x))^2 dx \]
+
+
+\end{document}

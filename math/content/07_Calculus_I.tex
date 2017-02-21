@@ -36,16 +36,26 @@
 
 	Take differential of both sides and differentiate \(g(y)\) in terms of \(y\) and \(\frac{dy}{dx}\), then isolate \(\frac{dy}{dx}\) to obtain a suitable expression.
 
-	\subsubsection{Inverse Trigonometric Derivative}
+	\subsubsection{Trigonometric Derivatives}
+
+	\begin{equation*} \begin{aligned}
+		\frac{d}{dx} \sin(x) &= \cos(x) \\
+		\frac{d}{dx} \cos(x) &= -\sin(x) \\
+		\frac{d}{dx} \tan(x) &= \sec^2(x) \\
+		\frac{d}{dx} \sec(x) &= \tan(x)\sec(x) \\
+		\frac{d}{dx} \csc(x) &= -\csc(x)\cot(x) \\
+		\frac{d}{dx} \sin^{-1}(x) &= \frac{1}{\sqrt{1-x^2}} \\
+		\frac{d}{dx} \cos^{-1}(x) &= -\frac{1}{\sqrt{1-x^2}}  \\
+		\frac{d}{dx} \tan^{-1}(x) &= \frac{1}{1+x^2}  \\
+	\end{aligned} \end{equation*}
 
 	\subsubsection{Parametric Differentiation}
 
-	\begin{equation*} \begin{aligned}
-		x = f(t) \quad y &= g(t) \\
-		\frac{dx}{dt} &= f'(t) \quad \frac{dy}{dt} = g'(t)  \\
-		\frac{dy}{dx} &= \frac{dy}{dt} / \frac{dx}{dt} \\
-		&= g'(t) / f'(t) 
-	\end{aligned} \end{equation*}
+	\begin{equation*} \begin{gathered}
+		x = f(t) \quad y = g(t) \\
+		\frac{dx}{dt} = f'(t) \quad \frac{dy}{dt} = g'(t)  \\
+		\frac{dy}{dx} = \frac{dy}{dt} / \frac{dx}{dt} = g'(t) / f'(t) 
+	\end{gathered} \end{equation*}
 
 \subsection{Applications of Differentiation}
 
@@ -55,9 +65,12 @@
 
 	To find minima and maxima, find where \(\frac{dy}{dx} = 0 \). To test whether a point is a minimum or a maximum, use the first derivative test or second derivative test.
 
-	\subsubsection{First Order Derivative Table Test}
+	\subsubsection{First Order Derivative Test}
 
 	\subsubsection{Second Order Derivative Test}
+
+	Find \(x\) where \(\frac{dy}{dx} = 0\). Evaluate \(\frac{d^2y}{dx^2}\) at this value of \(x\). A positive value indicates a minimum point while a negative value indicates a maximum point.
+
 
 	\subsubsection{Concavity and Points of Inflection}
 
@@ -87,12 +100,67 @@
 
 	Conic Sections are a special category of graphs because they can be derived through the intersection of a plane with a three-dimensional biconic function. \\
 
-	Circles have equation of the form (a7)
+	Circles have equations of the form \( \frac{(x-a)^2}{r^2} + \frac{(y-b)^2}{r^2} = 1 \), where coordinates \((a,b)\) indicate the center of the circle and \(r\) is the radius of said circle. \\
 
-	Ellipse \\
+	Ellipses have equations of the form  \( \frac{(x-h)^2}{a^2} + \frac{(y-k)^2}{b^2} = 1 \), where coordinates \((h,k)\) indicate the center of the ellipse, \(a\) is the largest distance from the center to any point in the x axis and \(b\) is the largest distance from the center to any point in the y axis. \\
 
-	Hyperbola \\
+	Hyperbola have equations of the form \( \frac{(x-h)^2}{a^2} - \frac{(y-k)^2}{b^2} = 1 \) or \( \frac{(y-k)^2}{a^2} - \frac{(x-h)^2}{b^2} = 1 \), where coordinates \((h,k)\) indicate the center of the curves, and its asymptotes are given by the equation \( y - k = \frac{b}{a} (x - h) \). \\
 
 \subsection{Mclaurin Series}
+	
+	Any equation of a \(n\)-degree polynomial can be recovered from the values of its first \(n\) derivatives at \(x=0\).
+
+	\begin{equation*} \begin{gathered}
+		f(x) = a + bx + cx^2 + dx^3 \ldots \Rightarrow f(0) = a \\
+		f'(x) = b + 2cx + 3dx^2 \ldots \Rightarrow f'(0) = b \\
+		f''(x) = 2c + 6dx \ldots \Rightarrow f''(0) = 2c \\
+		f'''(x) = 6d \ldots \Rightarrow f'''(0) = 6d \\
+		\cdots \\
+		f(x) = f(0) + f'(x) + \frac{f''(x)}{2!} +  \frac{f'''(x)}{3 !} \ldots \\
+	\end{gathered} \end{equation*}
+
+	By assuming that all equations can be approximated by a polynomial, approximations in a polynomial form can be given to non-polynomial functions. Values of these polynomials can be evaluated and used if the polynomial is convergent. I.e. for an arbitary function \(f(x)\) :
+
+	\[ f(x) \approx f(0) + \frac{f'(0)}{1!} + \frac{f''(0)}{2!} + \frac{f'''(0)}{3!} \ldots \]
+
+\subsection{Graph Transformatons}
+
+	\subsubsection{Linear Transformations}
+
+	Four linear transformations of graphs need to be known:
+
+	\begin{itemize}
+		\item Scale along x axis: \\
+			Scaling by factor a: \( f(x) \Rightarrow f(\frac{x}{a}) \) 
+		\item Scale along y axis: \\
+			Scaling by factor a: \( f(x) \Rightarrow f(x)a \) 
+		\item Translate along x axis: \\
+			Shifting left a units: \( f(x) \Rightarrow f(x+a) \) \\
+			Shifting right a units: \( f(x) \Rightarrow f(x-a) \)
+		\item Translate along y axis:  \\
+			Shifting up a units: \( f(x) \Rightarrow f(x)+a \) \\
+			Shifting down a units: \( f(x) \Rightarrow f(x)-a \)
+	\end{itemize}
+
+	\subsubsection{Inverse Graphs}
+
+	Transformation of a graph \(f(x)\) to a graph \(\frac{1}{f(x)}\) holds the properties:
+
+	\begin{itemize}
+		\item X intercepts \(\Rightarrow\) vertical asymptotes
+		\item Vertical asymptotes \(\Rightarrow\) X intercepts with exclusion circle
+		\item Horizontal asymptotes remain
+		\item Exact coordinates for all marked points that are not on the x-axis 
+	\end{itemize}
+
+	\subsubsection{Derivative Graphs}
+
+	Transformation of a graph \(f(x)\) to a graph \(f'(x)\) holds the properties:
+
+	\begin{itemize}
+		\item Maximum, minimum and points of inflection \(\Rightarrow\) x-intercepts
+		\item Vertical asymptotes remain in location
+		\item Oblique asymptotes \(\Rightarrow\) Horizontal asymptotes
+	\end{itemize}
 
 \end{document}

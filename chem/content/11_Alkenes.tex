@@ -1,0 +1,154 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Alkenes}
+
+	\subsection{Structure of Alkenes}
+
+	Alkenes are organic molecules which contain \ch{C=C} double bonds.
+
+	\subsubsection{Cis-trans Isomerism}
+
+	Alkenes commonly display cis-trans isomerism as its \ch{C=C} double bonds provide the restricted rotation about a bond. \\
+
+	Cis-trans isomers of the same alkene have varying physical properties. Trans isomers tend to have higher melting points as they generally tessellate better than cis isomers in the solid state. Cis isomers on the other hand have higher boiling points because their structure forms a dipole moment which leads to more energy being required for the state change from liquid to gas.
+
+	\subsection{Formation of Alkenes}
+
+	Alkenes are generally formed through condensation of halogenarenes or alcohols.
+
+	\subsubsection{Elimination}
+
+	Elimination reactions may produce more than one product, but typically the major product is the more stable alkene, which has more alkyl substituents attached to the double bonded carbons. \\
+
+	\noindent \textbf{Halogeonalkanes to Alkenes}
+
+	Reagents: \ch{NaOH} or \ch{KOH} \\
+	Conditions: Ethanol solvent, heat under reflux \\
+
+	\chfg{
+		\chemfig{-[:-30](-[@{a1}:270]@{a2}Br)-[@{a3}:30](-[@{a4}:90]@{a5}H)-[:-30]} \+ \chemfig{@{a6}\lewis{2:,O}\ch{H-}}
+		\arrow 
+		\chemfig{-[:-30]=[:30]-[:-30]} + \ch{H2O} \+ \ch{Br-}
+		\chemmove[shorten <=2pt,shorten >=2pt]{ \draw (a1)..controls +(180:5mm) and +(180:5mm) ..(a2); }
+		\chemmove[shorten <=2pt,shorten >=2pt]{ \draw (a4)..controls +(180:5mm) and +(120:5mm) ..(a3); }
+		\chemmove[shorten <=2pt,shorten >=2pt]{ \draw (a6)..controls +(90:5mm) and +(0:5mm) ..(a5); }
+	}
+
+	\noindent \textbf{Alcohols to Alkenes} 
+
+	Reagents: Excess concentrated \ch{H2SO4} \\
+	Conditions: \SI{170}{\celsius} \\
+
+	\subsection{Reaction of Alkenes}
+	
+	Alkenes are typically more reactive than their alkane counterparts due to the high electron density of the \ch{C=C} bond which tends to polarize surrounding molecules and attract electrophiles. Alkenes will typically undergo electrophillic addition reactions which break the double bond to form single bonds.
+
+	\subsubsection{Reduction}
+
+	Unsaturated alkenes can undergo reduction reactions which replace the \ch{C=C} \(\pi\) bond with \ch{H} to form a saturated hydrocarbon. \\
+
+	Reagents: \ch{H2} \\
+	Conditions: \ch{Ni} + \SI{150}{\celsius} OR \ch{Pt} OR \ch{Pd} + Heat\\
+
+	\subsubsection{Electrophillic Addition}
+
+	Alkene species typically undergo Electrophillic Addition reactions which remove the \ch{C=C} \(\pi\) bond in order to form two new bonds with various side molecules and usually react readily and quickly due to the exothermic processes. These reactions typically involve the formation of a electrophillic species, the slow addition of the electrophillic species and finally the addition of a nucleophillic species.
+
+	Carbocations that are bonded to more \ch{C} atoms are more stable as they can tap on the electrons of other carbon. As such, electrophillic addition reactions which involve the formation of a carbocation will form more molecules with more substituted carbocations, leading to the formation of a major product. Note that minor products may still form. \\
+
+	Reactions involving formation of \ch{C+} involve states where \ch{C+} is \usup{sp}{2} hybridized. As such, any further reactions have an equal probability of nucleophillic attack from both upper and lower planes as compared to the plane of bonds to \ch{C+}. A resultant racemic mixture of enantiomers will result if the \ch{C+} is eventually chiral.
+
+	\noindent \textbf{Addition of Halogen Gas}
+
+	Reagents: \ch{X2} (\ch{X} \(\in\) \ch{Cl,Br,I}) \\
+	Conditions: In inert solvent (\ch{CCl4}), dark, room temperature \\
+
+	\chfg{
+		\chemfig{-[:30]=[@{a1}:-30]} \+ \chemfig{@{a2}\chemabove{Br}{\delta+}-[@{a3}]@{a4}\chemabove{Br}{\delta-}}
+		\arrow{->[slow]}
+		\chemfig{-[:30]C^+-[:-30]-[:30]Br} \+ \ch{Br-}
+		\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a1)..controls +(210:10mm) and +(270:7mm) ..(a2);}
+		\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a3)..controls +(270:5mm) and +(270:5mm) ..(a4);}
+	} \\
+	\chfg{
+		\chemfig{-[:30]@{a5}C^+-[:-30]-[:30]Br} \+ \chemfig{@{a6}\lewis{6:,\ch{Br-}}}
+		\arrow{->[fast]}
+		\chemfig{-[:30](-[:90]Br)-[:-30]-[:30]Br}
+		\chemmove[shorten <=5pt, shorten >=2pt]{ \draw (a6)..controls +(270:7mm) and +(270:10mm) ..(a5);}
+	}
+
+	\noindent \textbf{Addition of Halohydrin}
+
+	Reagents: \ch{HX} (\ch{X} \(\in\) \ch{Cl,Br,I}) \\
+	Conditions: room temperature, dark, anhydrous\\
+
+	See Addition of Halogen Gas for reaction mechanism, except \ch{H} acts as the electrophile.
+
+	\noindent \textbf{Addition of Halogen Gas in Aqueous solution}
+
+	Reagents: \ch{X2} (\ch{X} \(\in\) \ch{Cl,Br,I}) \\
+	Conditions: Aqueous, room temperature \\
+	
+	\begin{figure}[H]
+		\centering
+		\chfg{
+			\chemfig{-[:30]=[@{a1}:-30]} \+ \chemfig{@{a2}\chemabove{Br}{\delta+}-[@{a3}]@{a4}\chemabove{Br}{\delta-}}
+			\arrow{->[slow]}
+			\chemfig{-[:30]C^+-[:-30]-[:30]Br} \+ \ch{Br-}
+			\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a1)..controls +(210:10mm) and +(270:7mm) ..(a2);}
+			\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a3)..controls +(270:5mm) and +(270:5mm) ..(a4);}
+		} \\
+		\chfg{ 
+			\chemfig{-[:30]@{a5}C^+-[:-30]-[:30]Br} \+ \chemfig{@{a6}\lewis{6:,O}(-[:30]H)-[@{a7}:330]@{a8}H}
+			\arrow{->[fast]}
+			\chemname{\chemfig{-[:30](-[:90]OH)-[:-30]-[:30]Br}}{(major)} + \ch{H+}
+			\chemmove[shorten <=5pt, shorten >=2pt]{ \draw (a6)..controls +(270:7mm) and +(270:10mm) ..(a5);}
+			\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a7)..controls +(210:5mm) and +(180:5mm) ..(a8);}
+		} \\
+		\chfg{
+			\ch{H+} \+ \ch{Br-} \arrow{->[fast]} \ch{HBr}
+		} 
+
+		\emph{OR}
+
+		\chfg{
+			\chemfig{-[:30]@{a9}C^+-[:-30]-[:30]Br} \+ \chemfig{@{a10}\lewis{6:,\ch{Br-}}}
+			\arrow{->[fast]}
+			\chemname{\chemfig{-[:30](-[:90]Br)-[:-30]-[:30]Br}}{(minor)}
+			\chemmove[shorten <=5pt, shorten >=2pt]{ \draw (a10)..controls +(270:7mm) and +(270:10mm) ..(a9);}
+		}
+	\end{figure}
+
+	\noindent \textbf{Formation of Alcohol}
+
+	Reagents: \ch{H2O} \\
+	Conditions: cold concentrated \ch{H2SO4} then warm \ch{H2O}\\
+	Conditions (Industrial): \ch{H3PO4 (l)} in celite, \SI{300}{\celsius}, celite 
+
+	\subsubsection{Oxidation}
+
+	\noindent \textbf{Mild Oxidation / Formation of Diol}
+
+	Reagents: \ch{KMnO4}\\
+	Conditions: \ch{NaOH} cold \\
+
+	\noindent \textbf{Strong Oxidation}
+
+	Reagents: \ch{KMnO4}\\
+	Conditions: \ch{H2SO4}, warm or heat under reflux\\
+
+	Reactant alkene first undergoes mild oxidation and is saturated with \ch{-OH} groups, afterward the heat supplied allows for the cleavage of a \(\sigma\) bond between two \ch{C} with \ch{OH} groups attached to each of them due to the electron-withdrawing effect of an \ch{-OH} group. \\
+
+	Terminal / secondary \ch{C} are reacted into \ch{CO2 + H2O}, tertiary \ch{C} are converted into terminal \ch{COOH} groups and quaternary \ch{C} are converted into ketone groups. \\
+
+	\noindent \textbf{Strong Oxidation in Alkaline}
+
+	Reagents: \ch{KMnO4}\\
+	Conditions: \ch{NaOH}, warm\\
+
+	\ch{CO3 2-} is obtained instead of \ch{CO2} and \ch{COO} is obtained instead of \ch{COOH}. Addition of acidic solution will revert the products to \ch{CO2} and \ch{COOH}.
+
+
+\end{document}

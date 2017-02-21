@@ -53,3 +53,26 @@
 \DeclareSIUnit\bar{bar}
 
 \usetikzlibrary{decorations.markings,arrows,matrix}
+
+\definesubmol\nobond{[,0.2,,,draw=none]}
+
+% \newcommand\ucfsup[1]{(!\nobond\chemabove[4mm]{}{#1})}
+
+% \newcommand{\minischeme}[1]{
+% 	\scalebox{0.7}{
+% 		\schemestart
+% 			#1
+% 		\schemestop
+% 	}
+% }
+
+\newcommand{\chfg}[1]{
+	\schemestart
+		#1
+	\schemestop
+}
+
+\setatomsep{7mm}
+
+\definesubmol\upbenz{[:240]**6(------)}
+\definesubmol\rightbenz{[:150]**6(------)}
