@@ -9,6 +9,7 @@ cleanallregex = ".+\(aux\|log\|synctex.gz\|fls\|fdb_latexmk\|bbl\|blg\|pdf\)$$"
 
 $(FILE).pdf: $(FILE).tex
 	pdflatex $(FILE)
+	pdflatex $(FILE)
 
 all:
 	$(FILE).pdf

@@ -6,7 +6,9 @@
 
 	\subsection{Ionic Product of Water}
 
-	\ch{H2O <=> H+ + OH-}
+	\begin{center} 
+		\ch{H2O <=> H+ + OH-}
+	\end{center}
 
 	\scidef{Ionic Product of Water \(K_w\)}{The product of concentrations of \ch{H+} and \ch{OH-} are always \(K_w\)=\SI{1e-14}{\mol\squared\per\dm\tothe{6}} at \SI{298}{\K}.}
 
@@ -14,7 +16,7 @@
 
 	\subsection{pH and pOH}
 
-	\scidef{p Function}{For some quantity \(X\): \[pX = \log_{10}{X}\] }
+	\scieqn{p Function}{For some quantity \(X\):}{pX = \log_{10}{X} } 
 
 	\scidef{pH}{pH is a measure of the concentration of \ch{H+} in a solution, calculated as: \[pH = \log_{10}{\text{[\ch{H+}]}}\]}
 
@@ -22,17 +24,113 @@
 
 	Note that at \SI{298}{\K}, \(pH + pOH = pK_w = 14 \).
 
-	\subsection{Definitions of Acids and Bases}
+	\subsection{Acid and Base Models}
+
+	Ionic Equilibria typically use the Br\o nsted Acid and Base model, which involves the transfer of \ch{H+}.
+
+	\scidef{Br\o nsted Acids and Bases}{Br\o nsted-Lowry Acids are substances which donate protons while Br\o nsted-Lowry Bases receive protons.}
+
+	\scidef{Conjugate Acids and Bases}{A Conjugate Acid or Base is the chemical substance obtained after a base recieves \ch{H+} or a acid donates \ch{H+} respectively.}
 
 	\subsection{Strength of Acids and Bases}
 
+	\begin{center} 
+		\ch{HA -> H+ + A-} \\
+	 	\ch{BOH -> B+ + OH-} 
+	\end{center}
+
+	\scidef{Strong Acids and Bases}{Strong Acids and Bases are substances which fully disassociate into \ch{H+} and \ch{OH-} in aqueous solution.}
+
+	\begin{center}
+		\ch{HA <=> H+ + A-} \\
+		\ch{BOH <=> B+ + OH-}
+	\end{center}
+
+	\scidef{Weak Acids and Bases}{Weak Acids and Bases are substances which only partially disassociate into \ch{H+} and \ch{OH-} in aqueous solution.}
+
 	\subsection{Weak Acids and Bases}
 
+	Weak acids and bases disassociate according to a incomplete reaction and exist in equilibrium, hence acid and base disassociation reactions can be quantified through equilibrium constants as well.
 
+	\ch{HA + H2O <=> H3O+ + A-} \(K_C = \frac{[\ch{H3O+}][\ch{A-}]}{[\ch{HA}][\ch{H2O}]}\) \\
+	\ch{BOH + H2O <=> BH+ + OH-} \(K_C = \frac{[\ch{BH+}][\ch{OH-}]}{[\ch{BOH}][\ch{H2O}]}\) \\
+
+	Notice that the non-simplified reactions of weak acid and weak base disassociation are psuedo-order with respect to \ch{H2O} because \ch{H2O} is present in large excess. As such, a simplified equilibrium constant for weak acid and weak base disassociation can be used instead.
+
+	\scieqn{Weak Acid Equilibrium Constant}{For a weak acid which dissociates to equilibrium concentrations [\ch{H+}], [\ch{A-}] and [\ch{HA}],its equilibrium constant \(K_A\) is given by the equation}{K_A = \frac{[\ch{H+}][\ch{A-}]}{[\ch{HA}]}}
+
+	\scieqn{Weak Base Equilibrium Constant}{For a weak base which dissociates to equilibrium concentrations [\ch{B+}], [\ch{OH-}] and [\ch{BOH}],its equilibrium constant \(K_A\) is given by the equation}{K_B = \frac{[\ch{B+}][\ch{OH-}]}{[\ch{HA}]}}
+
+	As with other equilibrium constants, the values of \(K_A\) and \(K_B\) are constant at any given temperature and do not vary with concentration.
+
+	\scidef{Disassociation Constant}{The disassociation constant \(\alpha\) of a weak acid or base is the proportion of disassociated acid or base to original concentration of acid or base.}
+
+	\scieqn{Disassociation Constant}{}{\alpha = \frac{[\ch{A-}]_\text{equilibrium}}{[\ch{HA}]_\text{initial}}}
 
 	\subsection{Salt Hydrolysis}
 
+	\scidef{Salt Hydrolysis}{The disassociation of acids and bases will form \ch{H+} or \ch{OH-} as well as a conjugate base \ch{A-} or acid \ch{B+}. If a solution contains these conjugate bases or acids, their reverse reaction of Salt Hydrolysis can occur.}
+
+	\begin{center}
+		\ch{A- + H2O <=> HA + OH-} \\
+		\ch{B+ + H2O <=> H+ + BOH}
+	 \end{center}
+
+	 As such, a `fully reacted' weak acid or base solution still contains conjugate base or acids which will alter their pH. \\
+
+	 Also notice that the product of the equilibrium constants of the initial disassociation reaction and the salt hydrolysis equation will be equal to that of \(K_w\). 
+
+	\scieqn{Relationship of \(K_A\) and \(K_B\)}{}{K_A \times K_B = K_w}
+
 	\subsection{Buffer Solutions}
 
+	\scidef{Buffer Solution}{A Buffer Solution is a solution which can resist change in its pH. Usually it contains a weak acid and its conjugate base in comparable proportions or a weak base and its conjugate acid in comparable proportions.}
+
+	\scieqn[gathered]{Henderson Hasselbach Equation}{}{
+		pH = pK_A + \lg{\frac{[\ch{A-}]}{[\ch{HA}]}} \\
+		pOH = pK_B + \lg{\frac{[\ch{B+}]}{[\ch{BOH}]}} 
+	}
+
+	\scidef{Effective Buffer Region}{The effective buffer region is the region of pH where a buffer solution is able to resist changes in pH, typically present within \(pK_A \pm 1 \) or \(pK_B \pm 1 \) }
+
+	\scidef{Maximum Buffer Capacity}{A Buffer solution is at maximum buffer capacity if it can resist the addition of acid and the addition of base equally well.}
+
+	At maximum buffer capacity, the concentration of acid or base is equal to the concentration of conjugate salt. At this point in time, the lg term is numerically equal to zero, hence \(pH = pK_a \text{or} pK_b\). As a result of this property, the point of maximum buffer capacity in a titration occurs at half of the volume of the equivalence point, where \(pH = pK_A\).
+
+	\subsection{Acid-Base Titration Curves}
+
+	For a titration of weak acid against strong base:
+
+	\scieqn{Initial pH}{Assuming \( [\ch{HA}]_\text{initial} \approx [\ch{HA}]_\text{equilibrium}\)}{pH = - \lg \sqrt{K_A[\ch{HA}]}}
+
+	\scieqn{pH in Buffer Region}{When \( | \lg{\frac{[\ch{A-}]}{[\ch{HA}]}} | < 1 \) }{pH = pK_A + \lg{\frac{[\ch{A-}]}{[\ch{HA}]}}}
+
+	\scieqn{Equivalence Point pH}{Assuming \( [\ch{HA}]_\text{initial} \approx [\ch{A-}]_\text{endpoint}\)}{pH = 14 - pOH = 14 + \lg \sqrt{\frac{K_w}{K_A}[\ch{HA}]}}
+
+	\subsection{Solubility Product}
+
+	\scidef{Solubility}{The solubility of a salt is how much salt can be dissolved per unit volume of water.}
+
+	\begin{center} 
+		\ch{M_aX_b (s) <=> a M+ (aq) + b X- (aq)} \(K_C = \frac{[\ch{M+}]^a[\ch{X-}]^b}{[\ch{M_aX_b}]} \)
+	\end{center}
+
+	Since \([\ch{M_aX_b}]\) is approximately constant, the equilibrium constant of dissociation of a sparingly soluble salt can be presented as psuedo-order with respect to its solid salt.
+
+	\scieqn{Solubility Product\(K_sp\)}{The Solubility Product \(K_{sp}\) of a sparingly soluble salt which disassociates to equilibrium concentrations \([\ch{M+}]\) and \([\ch{A-}]\) is given by the equation}{K_{sp} = [\ch{M+}]^a[\ch{X-}]^b }
+
+	As with other equilibrium constants, the value of \(K_{sp}\) is constant at any given temperature and do not vary with concentration.
+
+	\subsubsection{Ionic Product}
+
+	\scieqn{Ionic Product \(IP\)}{The Ionic Product \(IP\) of a sparingly soluble salt which disassociates to instantaneous concentrations \([\ch{M+}]\) and \([\ch{A-}]\) is given by the equation}{IP = [\ch{M+}]^a[\ch{X-}]^b }
+
+	Ionic Product is analogous to \(Q_C\) as \(K_{sp}\) is to \(K_C\). \\
+
+	In any system containing ions of a sparingly soluble salt, the \(IP\) is always less than or equal to \(K_{sp}\), or else precipitation will occur to remove sufficient aqueous ions to bring \(IP\) lower. \\
+
+	For a solution already containing some of one ion of a sparingly soluble salt, the overall solubility of a salt will drop drastically due to the inflated ionic product. Explain with Le Chatelier's Principle. \\
+
+	\subsubsection{}
 
 \end{document}
