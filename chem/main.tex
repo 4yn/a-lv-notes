@@ -7,6 +7,7 @@
 \usepackage{lmodern}
 \usepackage{mathtools}
 \usepackage{amssymb}
+\usepackage{tipa}
 \usepackage{textcomp}
 \usepackage{gensymb}
 \usepackage{pgfplots}
@@ -71,9 +72,9 @@
 \DeclareSIUnit\atm{atm}
 \DeclareSIUnit\bar{bar}
 
-\usetikzlibrary{decorations.markings,arrows,matrix}
+\usetikzlibrary{decorations.markings,arrows,matrix,positioning,calc}
 
-\definesubmol\nobond{[,0.2,,,draw=none]}
+\definesubmol\nobond{-[,0.2,,,draw=none]}
 
 % \newcommand\ucfsup[1]{(!\nobond\chemabove[4mm]{}{#1})}
 
@@ -95,6 +96,21 @@
 
 \definesubmol\upbenz{[:240]**6(------)}
 \definesubmol\rightbenz{[:150]**6(------)}
+
+\newcommand*{\bondboldwidth}{0.22832 em} %'Bold Width'
+\newcommand*{\bondhashlength}{0.25737 em} % 'Hash Spacing'
+
+\tikzset{
+  bold bond/.style = {line width = \bondboldwidth},
+  dash bond/.style =
+    {dash pattern = on \bondhashlength off \bondhashlength},
+  hash bond/.style =
+    {
+      dash pattern = on \bondwidth off \bondhashlength,
+      line width   = \bondboldwidth
+    },
+}
+
 \begin{document}
 
 \subfile{./templates/header.tex}

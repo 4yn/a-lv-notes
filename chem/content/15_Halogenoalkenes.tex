@@ -46,13 +46,52 @@
 
 	\scidef{\usub{S}{N}2}{The \usub{S}{N}2 mechanism of nucleophilic substitution involves two molecules in its slow (and only) step.}
 
-	\usub{S}{N}2 reactions involve the backside attack of a nucleophile to the halogenoalkane at the opposite side of the \ch{C-X} bond, forming an intermediate molecule both bonded to the nucleophile and \ch{X}, after which \ch{X} is ejected. This reaction preserves the enantiomeric quality of a molecule if the original alkane displays enantiomerism about the \ch{C} with \ch{X} due to the spatial requirements of a backside attack.
+	\usub{S}{N}2 reactions involve the backside attack of a nucleophile to the halogenoalkane at the opposite side of the \ch{C-X} bond, forming an intermediate molecule both bonded to the nucleophile and \ch{X}, after which \ch{X} is ejected. This reaction preserves the enantiomeric quality of a molecule if the original alkane displays enantiomerism about the \ch{C} with \ch{X} due to the spatial requirements of a backside attack. 
+
+	\chfg{
+		\chemfig{@{a1}\lewis{0:,\ch{HO-}}} \arrow{0}[,0] \+ \chemfig*{@{a2}C(-[@{a3}:0]@{a4}Br)(-[:115]H)(<:[:205]H3C)(<[:250,,,1]CH2CH3)} 
+		\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a1.north east)..controls +(45:6mm) and +(150:4mm) ..(a2); }
+		\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a3)..controls +(90:5mm) and +(90:5mm) ..(a4); }
+	}
+
+	\chfg{
+		\arrow \chemleft[ \chemfig*{\chemabove{HO}{\delta-}-[,,,,dash bond]C(-[:90]H)(<:[:250]H3C)(<[:290]CH2CH3)-[,,,,dash bond]\chemabove{HO}{\delta-}} \chemright{]^{\text{\textdoublebarpipe}}}
+	}
+
+	\chfg{
+		\arrow \chemfig*{HO-C(-[:65]H)(<:[:335]CH3)(<[:290]CH2CH3)} \arrow{0}[,0] \+ \ch{Br-}
+	} \\
+
+	Label partial charges on atoms as they `develop' charges throughout the reaction. A negatively charged nucleophile will progress to a neutral charge whereas a neutrally charged nucleophile will develop a positive charge.
 
 	\scidef{\usub{S}{N}1}{The \usub{S}{N}1 mechanism of nucleophilic substitution involves molecules in its slow step.}
 
 	\usub{S}{N}1 reactions involve the spontaneous ejection of the \ch{X} group in its slow step to form a carbocation which will then react with a nucleophile. The later addition of the nucleophile will happen at equal probabilities at either side of the trigonal planar \ch{C+}, hence any enantiomeric products about \ch{C} will be racemic. \\
 
-	Only draw stereochemistry of a reaction if the original molecule displays enantiomerism about the \ch{C} bonded to \ch{X}.
+	\chfg{
+		\chemfig*[][scale=0.8]{C(-[@{a1}:0]@{a2}Br)(-[:115]H)(<:[:205]H3C)(<[:250,,,1]CH2CH3)} \arrow{->[slow]} \chemfig*[][scale=0.8]{\ch{C+}(-[:90]H)(<:[:250]H3C)(<[:290,,,1]CH2CH3)} \arrow{0}[,0] \+ \ch{Br-}
+		\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a1)..controls +(90:5mm) and +(90:5mm) ..(a2); }
+	} 
+
+	\chfg{
+		\chemfig{@{a1}\lewis{0:,\ch{HO-}}} \arrow{0}[,0] \+ \chemfig*[][scale=0.8]{@{a2}\ch{C+}(-[:90]H)(<:[:250]H3C)(<[:290,,,1]CH2CH3)} \arrow{0}[,0] \+ \chemfig{@{a3}\lewis{4:,\ch{OH-}}}
+	}
+
+	\begin{flushright}
+		\begin{tikzpicture}[node distance=0cm and 2cm]
+			\node (a1) {};
+			\node[above right=of a1] (a2) {
+				\chemname{\chemfig*[][scale=0.8]{HO-C(-[:65]H)(<:[:335]CH3)(<[:290]CH2CH3)}}{Inversion of Configuration}
+				};
+			\node[below right=of a1] (a3) {
+				\chemname{\chemfig*[][scale=0.8]{C(-[:115]H)(<:[:205]CH3)(<[:250,,,1]CH2CH3)-OH}}{Retention of Configuration}
+				};
+			\draw[-stealth] (a1) -- ( $ (a1.0)!0.5!(a2.west|-a1.0) $ ) |- (a2.west) node[auto,pos=0.7] {};
+			\draw[-stealth] (a1) -- ( $ (a1.0)!0.5!(a3.west|-a1.0) $ ) |- (a3.west) node[auto,pos=0.7] {};
+		\end{tikzpicture}
+	\end{flushright}
+
+	Draw stereochemistry of a reaction if the original molecule displays enantiomerism about the \ch{C} bonded to \ch{X}. Also indicate by annotating `Retention of Configuration' and `Inversion of Configuration' below the resultant molecules.
 
 	The mechanism at which a \usub{S}{N} reaction occurs depends primarily on the degree of substitution of the \ch{C} bonded to \ch{X}. \ch{C} with more alkyl groups bonded to it will generally follow the \usub{S}{N}{1} mechanism because it will form a more stable \ch{C+} whereas \ch{C} with less alkyl groups bonded to it will follow the \usub{S}{N}2 mechanism due to the free space around \ch{C} leaving it susceptible to backside attack. \\
 
@@ -127,5 +166,9 @@
 	Ethanol acts as a nucleophile.
 
 	\subsection{Applications of Halogenoalkanes}
+
+	Strong \ch{C-F} and \ch{C-Cl} bonds mean that organic molecules saturated with \ch{F} and \ch{Cl} are highly unreactive. As a result, Chlorofluorocarbon (CFC) / `Freon' compounds are also usually non-toxic, non-flammable (or even flame retardant), odorless, volatile and easily liquifiable. However, their high stability and low density mean that these compounds can rise to high altitudes before decomposition, after which \ch{Cl^.} radicals can easily form to deplete \ch{O3} in a chain reaction. \\
+
+	As a replacement, the use of HCFC compounds and HFC compounds are proposed as the presence of \ch{C-H} bonds allow them to be destroyed at lower altitudes before being able to extensively damage the \ch{O3} layer.
 	
 \end{document}

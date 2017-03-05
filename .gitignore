@@ -159,3 +159,4 @@ pythontex-files-*/
 TSWLatexianTemp*
 
 gp/
+**/content/*.pdf
