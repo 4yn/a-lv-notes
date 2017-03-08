@@ -1,0 +1,54 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Thermodynamics}
+
+	\subsection{Energy of a Thermodynamic System}
+
+	The first law of Thermodynamics is 
+
+	\scieqn{First Law of Thermodynamics}{}{
+		\Delta U = WD_\text{on} + \Delta Q
+	}
+
+	\scidef{Internal Energy \(U\)}{The Internal Energy \(U\) of a system is the total energy of a system, effectively the summation of microscopic kinetic energies of all molecules in the gas.}
+
+	\scieqn{Internal Energy \(U\)}{At a certain \(P\) and \(V\), the internal energy of a system is given by the equation}{U = \frac{3}{2} P V}
+
+	\scidef{Work Done \(WD\)}{The Work Done \(WD\) of a system is the sum of energy used to compress or expand a system done by an external force.}
+
+	\scieqn[aligned]{Work Done \(WD\)}{}{
+		WD & = - \int P dV \\
+		&= - P \Delta V \quad \text{(at a constant \(P\))}
+	}
+
+	The sign convention used by the A-levels is where the a positive \(WD\) indicates compression while a negative \(WD\) indicates expansion.
+
+	\scidef{Heat Exchange \(Q\)}{The Heat Exchange \(Q\) of a thermodynamic change is the amount of heat provided to a system.}
+
+	\subsection{\(P-V\) Graphs}
+
+	\scidef{Thermodynamic Process}{A Thermodynamic Process is a process which involves some change in the Pressure, Volume and Temperature quantities of a system. Processes are represented by arrows on a \(P-V\) graph.}
+
+	\scidef{Cyclic Process}{A Cyclic Process is a set of thermodynamic changes which start and end at the same point on a \(P-V\) graph. This implies that across one cycle, the total change in internal energy is \(0\) and the net area under the cycle is numerically equal to \(\Delta Q\) and \(-WD\).}
+
+	\subsection{Thermodynamic Processes}
+
+	\scidef{Isobaric Process}{An Isobaric Process is one where the pressure of a system remains constant. These processes are characterized by horizontal lines on a \(P-V\) graph.}
+
+	\scieqn[gathered]{Isobaric Process}{}{\Delta P = 0 \\ WD = P \Delta V}
+
+	\scidef{Isothermal Process}{An Isothermal Process is one where the temperature of a system remains constant. These processes are characterized by inverse (\(\frac{1}{x}\)) lines on a \(P-V\) graph.}
+
+	\scieqn[gathered]{Isothermal Process}{}{\Delta T = 0 \\ \Delta PV = 0 \\ \Delta U = 0 \\ WD = - \Delta Q}
+
+	\scidef{Isovolumetric / Isochoric Process}{An Isovolumetric / Isochoric Process is one where the volume of a system remains constant. These processes are characterized by vertical lines on a \(P-V\) graph.}
+
+	\scieqn[gathered]{Isovolumetric / Isochoric Process}{}{\Delta V = 0 \\ WD = 0 \\ \Delta U = \Delta Q}
+
+	\scidef{Adiabatic Process}{An Adiabatic Process is one where no heat is exchanged with the external system. These processes are characterized by lines which traverse isotherms on a \(P-V\) graph.}
+
+	\scieqn[gathered]{Adiabatic Process}{}{\Delta Q = 0 \\ \Delta U = WD}
+
+\end{document}

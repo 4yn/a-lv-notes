@@ -1,0 +1,78 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Current of Electricity}
+
+	\subsection{Current}
+
+	\scidef{Current \(I\)}{Current \(I\) is the rate of flow of charge, measured in \si{\ampere}.}
+
+	\scidef{Coulomb \si{\coulomb})}{The Coulomb \si{\coulomb} is the number of electrons passing through a point in \SI{1}{\s} with a current of \SI{1}{\ampere}.}
+
+	\subsubsection{Derivation of Current}
+
+	\scieqn[aligned]{Current by Considering Charge Carriers}{For a conducting medium with \(n\) charge carriers per unit volume, each of charge \(q\), their drift velocity \(v\) and the medium's cross sectional area \(A\), the current \(I\) is given by the equation}{
+		I & = \frac{\text{Charge passing}}{\Delta t} \\
+		& = \frac{\text{Volume} \times n q}{\Delta t} \\
+		& = \frac{(A v \Delta t) n q}{\Delta t} \\
+		& = nAvq
+	}
+
+	\subsection{Potential Difference and EMF}
+
+	\scidef{Potential Difference \(V\)}{The Potential Difference between two points in a circuit is the electrical energy converted to other forms of energy per unit charge as they pass between these points, measured in \si{\volt}.}
+
+	\scieqn{Potential Difference \(V\)}{For a circuit with work done \(W\) and current \(I\), the potential difference \(V\) is given by the equation}{V = \frac{W}{I}}
+
+	\scidef{Volt}{One Volt is the potential difference between two points where a charge of \SI{1}{\coulomb} will convert \SI{1}{\joule} of electrical energy to other forms.}
+
+	\scidef{Electromotive Force \(\epsilon\)}{The Electromotive Force \(\epsilon\) is the amount of other forms of energy converted into electrical energy per unit charge when driving a charge throughout the circuit.}
+
+	\subsection{Resistance}
+
+	\scidef{Ohm's Law}{Ohm's Law states that the potential difference across a circuit component is proportional to the current passing through it, with proportionality constant \(R\).}
+
+	\scieqn{Ohm's Law}{For a circuit component with resistance \(R\) and current passing through \(I\), the potential difference \(V\) over the component is given by the equation}{V = RI}
+
+	\scidef{Resistance \(R\)}{Resistance \(R\) is the ratio of potential difference to current passing through a circuit component.}
+
+	\scidef{Ohm \(\Omega\)}{One ohm is the resistance of a conductor when \SI{1}{\volt} of potential difference induces a current of \SI{1}{\ampere} across it.}
+
+	\scidef{Resistivity \(\rho\)}{The Resistivity \(\rho\) of a material is the constant of proportionality between the resistance of a component and the ratio of its cross-sectional area to its length.}
+
+	\scieqn{Resistivity \(\rho\)}{For a material of resistivity \(\rho\), length \(l\) and area \(A\), its resistance is given by the equation}{R = \frac{\rho l}{A}}
+
+	% derivation of resistivity
+
+	\subsection{Power}
+
+	\scidef{Power \(P\)}{The Power dissipated by a circuit component is the rate of which energy is dispersed by it.}
+
+	\scieqn{Power \(P\)}{For a component with resistance \(R\), current passing through \(I\) and potential difference across it \(V\), the power dissipated by it is given by the equation}{P = IV = I^2R = \frac{V^2}{I}}
+
+	\scidef{Internal Resistance}{A non-ideal power source has an Internal Resistance in series with its induced electromotive force.}
+
+	\scidef{Efficiency \(\eta\)}{The Efficiency of an electric system is the ratio of useful power dissipated to total power dissipated in a circuit in percent.}
+
+	\scieqn[aligned]{Efficiency \(\eta\)}{}{
+		\eta & = 100\% \times \frac{P_\text{useful}}{P_\text{total}} \\
+			& = 100\% \times \frac{V_\text{load}}{V_\text{total}} \\
+			& = 100\% \times \frac{R}{R+r}
+	}
+
+	\scidef{Maximum Power Theorem}{For a power source with internal resistance \(r\) and external load \(R\), the largest power is dissipated through the external load when \(r = R\).}
+
+	\subsection{Types of Conductors}
+
+	\scidef{Ohmic Conductor}{An Ohmic conductor is a conductor which has a constant resistance regardless of other physical conditions.}
+
+	\scidef{Metal Conductor / Filament Bulb}{A Metal Conductor or Filament Bulb is a conductor whose resistance increases as temperature increases.}
+
+	At higher temperatures, the cations in a metal vibrate faster and are hence more likely to collide with current-carrying electrons. This results in a net effect where more collisions occur and the electrons passing through face more resistance, hence the resistance increases.
+
+	\scidef{Semiconductor}{A Semiconductor is a conductor whose resistance decreases as temperature increases.}
+
+	At higher temperatures, more charge carriers in a semiconductor are able to disassociate and carry a current, hence its resistance decreases.
+
+\end{document}
