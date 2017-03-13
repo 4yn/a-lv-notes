@@ -18,17 +18,17 @@
 
 	\subsection{Formation of Halogenoalkanes}
 
-	\subsubsection{From Alkanes}
+	\noindent \textbf{Alkanes to Halogenoalkanes}
 
-	Mono and polyhalogenated products can be formed from alkanes. Refer to `Free Radical Substitution' in Alkanes.
+	Mono and polyhalogenated products can be formed from alkanes. Refer to `Free Radical Substitution' in Alkanes. \\
 
-	\subsubsection{From Alkenes}
+	\noindent \textbf{Alkenes to Halogenoalkanes}
 
-	Mono and dihalogenated products can be formed from alkenes. Refer to `Electrophilic Substitution' in Alkenes.
+	Mono and dihalogenated products can be formed from alkenes. Refer to `Electrophilic Substitution' in Alkenes. \\
 
-	\subsubsection{From Alcohols}
+	\noindent \textbf{Alcohols to Halogenoalkanes}
 
-	Refer to `Nucleophilic Substitution' in Hydroxy Compounds.
+	Refer to `Nucleophilic Substitution' in Hydroxy Compounds. \\
 
 	\subsection{Reaction of Halogenoalkanes}
 
@@ -66,7 +66,7 @@
 
 	\scidef{\usub{S}{N}1}{The \usub{S}{N}1 mechanism of nucleophilic substitution involves molecules in its slow step.}
 
-	\usub{S}{N}1 reactions involve the spontaneous ejection of the \ch{X} group in its slow step to form a carbocation which will then react with a nucleophile. The later addition of the nucleophile will happen at equal probabilities at either side of the trigonal planar \ch{C+}, hence any enantiomeric products about \ch{C} will be racemic. \\
+	\usub{S}{N}1 reactions involve the spontaneous ejection of the \ch{X} group in its slow step to form a carbocation which will then react with a nucleophile. The later addition of the nucleophile will happen at equal probabilities at either side of the planar \ch{C+}, hence any enantiomeric products about \ch{C} will be racemic. \\
 
 	\chfg{
 		\chemfig*[][scale=0.8]{C(-[@{a1}:0]@{a2}Br)(-[:115]H)(<:[:205]H3C)(<[:250,,,1]CH2CH3)} \arrow{->[slow]} \chemfig*[][scale=0.8]{\ch{C+}(-[:90]H)(<:[:250]H3C)(<[:290,,,1]CH2CH3)} \arrow{0}[,0] \+ \ch{Br-}
@@ -91,23 +91,25 @@
 		\end{tikzpicture}
 	\end{flushright}
 
-	Draw stereochemistry of a reaction if the original molecule displays enantiomerism about the \ch{C} bonded to \ch{X}. Also indicate by annotating `Retention of Configuration' and `Inversion of Configuration' below the resultant molecules.
+	Draw stereochemistry of a reaction if the original molecule displays enantiomerism about the \ch{C} bonded to \ch{X}. Also indicate by annotating `Retention of Configuration' and `Inversion of Configuration' below the resultant molecules. \\
 
-	The mechanism at which a \usub{S}{N} reaction occurs depends primarily on the degree of substitution of the \ch{C} bonded to \ch{X}. \ch{C} with more alkyl groups bonded to it will generally follow the \usub{S}{N}{1} mechanism because it will form a more stable \ch{C+} whereas \ch{C} with less alkyl groups bonded to it will follow the \usub{S}{N}2 mechanism due to the free space around \ch{C} leaving it susceptible to backside attack. \\
+	The mechanism at which a \usub{S}{N} reaction occurs depends primarily on the bonding of the \ch{C} bonded to \ch{X}. \ch{C} with more alkyl groups bonded to it will generally follow the \usub{S}{N}{1} mechanism because it will form a more stable \ch{C+} whereas \ch{C} with less alkyl groups bonded to it will follow the \usub{S}{N}2 mechanism due to the free space around \ch{C} leaving it susceptible to backside attack. When explaining why a reaction follows one mechanism, explain why one is favored and why the other is less likely. \\
 
 	\noindent \textbf{Formation of Alcohol}
 
 	Reagents: \ch{NaOH} \\
 	Conditions: Aqueous, heat \\
 
-	A polyhalogenoalkane may react to form alcohol groups, which may then alter the reaction environment to give an Alcoholic medium which can then lead to elimination of \ch{HX}. Refer to Elimination Reactions. \\
+	A polyhalogenoalkane may react to form multiple alcohol groups on the same carbon (also known as gem-diols), which may then decompose into ketone and carboxylic acid groups. \\
 
 	\noindent \textbf{Formation of Amines}
 
-	Reagents: Concentrated \ch{NH3} in excess \\
+	Reagents: Excess concentrated \ch{NH3} \\
 	Conditions: Alcoholic, heat, sealed tube \\
 
-	If \ch{NH3} is not in excess, a primary amine can act as a nucleophile in later reactions and form a chain reaction to eventually form secondary and tertiary amines and finally a quaternary ammonium salt. \\
+	If \ch{NH3} is not in excess, a primary amine can act as a nucleophile in later reactions and form a chain reaction to eventually form secondary and tertiary amines and finally a quaternary ammonium salt because more-substituted amine compounds are stronger nucleophiles than their primary counterparts. \\
+
+	Indicate all reactions (including proton transfer) when describing the mechanism. \\
 
 	\noindent \textbf{Formation of Nitriles}
 
@@ -123,12 +125,21 @@
 
 	\subsubsection{Elimination}
 
-	Though the benzene ring itself is unreactive, any alkyl chains bonded to a benzene ring can undergo oxidation, replacing the alkyl group with a \ch{COOH} group. However, the reaction requires that the benzyllic carbon has at least 1 \ch{H} or 1 \ch{O} atom bonded to it, otherwise a case such as a tert-butyl benzene will not be oxidised due to steric effect of \ch{CH3} groups attached to the benzyllic \ch{C}. \\
+	Though the benzene ring itself is unreactive, any alkyl chains bonded to a benzene ring can undergo oxidation, replacing the alkyl group with a \ch{COOH} group. However, the reaction requires that the benzyllic carbon has at least 1 \ch{H} or 1 \ch{O} atom bonded to it, otherwise a case such as a tert-butyl benzene will not be oxidised due to steric effect of \ch{CH3} groups attached to the benzylic \ch{C}. \\
 
 	\noindent \textbf{Dehydrohalogenation}
 
 	Reagents: \ch{NaOH} \\
 	Conditions: Alcoholic, heat \\
+
+	\chfg{
+		\chemfig{-[:-30](-[@{a1}:270]@{a2}Br)-[@{a3}:30](-[@{a4}:90]@{a5}H)-[:-30]} \+ \chemfig{@{a6}\lewis{2:,O}\ch{H-}}
+		\arrow 
+		\chemfig{-[:-30]=[:30]-[:-30]} + \ch{H2O} \+ \ch{Br-}
+		\chemmove[shorten <=2pt,shorten >=2pt]{ \draw (a1)..controls +(180:5mm) and +(180:5mm) ..(a2); }
+		\chemmove[shorten <=2pt,shorten >=2pt]{ \draw (a4)..controls +(180:5mm) and +(120:5mm) ..(a3); }
+		\chemmove[shorten <=2pt,shorten >=2pt]{ \draw (a6)..controls +(90:5mm) and +(0:5mm) ..(a5); }
+	}
 
 	Dehydrohalogenation can only occur if there is a \ch{H} in some \ch{C} adjacent to the \ch{C-X} group. \\
 
@@ -144,18 +155,18 @@
 
 	Halogenoarenes can also undergo electrophilic substitution, much like other arenes. However, \ch{X} are electron-withdrawing and electronegative, hence they are deactivating groups and the reactivity of the arene decreases as more \ch{X} groups are added. \ch{X} is a 2,4-directing group.
 
-	\subsection{Distinguishing Test}
+	\subsection{Distinguishing Tests}
 
 	\subsubsection{`4-step Test'}
 
 	\begin{enumerate}
-		\item Heat with \ch{NaOH (aq)}
-		\item Cool
-		\item Acidify with \ch{HNO3}
-		\item Add \ch{AgNO3}
+		\item Heat with \ch{NaOH (aq)} (liberate \ch{-X} group)
+		\item Cool (prevent decomposition of \ch{AgNO3})
+		\item Acidify with \ch{HNO3} (remove OH)
+		\item Add \ch{AgNO3} (form ppt)
 	\end{enumerate}
 
-	Positive tests will form a \ch{AgX} precipitate. The identity of \ch{X} can be determined according to the color of the precipitate.
+	Positive tests will form a \ch{AgX} precipitate. The identity of \ch{X} can be determined according to the color of the precipitate. \\
 
 	\subsubsection{Ethanolic \ch{AgNO3}}
 
@@ -163,7 +174,7 @@
 		\item Heat with ethanolic \ch{AgNO3}
 	\end{enumerate}
 
-	Ethanol acts as a nucleophile.
+	Ethanol acts as a nucleophile which will displace the halide group, which then causes the precipitation of \ch{AgX}.
 
 	\subsection{Applications of Halogenoalkanes}
 

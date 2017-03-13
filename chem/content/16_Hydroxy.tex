@@ -6,7 +6,7 @@
 
 	\subsection{Structure of Hydroxy Compounds}
 
-	Hydroxy compounds, also known as alcohols, are organic molecules with a \ch{-OH} group.
+	Hydroxy compounds, also known as alcohols, are organic molecules with a \ch{-OH} group. \\
 
 	\subsection{Physical Properties of Hydroxy Compounds}
 
@@ -14,72 +14,170 @@
 
 	\subsection{Formation of Hydroxy Compounds}
 
-	\subsection{Reaction of Arenes}
+	\noindent \textbf{Oxidation of Alkenes}
 
-	Arenes are typically reactive due to the presence of its electron-dense \ch{\(\pi\) e-} cloud. However, benzene rings tend to preserve their aromaticity even after reactions due to its unique stability. Arenes will typically undergo electrophillic substitution reactions. \\
+	Refer to `Electrophilic Addition' in Alkenes. \\
 
-	Side chains of benzene rings are typically more reactive than their counterparts without benzene rings as the \ch{\(\pi\) e-} cloud of the benzene ring can disassociate across \ch{C} atoms in the side chain, making them more reactive. Otherwise, side chains can undergo any reactions as if they lacked its benzene ring substituent.
+	\noindent \textbf{Reduction of Carboxylic Acid / Aldehyde / Ketone}
+
+	Reagents: \ch{LiAlH4}\\
+	Conditions: Heat \\
+
+	\ch{LiAlH4} is a source of \ch{H-} and is able to reduce carboxylic acids, aldehydes and ketones. 
+
+	Reagents: \ch{NaBH4} OR \ch{H2}, Ni \\
+	Conditions: Heat \\
+
+	\ch{NaBH4} is a source of \ch{H-} and is able to reduce aldehydes and ketones. 
+
+	\subsection{Reaction of Hydroxy Compounds}
 
 	\subsubsection{Reduction}
 
-	Reagents: \ch{H2}\\
-	Conditions: \ch{Ni} + High T + High P 
+	Alcohols are able to donate \ch{H+} in organic solutions and can hence act as weak acids, therefore reducing metals like \ch{Na}. However, in aqueous solution \ch{H2O} acts as a stronger acid and hence alcohols do not act as an acid. Across different alkyl chains, the more substituted chain is the weaker acid because the electron-donating \ch{C} will destabilize \ch{O-}. \\
 
-	\subsubsection{Electrophillic Substitution}
+	Reagents: \ch{Na} \\
 
-	\noindent \textbf{Nitration}
+	\ch{R-OH + Na -> R-O- Na+ + 1/2 H2}
 
-	Reagents: Concentrated \ch{HNO3} \\
-	Conditions: Concentrated \ch{H2SO4}, \SI{55}{\celsius} in benzene, \SI{30}{\celsius} in methylbenzene \\
+	\subsubsection{Nucleophilic Substitution}
 
-	Generation of Electrophile: \ch{HNO3 + H2SO4 <=> H2NO3+ + HSO4-} 
+	In the presence of other nucleophiles, an \ch{R-OH} is a suitable leaving group and can make way for nucleophiles such as \ch{X}. \\
+
+	After being treated with \ch{Na} in anhydrous conditions, an alkoxide \ch{R-O-} is obtained which can then act as a nucleophile, allowing it to take place in reactions such as ether synthesis and acylation. \\
+
+	\noindent \textbf{Halogenation}
+
+	Reagents: \ch{HCl (aq)} OR \ch{Br2}, \ch{H2SO4} OR \ch{I2}, {H3PO4} \\
+	Conditions:  Heat \\
+
+	Reagents: \ch{PCl3} OR \ch{PBr3} OR red \ch{P}, \ch{I2} \\
+	Conditions:  Anhydrous, heat \\
+
+	Reagents: \ch{PCl5} \\
+	Conditions:  Heat \\
+
+	Reagents: \ch{SOCl2} \\
+	Conditions:  Room temperature \\
+
+	\noindent \textbf{Ether Synthesis}
+
+	Reagents: \ch{R-Cl} \\
+	Conditions:  Heat \\
+
+	\noindent \textbf{Ester Synthesis}
+
+	Reagents: \ch{RCOOH} \\
+	Conditions:  Concentrated \ch{H2SO4}, \SI{60}{\celsius} \\
+
+	Reagents: \ch{RCOCl} \\
+	Conditions:  Room temperature \\
+
+	\subsubsection{Oxidation}
+
+	\noindent \textbf{Oxidation of Primary Alcohol to Aldehyde}
+
+	Reagents: \ch{K2Cr2O7} \\
+	Conditions: With dilute \ch{H2SO4}, heat, immediate distillation \\
+
+	\noindent \textbf{Oxidation of Primary Alcohol to Carboxylic Acid and Secondary Alcohol to Ketone}
+
+	Reagents: \ch{K2Cr2O7} OR \ch{KMnO4} \\
+	Conditions: Dilute \ch{H2SO4}, heat \\
+
+	\subsubsection{Iodoform Formation}
+
+	Reagents: \ch{Na}, \ch{I2} \\
 
 	\chfg{
-		\chemfig{!\upbenz(-[:90]H)(-[@{a1}:270,,,,draw=none])} \arrow{0}[,0] \+ \chemfig{@{a2}\ch{NO3+}} \arrow \chemfig{**[120,420]6(----@{a3}([:60]-H)([:120]-\ch{NO3})(-[:270,,,,draw=none]+)--)}
-		\chemmove[shorten <=4pt,shorten >=2pt]{\draw (a1)..controls +(90:5mm) and +(135:10mm) ..(a2); }
-	}
-
+		\chemfig{R-C(-[:270]H)(-[:90]CH3)-OH} \+ \ch{Na} \arrow \chemfig{R-C(-[:90]CH3)=O} \+ \ch{HI}
+	} \\
 	\chfg{
-		\chemfig{**[120,420]6(----(-[@{a1}:60]@{a2}H)([:120]-\ch{NO3})(-[@{a3}:270,,,,draw=none]+)--)} \arrow{0}[,0] \+ \chemfig{@{a4}\lewis{3:,\ch{O-}}-S(=[:90]O)(=[:270]O)-OH} \arrow \chemfig{!\upbenz(-[:90]\ch{NO3})} \arrow{0}[,0] \+ \ch{H2SO4}
-		\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a1)..controls +(330:4mm) and +(30:4mm) ..(a3); }
-		\chemmove[shorten <=6pt,shorten >=2pt]{\draw (a4)..controls +(135:5mm) and +(300:5mm) ..(a2); }
-	}
+		\chemfig{R-C(-[:90]CH3)=O} \+ \ch{3I2} \arrow \chemfig{R-C(-[:90]CI3)=O} \+ \ch{3HI}
+	} \\
+	\chfg{
+		\chemfig{R-C(-[:90]CI3)=O} \+ \ch{OH-} \arrow \chemfig{R-C(-[:90]\ch{O-})=O} \+ \ch{CHI3}
+	} \\
+
+	The Iodoform reaction requires the presence of a \ch{CH3} and \ch{H} group next to \ch{COH} in the alcohol reactant. \\
+
+	The Iodoform reaction results in the formation of a \ch{COO-} compound and also the precipitation of \ch{CHI3}. \\
+
+	\subsection{Structure of Phenols}
+
+	A Phenol group is a benzene ring with an \ch{OH} group bonded to a carbon in the ring. \\
+
+	The \ch{Ph-OH} group is electron donating and hence an activating group, making them very reactive. Phenols are 2,4-directing. \\
+
+	Due to the presence of the \(\pi\) \ch{e-} cloud in the benzene ring, \ch{Ph-OH} can deprotonate to \ch{Ph-O-} and the negative charge on \ch{O-} can be dispersed across the ring, hence phenols can act as acids. The acidity of a phenol is strengthened by attaching electron-withdrawing groups on the benzene ring (such as \ch{NO2}) or can be weakened by attaching electron-donating groups on the benzene ring (such as \ch{CH3}).
+
+	\subsection{Physical Properties of Phenols}
+
+	Pure phenols are colorless crystalline solids at room temperature. Phenols melts at \SI{42}{\celsius} and boil at \SI{217}{\celsius} due to their ability to form hydrogen bonds between molecules. However, the extent of these hydrogen bonds can be diminished if the species of phenol is able to exhibit intramolecular \ch{H} bonds which then reduces the strength of intermolecular bonds.
+
+	Phenol compounds are sparsely soluble in water due to the presence of a hydrophobic benzene ring, but are soluble in \ch{NaOH} solution. \\
+
+	\subsection{Reactions of Phenols}
+
+	\subsubsection{Reduction}
+
+	Reagents: \ch{Na} \\
+
+	\ch{Ph-OH + Na -> Ph-O- Na+ + 1/2 H2}
+
+	\subsubsection{Acid-base}
+
+	Reagents: \ch{NaOH} \\
+
+	\ch{Ph-OH + Na -> R-O- Na+ + H2O}
+
+	\subsubsection{Electrophilic Substitution}
+
+	Due to the presence of the electron-donating \ch{OH} group, the electron density in a phenol ring is increased, leaving it more reactive to electrophilic substitution reactions. Compared to reactions of arenes, reactions of phenols typically do not require heating or the presence of a catalyst.
 
 	\noindent \textbf{Halogenation}
 
 	Reagents: \ch{X2} (\ch{X} \(\in\) \ch{Cl,Br,I}) \\
-	Conditions: \ch{?} \\
+	Conditions:  Aqueous, room temperature\\
 
-	Electrophile is generated by homolytic fission of \ch{X-X} bond due to \ch{e-} concentration in benzene ring. \\
+	Halogenation of phenols in a aqueous substrate forms a polysubstituted product. A tribromophenol is an insoluble white precipitate. \\
 
-	\noindent \textbf{Friedel-Craft Alkylation}
+	Reagents: \ch{X2} (\ch{X} \(\in\) \ch{Cl,Br,I}) \\
+	Conditions: \ch{CCl4}, room temperature\\
 
-	Reagents: \ch{R-Cl} \\
-	Conditions: \ch{AlCl3} \\
+	Halogenation of phenols in a aqueous substrate forms a monosubstituted product. \\
 
-	Generation of Electrophile: \ch{R-Cl + AlCl3 -> R+ + AlCl4-} \\
+	\noindent \textbf{Nitration}
 
-	\noindent \textbf{Friedel-Craft Acylation}
+	Reagents: Concentrated \ch{HNO3} \\
+	Conditions: Room temperature\\
 
-	Reagents: \ch{R-COCl} \\
-	Conditions: \ch{AlCl3} \\
+	Nitration of phenols in a concentrated solution forms a polysubstituted product. \\
 
-	Generation of Electrophile: \ch{R-COCl + AlCl3 -> RCO+ + AlCl4-} \\
+	Reagents: Dilute \ch{HNO3} \\
+	Conditions: Room temperature\\
 
-	\subsubsection{Oxidation}
+	Nitration of phenols in a dilute solution forms a monosubstituted product. \\
 
-	Though the benzene ring itself is unreactive, any alkyl chains bonded to a benzene ring can undergo oxidation, replacing the alkyl group with a \ch{COOH} group. However, the reaction requires that the benzyllic carbon has at least 1 \ch{H} or 1 \ch{O} atom bonded to it, otherwise a case such as a tert-butyl benzene will not be oxidised due to steric effect of \ch{CH3} groups attached to the benzyllic \ch{C}.
+	\subsubsection{Acylation}
 
-	Reagents: \ch{KMnO4} \\
-	Conditions: Warm \\
+	Reagents: \ch{R-OCl} \\
+	Conditions: \ch{Na}, room temperature \\
 
-	\subsection{Activating and Deactivating Groups}
+	\ch{Na} is added to form a carboxylate salt which can then readily react with acyl halides to form an ester. \ch{Ph-OH} is not strong enough to undergo esterification from carboxylic acids. \\
 
-	Functional groups bonded to a benzene ring will distort the electron cloud of the benzene ring through two mechanisms. 
-	Groups bonded to benzene rings can donate or withdraw electrons by `Resonance Effect' which arises when there is lone pairs (increasing reactivity) or \(\pi\) bonds (decreasing reactivity) at functional groups adjacent to the benzene. Groups can also affect reactivity through `Inductive Effect' which arises due to electronegativity of attached groups and may supply or withdraw \ch{e-} to the aromatic \(\pi\) \ch{e-} cloud. \\
+	\subsubsection{Complexation}
 
-	The functional groups presently on a benzene ring can determine the locations of where further electrophillic substitution reactions attach their functional groups onto. `Meta'-directing groups prefer addition to the third carbon in the benzene ring whereas `Ortho/Para'-directing groups prefer addition to the second or fourth carbon in the benzene ring. \\
+	Reagents: \ch{Fe3+ (aq)} \\
 
-	When there is more than one group on a benzene ring, follow the locations as determined by the strongest activating group on the benzene.
+	\chfg{
+		\ch{Fe^{3+}} \+ \chemfig{!\rightbenz([:0]-OH)} \arrow
+	} \\
+	\chfg{
+		\chembelow{\chemleft[ \subscheme{ \ch{Fe} \arrow{0}[,0] \chemleft( \chemfig{!\rightbenz([:0]-O)} \chemright{)_6} } \chemright{]^{3-}}}{violet~coloration} \+ \ch{H+}
+	} \\
+
+	Phenols form complexes with \ch{Fe3+} and obtain a violet color. Phenols with different groups attached to them may have varying colors.
+
 	
 \end{document}
