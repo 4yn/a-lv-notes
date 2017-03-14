@@ -4,35 +4,44 @@
 
 \section{Thermodynamics}
 
+	\subsection{Temperature and Heat}
+
 	\scidef{Internal Kinetic Energy}{Internal Kinetic Energy \usub{E}{K} is the amount of energy stored in an object's molecule's translational and rotational energy.}
 
 	\scidef{Temperature}{Temperature is a quantization of the internal kinetic energy of an object.}
-
-	\scieqn{Thermodynamic Temperature}{For an object with temperature \(T_C\) in \si{\celsius}, its thermodynamic temperature \(T_K\)in \si{\kelvin} is given by the equation:}{T_K = T_C + 273.15}
-
-	\scidef{Kelvin}{The Kelvin \si{\K} is a measurement of temperature. \SI{1}{\K} is \(\frac{1}{273.16}\) of the temperature difference between absolute zero and the triple point of water (\SI{0.01}{\celsius}).}
 
 	\scidef{Heat}{Heat is the flow of internal kinetic energy due to the difference in temperature between them.}
 
 	\scidef{Thermal Equilibrium}{Objects that are in Thermal Equilibrium have no net flow of heat, and occurs if and only if these objects have the same temperature.}
 
-	\subsection{Laws of Thermodynamics}
+	\scidef{\usup{0}{th} Law of Thermodynamics}{The \usup{0}{th} Law of Thermodynamics states that if objects A and B are in thermal equilibrium and B and C are in thermal equilibrium, then objects A and C are in thermal equilibrium.}
 
-	\scidef{\usup{0}{th} Law of Thermodynamics}{If an A and B are in thermal equilibrium and B and C are in thermal equilibrium, A and C are in thermal equilibrium.}
+	\subsection{Temperature Scale}
 
-	\scidef{\usup{1}{st} Law of Thermodynamics}{The 1 \usup{1}{st} Law of Thermodynamics states that the total energy in a closed system, including internal kinetic energy, is constant.}
+	\scieqn{Thermodynamic Temperature}{For an object with temperature \(T_C\) in \si{\celsius}, its thermodynamic temperature \(T_K\)in \si{\kelvin} is given by the equation:}{T_K = T_C + 273.15}
 
-	\scidef{\usup{2}{nd} Law of Thermodynamics}{The \usup{2}{nd} Law of Thermodynamics states that the entropy of a closed system increases.}
-
-	\scidef{\usup{3}{rd} Law of Thermodynamics}{The \usup{3}{rd} Law of Thermodynamics states that no object can achieve \SI{0}{\kelvin}.}
+	\scidef{Kelvin}{The Kelvin \si{\K} is a measurement of temperature. \SI{1}{\K} is \(\frac{1}{273.16}\) of the thermodynamic temperature of the triple point of water (\SI{0.01}{\celsius}).}
 
 	\subsection{Ideal Gas Law}
 
-	\scidef{Ideal Gas}{An Ideal Gas satisifes the relationship of \(pV = nRT\).}
+	Three equations which relate various quantities of a gas, namely Boyles Law \( p \propto \frac{1}{V} \), Charles' Law \( V \propto T \) and The Pressure Law \( p \propto T \), an equation relating these three values and the amount of gas is derived.
 
 	\scieqn{Ideal Gas Law}{For an ideal gas with pressure \(p\), volume \(V\), amount of gas in \si{\mol} \(n\) and thermodynamic temperature \(T\)}{pV = nRT}
 
+	\scidef{Ideal Gas}{An Ideal Gas satisifes the relationship of \(pV = nRT\).}
+
+	An Ideal Gas is assumed to have the following properties for ease of calculations:
+
+	\begin{enumerate}
+		\item Negligible intermolecular forces
+		\item Hard and identical particles with elastic collisions
+		\item Particles have negligible volume
+		\item Molecules move randomly
+	\end{enumerate}
+
 	\subsection{Internal Kinetic Energy of a Gas}
+
+	\scidef{Internal Energy}{The Internal Energy of a gas is the sum of its microscopic kinetic energies (translational, rotational and vibrational) and potential energies of the system.}
 
 	\scieqn{Internal Kinetic Energy}{The average Internal Kinetic Energy \(\left< E_K \right>\) of a gas molecule with mass \(m\) and mean square speed \(c\) or thermodynamic temperature \(T\) using the Boltzmann constant \(k\) is given by the equation: }{ \left< E_K \right> = \frac{1}{3}m \left< c^2 \right> = \frac{3}{2}kT}
 
@@ -54,5 +63,11 @@
 			\left<E_K\right> = \frac{1}{2} m\left<c^2\right> = \frac{3}{2} kT
 		\end{gathered} \end{equation*}
 	\end{enumerate}
+
+	\scieqn{Energy of Gaseous System}{}{ E_\text{system} = \frac{3}{2} NkT = \frac{3}{2} nRT = \frac{3}{2} pV}
+
+	\scieqn{Energy of 1 Gas Particle}{}{ \left<E_K\right> = \frac{3}{2} kT = \frac{1}{2} m\left<c^2\right> = E_\text{system} N^{-1}}
+
+	Note that these equations only hold for a monatomic particle with no rotational or vibrational energy.
 
 \end{document}

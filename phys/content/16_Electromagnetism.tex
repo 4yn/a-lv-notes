@@ -4,6 +4,65 @@
 
 \section{Electromagnetism}
 
-	\scidef{}
+	\subsection{Magnetic Fields}
+
+	\scidef{Magnetic Field}{A Magnetic Field is a region in which a magnetic pole experiences a force.}
+
+	Magnetic fields are induced by permanent magnets as a result of atomic dipoles and electric currents on a quantum scale whereas a current of electricity can also induce magnetic fields from an electromagnet. The direction of magnetic field is determined by the orientation of dipoles in a permanent magnet and the direction of current in a electromagnet.
+
+	Magnetic fields lines in a diagram are drawn from North to South and indicate the direction of force on a test north pole. As with electric fields, like field lines repel and unlike field lines attract\\
+
+	\scidef{Magnetic Flux Density}{The Magnetic Flux Density of a magnetic field quantities force per unit length of a long straight conductor carrying current at right angles to the magnetic field, measured in Tesla \si{\tesla} or \si{\N\per\ampere\per\meter}.}
+
+	\scieqn{Biot-Savart Law (not in syllabus)}{The general law for calculation of magnetic field density \(B\) for a wire with path \(L\) and current \(I\) at a point \(r\) is given by the equation}{ B = \frac{\mu_0}{4\pi} \int \frac{I \overrightarrow{dL} \times \hat{r}}{r^2}}
+
+	The Magnetic Flux Density of a region describes the magnitude of a magnetic field. \\
+
+	\scidef{Tesla}{One Tesla of magnetic flux in a region acting perpendicular to a long straight wire carrying a current of \SI{1}{\ampere} will experience a force per unit length of \SI{1}{\N\per\m}.}
+
+	\subsubsection{Magnetic Field due to Long Wire}
+
+	\scidef{Right Hand Rule}{In relation to a curled up right hand with its thumb pointing away from the fingers, a current moving in the direction of the thumb induces a magnetic field in the circular direction of the fingers. Alternatively, a solenoid with its current moving in the circular direction inscribed by a curled hand's fingers will induce magnetic field lines indicated by the direction the thumb is pointing in.}
+
+	\scieqn{Magnetic Field due to Long Wire}{For a long wire distance \(r\) away from a point carrying current \(I\), its magnetic field strength \(B\) at said point is given by the equation}{B = \frac{\mu_0 I}{2\pi r}}
+
+	\subsubsection{Magnetic Field due to Ring}
+
+	\scieqn{Magnetic Field due to Ring}{For a conducting ring of radius \(r\) and number of turns of wire \(N\) carrying current \(I\), its magnetic field strength \(B\) at the center of the coil is given by the equation}{B = \frac{\mu_0 N I}{2r}}
+
+	\subsubsection{Magnetic Field due to Solenoid}
+
+	\scieqn{Magnetic Field due to Solenoid}{For a solenoid of turns per meter \(n\) carrying a current \(I\), its magnetic field strength \(B\) inside the coil is given by the equation}{B = \mu_0 n I}
+
+	\subsection{Magnetic Force}
+
+	\scidef{Fleming's Left Hand Rule}{For a left hand with its thumb and two forefingers pointing perpendicular to each other, orienting two out of the following three directions will give the direction of the last component: thumb pointing in direction of Force, forefinger in the direction of magnetic field and middle finger in the direction of current.}
+
+	Unlike magnetic field inducing currents which typically require some arrangement of an infinitely long wire or a current in a loop, magnetic force in a current carrying wire can be calculated for some finite length of wire. \\
+
+	Magnetic force is only dependent on current which is perpendicular to the direction of the magnetic field, hence a term of \(\sin \theta\) is present in most calculations to account for currents which may vary in angle to the external magnetic field.
+
+	\subsubsection{Magnetic Force on Current-carrying Conductor}
+
+	\scieqn{Magnetic Force on Current-carrying Conductor}{For a wire with length \(L\) carrying current \(I\) in a magnetic field \(B\) and with angle between current and magnetic field \(\theta\), the force experienced \(F\) is given by the equation}{ F = B I L \sin \theta}
+
+	Two wires with currents flowing in the same direction experience attractive forces whereas wires with currents flowing in the opposite direction experience repulsive forces. From observing these forces, the quantitative value of the SI ampere can be fixed.
+
+	\scidef{Ampere (not in syllabus)}{One Ampere of current is the current carried in two infinite current-carrying wires of negligible cross-section such that there is a force of \SI{2e-7}{\N\per\meter} between them.}
+
+	\subsubsection{Magnetic Force on Free Charge}
+
+	\scieqn[aligned]{Magnetic Force on Free Charge}{For a free charge \(q\) with velocity \(v\) in a magnetic field \(B\) and with angle between velocity and magnetic field \(\theta\), the force experienced \(F\) is given by the equation}{
+		F &= B I L \sin\theta \\
+		&= B \frac{q}{t} L \sin\theta \\
+		&= B q \frac{L}{t} \sin\theta \\
+		&= B q v \sin\theta 
+	}
+
+	A free charge moving in the presence of a magnetic field may experience force due to the magnetic field and the effective `current' which it creates. For a charge with some component of velocity perpendicular to magnetic field \(v_\perp\), it will experience some force perpendicular to its direction of motion and hence experience circular motion perpendicular to the magnetic field. If its velocity has a component parallel to magnetic field \(v_\parallel\) as well, it will exhibit helical motion / move in a helix. \\
+
+	\scidef{Specific Charge}{The specific charge of a charged particle is the ratio of its charge to its mass.}
+
+	\scieqn{Electric and Magnetic Force on Free Charge}{The total force \(F\) experienced by a charge \(q\) in an electric field \(E\) and magnetic field \(B\) while moving in velocity \(v\) is given by the equation}{ F = q ( \overrightarrow{E} + \overrightarrow{B} \times \overrightarrow{v} )}
 
 \end{document}
