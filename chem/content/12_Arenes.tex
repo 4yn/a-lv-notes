@@ -63,7 +63,7 @@
 	Reagents: Concentrated \ch{HNO3} \\
 	Conditions: Concentrated \ch{H2SO4}, \SI{55}{\celsius} in benzene, \SI{30}{\celsius} in methylbenzene \\
 
-	Generation of Electrophile: \ch{HNO3 + H2SO4 <=> H2NO3+ + HSO4-} 
+	Generation of Electrophile: \ch{HNO3 + H2SO4 <=> H2NO3+ + HSO4-}  \\
 
 	\chfg{
 		\chemfig{!\upbenz(-[:90]H)(-[@{a1}:270,,,,draw=none])} \arrow{0}[,0] \+ \chemfig{@{a2}\ch{NO3+}} \arrow \chemfig{**[120,420]6(----@{a3}([:60]-H)([:120]-\ch{NO3})(-[:270,,,,draw=none]+)--)}
@@ -71,9 +71,13 @@
 	}
 
 	\chfg{
-		\chemfig{**[120,420]6(----(-[@{a1}:60]@{a2}H)([:120]-\ch{NO3})(-[@{a3}:270,,,,draw=none]+)--)} \arrow{0}[,0] \+ \chemfig{@{a4}\lewis{3:,\ch{O-}}-S(=[:90]O)(=[:270]O)-OH} \arrow \chemfig{!\upbenz(-[:90]\ch{NO3})} \arrow{0}[,0] \+ \ch{H2SO4}
+		\chemfig{**[120,420]6(----(-[@{a1}:60]@{a2}H)([:120]-\ch{NO3})(-[@{a3}:270,,,,draw=none]+)--)} \arrow{0}[,0] \+ \chemfig{@{a4}\lewis{3:,\ch{O-}}-S(=[:90]O)(=[:270]O)-OH} 
 		\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a1)..controls +(330:4mm) and +(30:4mm) ..(a3); }
 		\chemmove[shorten <=6pt,shorten >=2pt]{\draw (a4)..controls +(135:5mm) and +(300:5mm) ..(a2); }
+	}
+
+	\chfg{
+		\arrow \chemfig{!\upbenz(-[:90]\ch{NO3})} \arrow{0}[,0] \+ \ch{H2SO4}
 	}
 
 	\noindent \textbf{Halogenation}
