@@ -18,32 +18,40 @@
 
 	Most benzene derivatives involve their functional group's prefix being added to `benzene'. Four unique names need to be memorized: benzaldehyde, phenol, phenylamine and benzoic acid.
 
-	\chfg{
-		\chemfig{!\upbenz([:90]-CHO)}
-		\chemfig{!\upbenz([:90]-OH)}
-		\chemfig{!\upbenz([:90]-NH3)}
-		\chemfig{!\upbenz([:90]-COOH)}
-	}
+	\begin{center}
+		\chfg{
+			\chemfig{!\upbenz([:90]-CHO)} \arrow{0}[,0.2]
+			\chemfig{!\upbenz([:90]-OH)} \arrow{0}[,0.2]
+			\chemfig{!\upbenz([:90]-NH3)} \arrow{0}[,0.2]
+			\chemfig{!\upbenz([:90]-COOH)}
+		}
+	\end{center}
 
 	A benzene ring that does not contain the functional group is a `phenyl' (abbreviated \ch{Ph}) group.
 
-	\chfg{
-		\chemfig{!\rightbenz([:0]-R([:90]-)-[:270])}
-	}
+	\begin{center}
+		\chfg{
+			\chemfig{!\rightbenz([:0]-R([:90]-)-[:270])}
+		}
+	\end{center}
 
 	\subsection{Methylbenzene}
 
 	\scidef{Methylbenzene}{Methylbenzene is the simplest alkylbenzene, characterized by a methyl group attached to a benzene ring. Due to the presence of these two groups, methylbenzene is able to undergo both reactions involving the benzene ring as well as an alkyl chain.}
 
-	\chfg{
-		\chemfig{!\rightbenz([:0]-CH3)}
-	}
+	\begin{center}
+		\chfg{
+			\chemfig{!\rightbenz([:0]-CH3)}
+		}
+	\end{center}
 
 	\scidef{Benzyl Group}{A \ch{C6H5CH2} group is a `benzyl' group.}
 
-	\chfg{
-		\chemfig{!\rightbenz([:0]-CH2-R([:90]-)-[:270])}
-	}
+	\begin{center}
+		\chfg{
+			\chemfig{!\rightbenz([:0]-CH2-R([:90]-)-[:270])}
+		}
+	\end{center}
 
 	\subsection{Reaction of Arenes}
 
@@ -66,18 +74,20 @@
 	Generation of Electrophile: \ch{HNO3 + H2SO4 <=> H2NO3+ + HSO4-}  \\
 
 	\chfg{
-		\chemfig{!\upbenz(-[:90]H)(-[@{a1}:270,,,,draw=none])} \arrow{0}[,0] \+ \chemfig{@{a2}\ch{NO3+}} \arrow \chemfig{**[120,420]6(----@{a3}([:60]-H)([:120]-\ch{NO3})(-[:270,,,,draw=none]+)--)}
-		\chemmove[shorten <=4pt,shorten >=2pt]{\draw (a1)..controls +(90:5mm) and +(135:10mm) ..(a2); }
-	}
-
-	\chfg{
-		\chemfig{**[120,420]6(----(-[@{a1}:60]@{a2}H)([:120]-\ch{NO3})(-[@{a3}:270,,,,draw=none]+)--)} \arrow{0}[,0] \+ \chemfig{@{a4}\lewis{3:,\ch{O-}}-S(=[:90]O)(=[:270]O)-OH} 
-		\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a1)..controls +(330:4mm) and +(30:4mm) ..(a3); }
-		\chemmove[shorten <=6pt,shorten >=2pt]{\draw (a4)..controls +(135:5mm) and +(300:5mm) ..(a2); }
-	}
-
-	\chfg{
-		\arrow \chemfig{!\upbenz(-[:90]\ch{NO3})} \arrow{0}[,0] \+ \ch{H2SO4}
+		\subscheme[-90]{
+			\subscheme{
+				\chemfig{!\upbenz(-[:90]H)(-[@{a1}:270,,,,draw=none])} \arrow{0}[,0] \+ \chemfig{@{a2}\ch{NO3+}} \arrow \chemfig{**[120,420]6(----@{a3}([:60]-H)([:120]-\ch{NO3})(-[:270,,,,draw=none]+)--)}
+				\chemmove[shorten <=4pt,shorten >=2pt]{\draw (a1)..controls +(90:5mm) and +(135:10mm) ..(a2); }
+			}
+			\arrow{0}[,0.2]
+			\subscheme{
+				\chemfig{**[120,420]6(----(-[@{a1}:60]@{a2}H)([:120]-\ch{NO3})(-[@{a3}:270,,,,draw=none]+)--)} \arrow{0}[,0] \+ \chemfig{@{a4}\lewis{3:,\ch{O-}}-S(=[:90]O)(=[:270]O)-OH} 
+				\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a1)..controls +(330:4mm) and +(30:4mm) ..(a3); }
+				\chemmove[shorten <=6pt,shorten >=2pt]{\draw (a4)..controls +(135:5mm) and +(300:5mm) ..(a2); }
+			}
+			\arrow{0}[,0.2]
+			\subscheme{ \arrow \chemfig{!\upbenz(-[:90]\ch{NO3})} \arrow{0}[,0] \+ \ch{H2SO4}}
+		}
 	}
 
 	\noindent \textbf{Halogenation}

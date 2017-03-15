@@ -90,13 +90,13 @@
 	Reagents: \ch{Na}, \ch{I2} \\
 
 	\chfg{
-		\chemfig{R-C(-[:270]H)(-[:90]CH3)-OH} \+ \ch{Na} \arrow \chemfig{R-C(-[:90]CH3)=O} \+ \ch{HI}
-	} \\
-	\chfg{
-		\chemfig{R-C(-[:90]CH3)=O} \+ \ch{3I2} \arrow \chemfig{R-C(-[:90]CI3)=O} \+ \ch{3HI}
-	} \\
-	\chfg{
-		\chemfig{R-C(-[:90]CI3)=O} \+ \ch{OH-} \arrow \chemfig{R-C(-[:90]\ch{O-})=O} \+ \ch{CHI3}
+		\subscheme[-90]{
+			\subscheme{\chemfig{R-C(-[:270]H)(-[:90]CH3)-OH} \+ \ch{Na} \arrow \chemfig{R-C(-[:90]CH3)=O} \+ \ch{HI}} 
+			\arrow{0}[,0.2]
+			\subscheme{\chemfig{R-C(-[:90]CH3)=O} \+ \ch{3 I2} \arrow \chemfig{R-C(-[:90]CI3)=O} \+ \ch{3 HI}}
+			\arrow{0}[,0.2]
+			\subscheme{\chemfig{R-C(-[:90]CI3)=O} \+ \ch{OH-} \arrow \chemfig{R-C(-[:90]\ch{O-})=O} \+ \ch{CHI3}}
+		}
 	} \\
 
 	The Iodoform reaction requires the presence of a \ch{CH3} and \ch{H} group next to \ch{COH} in the alcohol reactant. \\
@@ -133,7 +133,7 @@
 
 	\subsubsection{Electrophilic Substitution}
 
-	Due to the presence of the electron-donating \ch{OH} group, the electron density in a phenol ring is increased, leaving it more reactive to electrophilic substitution reactions. Compared to reactions of arenes, reactions of phenols typically do not require heating or the presence of a catalyst.
+	Due to the presence of the electron-donating \ch{OH} group, the electron density in a phenol ring is increased, leaving it more reactive to electrophilic substitution reactions. Compared to reactions of arenes, reactions of phenols typically do not require heating or the presence of a catalyst. \\
 
 	\noindent \textbf{Halogenation}
 
@@ -176,6 +176,8 @@
 	\chfg{
 		\chembelow{\chemleft[ \subscheme{ \ch{Fe} \arrow{0}[,0] \chemleft( \chemfig{!\rightbenz([:0]-O)} \chemright{)_6} } \chemright{]^{3-}}}{violet~coloration} \+ \ch{H+}
 	} \\
+
+	\vspace{12pt}
 
 	Phenols form complexes with \ch{Fe3+} and obtain a violet color. Phenols with different groups attached to them may have varying colors.
 
