@@ -71,25 +71,33 @@
 	\usub{S}{N}1 reactions involve the spontaneous ejection of the \ch{X} group in its slow step to form a carbocation which will then react with a nucleophile. The later addition of the nucleophile will happen at equal probabilities at either side of the planar \ch{C+}, hence any enantiomeric products about \ch{C} will be racemic. \\
 
 	\chfg{
-		\chemfig*[][scale=0.8]{C(-[@{a1}:0]@{a2}Br)(-[:115]H)(<:[:205]H3C)(<[:250,,,1]CH2CH3)} \arrow{->[slow]} \chemfig*[][scale=0.8]{\ch{C+}(-[:90]H)(<:[:250]H3C)(<[:290,,,1]CH2CH3)} \arrow{0}[,0] \+ \ch{Br-}
-		\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a1)..controls +(90:5mm) and +(90:5mm) ..(a2); }
-	} 
-
-	\chfg{
-		\chemfig{@{a1}\lewis{0:,\ch{HO-}}} \arrow{0}[,0] \+ \chemfig*[][scale=0.8]{@{a2}\ch{C+}(-[:90]H)(<:[:250]H3C)(<[:290,,,1]CH2CH3)} \arrow{0}[,0] \+ \chemfig{@{a3}\lewis{4:,\ch{OH-}}}
+		\subscheme[-90]{
+			\subscheme{
+				\chemfig*[][scale=0.8]{C(-[@{a1}:0]@{a2}Br)(-[:115]H)(<:[:205]H3C)(<[:250,,,1]CH2CH3)} \arrow{->[slow]} \chemfig*[][scale=0.8]{\ch{C+}(-[:90]H)(<:[:250]H3C)(<[:290,,,1]CH2CH3)} \arrow{0}[,0] \+ \ch{Br-}
+				\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a1)..controls +(90:5mm) and +(90:5mm) ..(a2); }
+			}
+			\arrow{0}[,0.2]
+			\subscheme{
+				\chemfig{@{a1}\lewis{0:,\ch{HO-}}} \arrow{0}[,0] \+ \chemfig*[][scale=0.8]{@{a2}\ch{C+}(-[:90]H)(<:[:250]H3C)(<[:290,,,1]CH2CH3)} \arrow{0}[,0] \+ \chemfig{@{a3}\lewis{4:,\ch{OH-}}}
+			}
+			\arrow{0}[,0.2]
+			\subscheme{
+				\begin{tikzpicture}[node distance=0cm and 2cm]
+					\node (a1) {};
+					\node[above right=of a1] (a2) {
+						\chemname{\chemfig*[][scale=0.8]{HO-C(-[:65]H)(<:[:335]CH3)(<[:290]CH2CH3)}}{Inversion of Configuration}
+						};
+					\node[below right=of a1] (a3) {
+						\chemname{\chemfig*[][scale=0.8]{C(-[:115]H)(<:[:205]CH3)(<[:250,,,1]CH2CH3)-OH}}{Retention of Configuration}
+						};
+					\draw[-stealth] (a1) -- ( $ (a1.0)!0.5!(a2.west|-a1.0) $ ) |- (a2.west) node[auto,pos=0.7] {};
+					\draw[-stealth] (a1) -- ( $ (a1.0)!0.5!(a3.west|-a1.0) $ ) |- (a3.west) node[auto,pos=0.7] {};
+				\end{tikzpicture}
+				}
+		}
 	}
 
-	\begin{tikzpicture}[node distance=0cm and 2cm]
-		\node (a1) {};
-		\node[above right=of a1] (a2) {
-			\chemname{\chemfig*[][scale=0.8]{HO-C(-[:65]H)(<:[:335]CH3)(<[:290]CH2CH3)}}{Inversion of Configuration}
-			};
-		\node[below right=of a1] (a3) {
-			\chemname{\chemfig*[][scale=0.8]{C(-[:115]H)(<:[:205]CH3)(<[:250,,,1]CH2CH3)-OH}}{Retention of Configuration}
-			};
-		\draw[-stealth] (a1) -- ( $ (a1.0)!0.5!(a2.west|-a1.0) $ ) |- (a2.west) node[auto,pos=0.7] {};
-		\draw[-stealth] (a1) -- ( $ (a1.0)!0.5!(a3.west|-a1.0) $ ) |- (a3.west) node[auto,pos=0.7] {};
-	\end{tikzpicture}
+	
 
 	Draw stereochemistry of a reaction if the original molecule displays enantiomerism about the \ch{C} bonded to \ch{X}. Also indicate by annotating `Retention of Configuration' and `Inversion of Configuration' below the resultant molecules. \\
 

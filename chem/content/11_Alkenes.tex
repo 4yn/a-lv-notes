@@ -55,60 +55,68 @@
 	Conditions: In inert solvent (\ch{CCl4}), dark, room temperature \\
 
 	\chfg{
-		\chemfig{-[:30]=[@{a1}:-30]} \+ \chemfig{@{a2}\chemabove{Br}{\delta+}-[@{a3}]@{a4}\chemabove{Br}{\delta-}}
-		\arrow{->[slow]}
-		\chemfig{-[:30]C^+-[:-30]-[:30]Br} \+ \ch{Br-}
-		\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a1)..controls +(210:10mm) and +(270:7mm) ..(a2);}
-		\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a3)..controls +(270:5mm) and +(270:5mm) ..(a4);}
-	} \\
-	\chfg{
-		\chemfig{-[:30]@{a5}C^+-[:-30]-[:30]Br} \+ \chemfig{@{a6}\lewis{6:,\ch{Br-}}}
-		\arrow{->[fast]}
-		\chemfig{-[:30](-[:90]Br)-[:-30]-[:30]Br}
-		\chemmove[shorten <=5pt, shorten >=2pt]{ \draw (a6)..controls +(270:7mm) and +(270:10mm) ..(a5);}
+		\subscheme[-90]{
+			\subscheme{
+				\chemfig{-[:30]=[@{a1}:-30]} \+ \chemfig{@{a2}\chemabove{Br}{\delta+}-[@{a3}]@{a4}\chemabove{Br}{\delta-}}
+				\arrow{->[slow]}
+				\chemfig{-[:30]C^+-[:-30]-[:30]Br} \+ \ch{Br-}
+				\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a1)..controls +(210:10mm) and +(270:7mm) ..(a2);}
+				\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a3)..controls +(270:5mm) and +(270:5mm) ..(a4);}
+			}
+			\arrow{0}[,0.2]
+			\subscheme{
+				\chemfig{-[:30]@{a5}C^+-[:-30]-[:30]Br} \+ \chemfig{@{a6}\lewis{6:,\ch{Br-}}}
+				\arrow{->[fast]}
+				\chemfig{-[:30](-[:90]Br)-[:-30]-[:30]Br}
+				\chemmove[shorten <=5pt, shorten >=2pt]{ \draw (a6)..controls +(270:7mm) and +(270:10mm) ..(a5);}
+			}
+		}
 	} \\
 
-	\noindent \textbf{Addition of Halohydrin}
+	\noindent \textbf{Addition of Hydrogenhalide}
 
 	Reagents: \ch{HX} (\ch{X} \(\in\) \ch{Cl,Br,I}) \\
 	Conditions: Room temperature, dark, anhydrous\\
 
 	\ch{H} acts as the electrophile. \\
 
-	\noindent \textbf{Addition of Halogen Gas in Aqueous solution}
+	\noindent \textbf{Addition of Halohydrin}
 
 	Reagents: \ch{X2} (\ch{X} \(\in\) \ch{Cl,Br,I}) \\
 	Conditions: Aqueous, room temperature \\
 	
-	\begin{figure}[H]
-		\centering
-		\chfg{
-			\chemfig{-[:30]=[@{a1}:-30]} \+ \chemfig{@{a2}\chemabove{Br}{\delta+}-[@{a3}]@{a4}\chemabove{Br}{\delta-}}
-			\arrow{->[slow]}
-			\chemfig{-[:30]C^+-[:-30]-[:30]Br} \+ \ch{Br-}
-			\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a1)..controls +(210:10mm) and +(270:7mm) ..(a2);}
-			\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a3)..controls +(270:5mm) and +(270:5mm) ..(a4);}
-		} \\
-		\chfg{ 
-			\chemfig{-[:30]@{a5}C^+-[:-30]-[:30]Br} \+ \chemfig{@{a6}\lewis{6:,O}(-[:30]H)-[@{a7}:330]@{a8}H}
-			\arrow{->[fast]}
-			\chemname{\chemfig{-[:30](-[:90]OH)-[:-30]-[:30]Br}}{(major)} + \ch{H+}
-			\chemmove[shorten <=5pt, shorten >=2pt]{ \draw (a6)..controls +(270:7mm) and +(270:10mm) ..(a5);}
-			\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a7)..controls +(210:5mm) and +(180:5mm) ..(a8);}
-		} \\
-		\chfg{
-			\ch{H+} \+ \ch{Br-} \arrow{->[fast]} \ch{HBr}
-		} 
-
-		\emph{OR}
-
-		\chfg{
-			\chemfig{-[:30]@{a9}C^+-[:-30]-[:30]Br} \+ \chemfig{@{a10}\lewis{6:,\ch{Br-}}}
-			\arrow{->[fast]}
-			\chemname{\chemfig{-[:30](-[:90]Br)-[:-30]-[:30]Br}}{(minor)}
-			\chemmove[shorten <=5pt, shorten >=2pt]{ \draw (a10)..controls +(270:7mm) and +(270:10mm) ..(a9);}
+	\chfg{
+		\subscheme[-90]{
+			\subscheme{
+				\chemfig{-[:30]=[@{a1}:-30]} \+ \chemfig{@{a2}\chemabove{Br}{\delta+}-[@{a3}]@{a4}\chemabove{Br}{\delta-}}
+				\arrow{->[slow]}
+				\chemfig{-[:30]C^+-[:-30]-[:30]Br} \+ \ch{Br-}
+				\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a1)..controls +(210:10mm) and +(270:7mm) ..(a2);}
+				\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a3)..controls +(270:5mm) and +(270:5mm) ..(a4);}
+			}
+			\arrow{0}[,0.4]
+			\subscheme{
+				\chemfig{-[:30]@{a5}C^+-[:-30]-[:30]Br} \+ \chemfig{@{a6}\lewis{6:,O}(-[:30]H)-[@{a7}:330]@{a8}H}
+				\arrow{->[fast]}
+				\chemname{\chemfig{-[:30](-[:90]OH)-[:-30]-[:30]Br}}{(major)} + \ch{H+}
+				\chemmove[shorten <=5pt, shorten >=2pt]{ \draw (a6)..controls +(270:7mm) and +(270:10mm) ..(a5);}
+				\chemmove[shorten <=2pt, shorten >=2pt]{ \draw (a7)..controls +(210:5mm) and +(180:5mm) ..(a8);}
+			}
+			\arrow{0}[,0.1]
+			\subscheme{
+				\ch{H+} \+ \ch{Br-} \arrow{->[fast]} \ch{HBr}
+			}
+			\arrow{0}[,0.4]
+			OR
+			\arrow{0}[,0.3]
+			\subscheme{
+				\chemfig{-[:30]@{a9}C^+-[:-30]-[:30]Br} \+ \chemfig{@{a10}\lewis{6:,\ch{Br-}}}
+				\arrow{->[fast]}
+				\chemname{\chemfig{-[:30](-[:90]Br)-[:-30]-[:30]Br}}{(minor)}
+				\chemmove[shorten <=5pt, shorten >=2pt]{ \draw (a10)..controls +(270:7mm) and +(270:10mm) ..(a9);}
+			}
 		}
-	\end{figure}
+	}
 
 	\noindent \textbf{Formation of Alcohol}
 
@@ -130,7 +138,7 @@
 
 	Reactant alkene first undergoes mild oxidation and is saturated with \ch{-OH} groups, afterward the heat supplied allows for the cleavage of a \(\sigma\) bond between two \ch{C} with \ch{OH} groups attached to each of them due to the electron-withdrawing effect of an \ch{-OH} group. \\
 
-	Terminal / secondary \ch{C} are reacted into \ch{CO2 + H2O}, tertiary \ch{C} are converted into terminal \ch{COOH} groups and quaternary \ch{C} are converted into ketone groups. \\
+	Terminal / primary \ch{C} are reacted into \ch{CO2 + H2O}, secondary \ch{C} are converted into terminal \ch{COOH} groups and tertiary \ch{C} are converted into ketone groups. \\
 
 	\ch{HOOCCOOH} or Ethanedioic acid as well as \ch{CHOOH} or Methanoic acid will be oxidized to \ch{CO2} and \ch{H2O} in acidic \ch{KMnO4}. Methanoic acid is also oxidized by acidic \ch{K2Cr2O7}. \\
 
@@ -139,6 +147,6 @@
 	Reagents: \ch{KMnO4} \\
 	Conditions: \ch{NaOH}, warm \\
 
-	\ch{CO3 2-} is obtained instead of \ch{CO2} and \ch{COO-} is obtained instead of \ch{COOH}. Addition of acidic solution will revert the products to \ch{CO2} and \ch{COOH}. \\
+	\ch{CO3^{2-}} is obtained instead of \ch{CO2} and \ch{COO-} is obtained instead of \ch{COOH}. Addition of acidic solution will revert the products to \ch{CO2} and \ch{COOH}. \\
 
 \end{document}

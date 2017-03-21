@@ -87,30 +87,30 @@
 
 	All these functional groups have been drawn in order below.
 
-	\begin{figure}[H]
-    \scalebox{.7}{
-		\chemfig{R-[:30](=[2]O)-[:-30]OH}
-		\chemfig{R-[:30](=[2]O)-[:-30]O-[:30]R}
-		\chemfig{R-[:30](=[2]O)-[:-30]X}
-		\chemfig{R-[:30](=[2]O)-[:-30]NH_2}
+	\chfg{
+		\subscheme[-90]{
+		    \subscheme{
+				\chemfig{R-[:30](=[2]O)-[:-30]OH}	\arrow{0}[,0.2]
+				\chemfig{R-[:30](=[2]O)-[:-30]O-[:30]R}	\arrow{0}[,0.2]
+				\chemfig{R-[:30](=[2]O)-[:-30]X}	\arrow{0}[,0.2]
+				\chemfig{R-[:30](=[2]O)-[:-30]NH_2}	
+			}
+			\arrow{0}[,0.2]
+		    \subscheme{
+				\chemfig{R~N}	\arrow{0}[,0.2]
+				\chemfig{R-[:30](=[2]O)-[:-30]H}	\arrow{0}[,0.2]
+				\chemfig{R-[:30](=[2]O)-[:-30]R}	\arrow{0}[,0.2]
+				\chemfig{R-[:30]-[:-30]OH}	\arrow{0}[,0.2]
+				\chemfig{R-NH_2}
+			}
+			\arrow{0}[,0.2]
+		    \subscheme{
+				\chemfig{R-[:30](-[2]NH_2)-[:-30](=[6]O)-[:30]OH}	\arrow{0}[,0.2]
+				\chemfig{[:30]**6(--(-X)----)}	\arrow{0}[,0.2]
+				\chemfig{[:30]**6(--(-OH)----)}
+			}
+		}
 	}
-	\end{figure}
-	\begin{figure}[H]
-    \scalebox{.7}{
-		\chemfig{R~N}
-		\chemfig{R-[:30](=[2]O)-[:-30]H}
-		\chemfig{R-[:30](=[2]O)-[:-30]R}
-		\chemfig{R-[:30]-[:-30]OH}
-		\chemfig{R-NH_2}
-	}
-	\end{figure}
-	\begin{figure}[H]
-    \scalebox{.7}{
-		\chemfig{R-[:30](-[2]NH_2)-[:-30](=[6]O)-[:30]OH}
-		\chemfig{[:30]**6(--(-X)----)}
-		\chemfig{[:30]**6(--(-OH)----)}
-	}
-	\end{figure}
 
 	\subsubsection{Tiebreakers}
 
