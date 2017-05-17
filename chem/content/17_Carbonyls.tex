@@ -10,9 +10,11 @@
 
 	Aldehydes are compounds with a \ch{R-CO-H} (more commonly written \ch{R-CHO}) structure while ketones are compounds with a \ch{R-CO-R} structure. \\
 
-	\subsection{Physical Properties of Hydroxy Compounds}
+	\subsection{Physical Properties of Carbonyl Compounds}
 
-	% TODO
+	Aldehydes and ketones have higher boiling points than similar alkene chains, but have lower boiling points than similar alcohols, typically due to the presence of the \ch{C=O} bond with its permanent dipole but the lack of corresponding \ch{H} bonding between carbonyl molecules. \\
+
+	Lone pairs of \ch{e-} on \ch{O} allow carbonyl compounds to form \ch{H} bonds with water, giving them good solubility in water so long as the carbon chain is small in number (less than 5\ch{C}). Carbonyls such as propanone (common name `acetone') are used as industrial solvents.
 
 	\subsection{Formation of Carbonyl Compounds}
 
@@ -20,171 +22,138 @@
 
 	Refer to `Oxidation' in Hydroxy Compounds. \\ 
 
-	% DO BELOW
-
 	\subsection{Reaction of Carbonyl Compounds}
 
 	\subsubsection{Reduction}
 
-	Alcohols are able to donate \ch{H+} in organic solutions and can hence act as weak acids, therefore reducing metals like \ch{Na}. However, in aqueous solution \ch{H2O} acts as a stronger acid and hence alcohols do not act as an acid. Across different alkyl chains, the more substituted chain is the weaker acid because the electron-donating \ch{C} will destabilize \ch{O-}. \\
+	Aldehydes and ketones can be reduced to primary alcohols and secondary alcohols respectively.
 
-	Reagents: \ch{Na} \\
+	Reagents: \ch{H2}, Ni \\
+	Conditions: Heat \\
 
-	\ch{R-OH + Na -> R-O- Na+ + 1/2 H2}
+	Reagents: \ch{LiAlH4} or \ch{NaBH4}\\
+	Conditions: Room temperature \\
 
-	\subsubsection{Elimination}
+	\ch{NaBH4} is a source of \ch{H-} and reduces aldehydes and ketones. \\
 
-	\noindent \textbf{Dehydrohalogenation}
-
-	Reagents: Concentrated \ch{H2SO4} \\
-	Conditions: Heat at \SI{170}{\celsius}\\
-
-	\subsubsection{Nucleophilic Substitution}
-
-	In the presence of other nucleophiles, an \ch{R-OH} is a suitable leaving group and can make way for nucleophiles such as \ch{X}. \\
-
-	After being treated with \ch{Na} in anhydrous conditions, an alkoxide \ch{R-O-} is obtained which can then act as a nucleophile, allowing it to take place in reactions such as ether synthesis and acylation. \\
-
-	\noindent \textbf{Halogenation}
-
-	Reagents: \ch{HCl (aq)} OR \ch{Br2}, \ch{H2SO4} OR \ch{I2}, {H3PO4} \\
-	Conditions:  Heat \\
-
-	Reagents: \ch{PCl3} OR \ch{PBr3} OR red \ch{P}, \ch{I2} \\
-	Conditions:  Anhydrous, heat \\
-
-	Reagents: \ch{PCl5} \\
-	Conditions:  Room temperature \\
-	Observation: White fumes formed \ch{(HCl)} \\
-
-	Reagents: \ch{SOCl2} \\
-	Conditions:  Room temperature \\
-	Observation: White fumes formed \ch{(HCl)} \\
-
-	\noindent \textbf{Ether Synthesis}
-
-	Reagents: \ch{R-Cl} \\
-	Conditions:  Heat \\
-
-	\noindent \textbf{Ester Synthesis}
-
-	Reagents: \ch{RCOOH} \\
-	Conditions:  Concentrated \ch{H2SO4}, \SI{60}{\celsius} \\
-
-	Reagents: \ch{RCOCl} \\
-	Conditions:  Room temperature \\
-	Observation: White fumes formed \ch{(HCl)} \\
+	Use \ch{LiAlH4} when avoiding reduction of alkene groups and \ch{NaBH4} when specifically reducing carbonyl compounds. \\
 
 	\subsubsection{Oxidation}
 
-	\noindent \textbf{Oxidation of Primary Alcohol to Aldehyde}
+	Aldehydes can be completely oxidized to carboxylic acids. \\
 
-	Reagents: \ch{K2Cr2O7} \\
-	Conditions: With dilute \ch{H2SO4}, heat, immediate distillation \\
+	Reagents: Acidic \ch{KMnO4} or Acidic \ch{K2Cr2O7} \\
+	Conditions: Heat \\
 
-	\noindent \textbf{Oxidation of Primary Alcohol to Carboxylic Acid and Secondary Alcohol to Ketone}
+	\subsubsection{Nucleophilic Addition}
 
-	Reagents: \ch{K2Cr2O7} OR \ch{KMnO4} \\
-	Conditions: Dilute \ch{H2SO4}, heat \\
+	Carbonyl compounds contain a \ch{C=O} structure. Due to the electronegativity of \ch{O} as compared to \ch{C}, \ch{C} holds a partial positive charge which is then able to attract electron-rich nucleophiles. Compounds are added across the unsaturated \ch{C=O} bond, hence leaving carbonyl compounds susceptible to Nucleophilic Addition. \\
+
+	Carbonyl compounds with alkyl groups or aromatic groups bonded to the \ch{C=O} structure decrease susceptibility to nucleophilic addition due to electronic effect reducing the intensity of the partial positive charge in the former and due to resonance effect in the latter. \\
+
+	\noindent \textbf{Addition of Nitriles / Formation of Cyanohydrins}
+
+	Reagents: \ch{HCN}, trace \ch{KCN} OR \ch{HCN}, trace \ch{KOH} OR \ch{KCN}, \ch{H2SO4} \\
+	Conditions: \textbf{Room temperature} \\
+
+	Nucleophilic addition of \ch{C+N} is a endothermic process. Heating the reaction will in fact slow the rate of reaction. \\
+
+	Generation of Electrophile: \ch{KCN <=>  K+ + CN-}, OR \\
+	Generation of Electrophile: \ch{HCN + KOH <=>  H2O + K+ + CN-} \\
+
+	\chfg{
+		\subscheme[-90]{
+			\subscheme{
+				\chemfig{-[:30]@{a1}\chembelow{C}{\delta+}(=[:90]\chemabove{O}{\delta-})-[:-30]H} \arrow{0}[,0] \+ \chemfig{@{a2}\lewis{4:,\ch{CN-}}} \arrow{->[slow]} \chemfig{-(-[:-90]H)(-[:90]\lewis{0:,\ch{O-}})-CN}
+				\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a2)..controls +(120:6mm) and +(45:6mm) ..(a1); }
+			}
+			\arrow{0}[,0.2]
+			\subscheme{
+				\chemfig{-(-[:-90]H)(-[:90]@{a3}\lewis{0:,\ch{O-}})-CN} \arrow{0}[,0] \+ \chemfig{@{a4}H-[@{a5}]@{a6}CN}
+				\chemmove[shorten <=6pt,shorten >=2pt]{\draw (a3)..controls +(0:5mm) and +(90:10mm) ..(a4); }
+				\chemmove[shorten <=2pt,shorten >=2pt]{\draw (a5)..controls +(90:5mm) and +(90:5mm) ..(a6); }
+			}
+			\arrow{->[fast]}[,0.85]
+			\subscheme{
+				\chemfig{-(-[:-90]H)(-[:90]OH)-CN} \arrow{0}[,0] \+ \chemfig{\lewis{4:,\ch{CN-}}}
+			}
+		}
+	}
+
+	Study of this reaction's kinetics determines that the rate of reaction is determined by the concentration of carbonyl and \ch{CN-}. As a result, for higher rates of reaction there needs to be trace amounts of \ch{KCN-} or \ch{KOH} to catalyze reactions. \\
+
+	Note that in the case of \ch{KCN}, \ch{H2SO4} the reaction consumes \ch{H2SO4} rather than using it as a catalyst. \ch{H2SO4} needs to be added in comparable amounts rather than in trace amounts. \\
+
+	Nucleophilic addition of \ch{CN} produces a structure known as a cyanohydrin,  a \ch{CN-} adjacent to \ch{C-OH}. Cyanohydrins, similar to nitrile compounds in halogenoalkanes, can be further hydrolyzed in acidic or basic conditions and can also be reduced to form primary amines. Carboxylic acid, carboxylate and primary amines adjacent to a \ch{C-OH} suggest that the product may have been obtained through a cyanohydrin. \\
+
+	Carbonyl compounds are typically \usup{sp}{3} hybridized with respect to \ch{C} in \ch{C=O}. The trigonal planar geometry of \ch{C=O} containing molecules mean that nucleophiles have equal chance of attacking from either plane, eventually forming a racemic mixture which is optically inactive.
+
+	\subsubsection{Characteristic Reactions}
+
+	Carbonyl compounds can be better differentiated through the use of several chemical tests, typically involving either condensation or oxidation reactions. \\
+
+	\noindent \textbf{Condensation and 2,4-DNPH} \\
+
+	Aldehydes and Ketones both react with 2,4-dinitro phenyl hydrazine (2,4-DNPH) to form 2,4-dinitro phenyl hydrazones which are orange precipitates.
+
+	\chfg{
+		\subscheme[-90]{
+			\subscheme{
+				\chemfig{[:30]**6(--(-NO2)--(-[:120,,,1]NO2)-(-[:180]N(-[:90]H)-[:180]H2N)-)} \arrow{0}[,0] \+ \chemfig{R=O}
+			}
+			\arrow{->}[,0.85]
+			\subscheme{
+				\chembelow{\chemfig{[:30]**6(--(-NO2)--(-[:120,,,1]NO2)-(-[:180]N(-[:90]H)=[:180]R)-)}}{orange~ppt} \arrow{0}[,0] \+ \chemfig{\ch{H2O}}
+			}
+		}
+	}
+
+	\vspace{12pt}
+
+	2,4-DNPH does not react with carboxylic acids as the interference of the \ch{C-OH} renders lone pairs on \ch{C=O} unable to undergo condensation. \\
+
+	\noindent \textbf{Oxidation using Tollen's Reagent} \\
+
+	Aldehydes are oxidized by Tollen's reagent to form a silver mirror. \\
+
+	\ch{R=O + 3 OH- + 2 [Ag(NH3)2]+ -> ROO- + 2 Ag + 4 NH3 + 2 H2O} \\
+
+	Reagents: Tollens' Reagent \ch{[Ag(NH3)2]+}, \ch{NaOH} \\
+	Conditions: Heat \\
+	Observation: Silver mirror formed \\
+
+	\noindent \textbf{Oxidation using Fehling's Solution} \\
+
+	Aliphatic aldehydes are oxidized by Fehling's solution to form a silver mirror. \\
+
+	\ch{R=O + 5 OH- + 2 Cu2+ -> ROO- + Cu2O + 3 H2O} \\
+
+	Reagents: Fehling's solution \ch{Cu2+ (aq)}, \ch{NaOH} \\
+	Conditions: Heat \\
+	Observation: Reddish-brown ppt formed \\
+
+	\noindent \textbf{2,4-DNPH / Tollens / Fehlings} \\
+
+	Using these three tests sequentially allows for identification of carbonyl compounds and further differentiation between ketones, aldehydes and aromatic aldehydes. \\
 
 	\subsubsection{Iodoform Formation}
+
+	Carbonyl compounds with a \ch{R-CO-CH3} structure form yellow ppt of \ch{CHI3} when heated with \ch{I2} and \ch{NaOH}. As a result, 2-carbonyls and ethaldehyde can be identified through this test.
 
 	Reagents: \ch{Na}, \ch{I2} \\
 	Observation: Yellow ppt \ch{(CHI3)} \\
 
 	\chfg{
 		\subscheme[-90]{
-			\subscheme{\chemfig{R-C(-[:270]H)(-[:90]CH3)-OH} \+ \ch{Na} \arrow \chemfig{R-C(-[:90]CH3)=O} \+ \ch{HI}} 
-			\arrow{0}[,0.2]
 			\subscheme{\chemfig{R-C(-[:90]CH3)=O} \+ \ch{3 I2} \arrow \chemfig{R-C(-[:90]CI3)=O} \+ \ch{3 HI}}
 			\arrow{0}[,0.2]
 			\subscheme{\chemfig{R-C(-[:90]CI3)=O} \+ \ch{OH-} \arrow \chemfig{R-C(-[:90]\ch{O-})=O} \+ \ch{CHI3}}
 		}
 	} \\
 
-	The Iodoform reaction requires the presence of a \ch{CH3} and \ch{H} group next to \ch{COH} in the alcohol reactant. \\
+	\subsection{Aromatic Carbonyls}
 
-	The Iodoform reaction results in the formation of a \ch{COO-} compound and also the precipitation of \ch{CHI3}. \\
-
-	\subsection{Structure of Phenols}
-
-	A Phenol group is a benzene ring with an \ch{OH} group bonded to a carbon in the ring. \\
-
-	The \ch{Ph-OH} group is electron donating and hence an activating group, making them very reactive. Phenols are 2,4-directing. \\
-
-	Due to the presence of the \(\pi\) \ch{e-} cloud in the benzene ring, \ch{Ph-OH} can deprotonate to \ch{Ph-O-} and the negative charge on \ch{O-} can be dispersed across the ring, hence phenols can act as acids. The acidity of a phenol is strengthened by attaching electron-withdrawing groups on the benzene ring (such as \ch{NO2}) or can be weakened by attaching electron-donating groups on the benzene ring (such as \ch{CH3}).
-
-	\subsection{Physical Properties of Phenols}
-
-	Pure phenols are colorless crystalline solids at room temperature. Phenols melts at \SI{42}{\celsius} and boil at \SI{217}{\celsius} due to their ability to form hydrogen bonds between molecules. However, the extent of these hydrogen bonds can be diminished if the species of phenol is able to exhibit intramolecular \ch{H} bonds which then reduces the strength of intermolecular bonds.
-
-	Phenol compounds are sparsely soluble in water due to the presence of a hydrophobic benzene ring, but are soluble in \ch{NaOH} solution. \\
-
-	\subsection{Reactions of Phenols}
-
-	\subsubsection{Reduction}
-
-	Reagents: \ch{Na} \\
-
-	\ch{Ph-OH + Na -> Ph-O- Na+ + 1/2 H2}
-
-	\subsubsection{Acid-base}
-
-	Reagents: \ch{NaOH} \\
-
-	\ch{Ph-OH + Na -> R-O- Na+ + H2O}
-
-	\subsubsection{Electrophilic Substitution}
-
-	Due to the presence of the electron-donating \ch{OH} group, the electron density in a phenol ring is increased, leaving it more reactive to electrophilic substitution reactions. Compared to reactions of arenes, reactions of phenols typically do not require heating or the presence of a catalyst. \\
-
-	\noindent \textbf{Halogenation}
-
-	Reagents: \ch{X2} (\ch{X} \(\in\) \ch{Cl,Br,I}) \\
-	Conditions:  Aqueous, room temperature\\
-
-	Halogenation of phenols in a aqueous substrate forms a polysubstituted product. A tribromophenol is an insoluble white precipitate. \\
-
-	Reagents: \ch{X2} (\ch{X} \(\in\) \ch{Cl,Br,I}) \\
-	Conditions: \ch{CCl4}, room temperature\\
-
-	Halogenation of phenols in a aqueous substrate forms a monosubstituted product. \\
-
-	\noindent \textbf{Nitration}
-
-	Reagents: Concentrated \ch{HNO3} \\
-	Conditions: Room temperature\\
-
-	Nitration of phenols in a concentrated solution forms a polysubstituted product. \\
-
-	Reagents: Dilute \ch{HNO3} \\
-	Conditions: Room temperature\\
-
-	Nitration of phenols in a dilute solution forms a monosubstituted product. \\
-
-	\subsubsection{Acylation}
-
-	Reagents: \ch{R-OCl} \\
-	Conditions: \ch{Na}, room temperature \\
-	Observation: White fumes formed \ch{(HCl)} \\
-
-	\ch{Na} is added to form a carboxylate salt which can then readily react with acyl halides to form an ester. \ch{Ph-OH} is not a strong enough nucleophile to undergo esterification with carboxylic acids. \\
-
-	\subsubsection{Complexation}
-
-	Reagents: \ch{Fe3+ (aq)} \\
-	Observation: Violet coloration \\
-
-	\chfg{
-		\ch{Fe^{3+}} \+ \chemfig{!\rightbenz([:0]-OH)} \arrow
-	} \\
-	\chfg{
-		\chembelow{\chemleft[ \subscheme{ \ch{Fe} \arrow{0}[,0] \chemleft( \chemfig{!\rightbenz([:0]-O)} \chemright{)_6} } \chemright{]^{3-}}}{violet~coloration} \+ \ch{H+}
-	} \\
-
-	\vspace{12pt}
-
-	Phenols form complexes with \ch{Fe3+} and obtain a violet color. Phenols with different groups attached to them may have varying colors.
+	Carbonyl groups on a benzene ring are deactivating due to the presence of the electron deficient \ch{C=O} structure, in addition to the fact that these compounds are typically strengthened due to resonance structures. \\
 
 	
 \end{document}
