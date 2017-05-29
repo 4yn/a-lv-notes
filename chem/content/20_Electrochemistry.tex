@@ -1,0 +1,142 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Electrochemistry}
+
+	\subsection{Redox}
+
+	Refer to `Redox' in Stoichiometry.
+
+	\subsection{Electrolytes}
+
+	\scidef{Electrolyte}{An Electrolyte is a compound which can conduct electricity in the molten or aqueous state, primarily through the flow of charged ions.}
+
+	\scidef{Strong / Weak Electrolyte}{Strong or Weak electrolytes are compounds which fully or partially ionize in molten or aqueous medium respectively.}
+
+	\scidef{Non-electrolyte}{A Non-electrolyte is a compound which does not ionize and does not conduct electricity in molten or aqueous state.}
+
+	\subsection{Electrode Potentials}
+
+	\subsubsection{Half-cell Potential}
+
+	When metals are submerged in aqueous solution, an equilibrium between its solid and aqueous ion species is established. Positive ions are dissolved into solution while electrons are left on the surface of the metal, forming a difference in charge and therefore a potential difference. \\
+
+	This formation of an electric potential difference can then be extended to many other redox half-reactions (e.g. a potential difference between an inert electrode and solution is also established in a solution containing \ch{Fe2+} and \ch{Fe3+}). \\
+
+	As probing the potential of a half-cell will inevitably interfere with the reaction system (e.g. submerging a voltmeter into the solution may redistribute positive ions in solution), electrode potentials of half-cells are measured relative to each other, with the global standard of `zero potential' being that of the `Standard Hydrogen Electrode'. \\
+
+	\subsubsection{Standard Electrode Potential}
+
+	To ensure consistent measurements of electrode potentials, the values are measured under specific conditions and concentrations of reactive species:
+
+	\begin{itemize}
+		\item All temperatures are at \SI{25}{\celsius} aka \SI{298}{\K}
+		\item All aqueous species are at \SI{1}{\mol\per\dm\cubed}
+		\item All gaseous species are at \SI{1}{\bar}
+		\item Electrodes with no solid metal species use inert \ch{Pt} or graphite electrodes
+	\end{itemize}
+
+	\scidef{Standard Electrode Potential \usup{E}{\plimsoll}}{The Standard Electrode Potential \usup{E}{\plimsoll} of a half cell is the electromotive force between a half cell and the Standard Hydrogen Electrode, at temperature \SI{25}{\celsius}  and where all reacting species are \SI{1}{\mol\per\dm\cubed} and all gases are at \SI{1}{\bar}.}
+
+	Standard electrode potentials are denoted with a \plimsoll to indicate standard conditions, written as a superscript. \\
+
+	Note: Though water is a reacting species, it is present in liquid and not aqueous form, and thus does not need to be present in \SI{1}{\mol\per\dm\cubed}.
+
+	\noindent \textbf{Standard Hydrogen Electrode}
+
+	The Standard Hydrogen Electrode (S.H.E.) is a platinum electrode covered in platinum black (to increase surface area), immersed in a solution of \SI{1}{\mol\per\dm\cubed} \ch{H+} and surrounded by \SI{1}{\bar} of \ch{H2} gas at \SI{25}{\celsius}.
+
+	\subsubsection{Measuring Electrode Potentials}
+
+	A half cell to be measured and a S.H.E. are setup adjacent to each other and a salt bridge is used to connect both pools of solution, which provides ions to readily migrate and maintain charge neutrality in each cell. A high-resistance voltmeter is then connected between the two electrodes and the potential difference \usup{E}{\plimsoll} is read from the voltmeter. \\
+
+	Electrode potentials are assigned to their respective reduction half equations as `redox potentials' or `reduction potentials', where electrons are present on the left side of the equation. A more positive electrode potential indicates that equilibrium in this half cell lies far to the right and is hence more likely to be reduced. \\
+
+	Reversing redox half equations will also reverse their awarded redox potential, but multiplying a half-reaction with coefficients will not affect redox potentials.
+
+	\subsection{Redox Series}
+
+	Once data has been collected across multiple half-cells, what reaction occurs between a system of two connected half-cells can be predicted. The half cell with a more positive reduction potential will be more likely to undergo reduction while the half cell with a more negative reduction potential will be more likely to undergo oxidation. \\
+
+	\subsection{Standard Cell Potentials}
+
+	\scidef{Standard Cell Potential \usup{\usub{E}{cell}}{\plimsoll}}{The Standard Cell Potential \usup{\usub{E}{cell}}{\plimsoll} of two half cells is the potential difference between the two standard half cells and is equal to the difference between the standard redox potentials of the two cells.}
+
+	\scidef{Anode}{The Anode of a electrochemical setup is the electrode at which a oxidation reaction occurs.}
+
+	\scidef{Cathode}{The Cathode of a electrochemical setup is the electrode at which a reduction reaction occurs.}
+
+	Once current is allowed to flow between the two electrodes in an electrochemical cell, the redox reaction is allowed to occur, with electron flow from the cathode to the anode.
+
+	\scieqn{Standard Cell Potential}{}{ \text{E}_\text{cell} = \text{E}_\text{cathode} - \text{E}_\text{anode} }
+
+	\subsubsection{Non-standard Cell Potentials}
+
+	If the half-cells are not under standard conditions, the potential difference between the two electrodes may change. By considering \usup{E}{\plimsoll} as a representation of equilibrium constant, changes to individual half-cells can be analyzed using half-reactions of the cell, therefore predicting the effect on its equilibrium constant and finally predicting the change of \usup{E}{\plimsoll} and \usup{\usub{E}{cell}}{\plimsoll}. \\
+
+	\subsection{Cell Potentials and Energetics}
+
+	\scieqn{Gibbs Free Energy of Redox Reaction}{Where \(n\) is the number of electrons transferred in one mole of reaction and \(F\) is Faraday's constant of \SI{96500}{\coulomb\per\mol}}{ \Delta G^\plimsoll = - n F E^\plimsoll }
+
+	If two species of compounds which can undergo redox reaction are mixed, the spontaneity of the redox reaction can be predicted by comparing their redox potentials as if they were in half-cell setups, where from there the change of Gibbs Free Energy of the system can be calculated. \\
+
+	\subsubsection{Fuel Cells}
+
+	\scidef{Fuel Cells}{Fuel Cells are voltaic cells where controlled reaction of redox processes are used to convert chemical energy into electrical energy from a continuous supply of reactants.}
+
+	A commonly studied fuel cell is the hydrogen fuel cell, where \ch{H2} and \ch{O2} gas are introduced into the cell and reacted to form water. The location of where water is produced depends on whether the electrolyte is basic or acidic. \\
+
+	Fuel cells are advantageous in that they are space saving, light, reusable, highly efficient as compared to fossil fuels and in the case of the \ch{H2} fuel cell, non polluting. Disadvantages include the fact that \ch{H2} fuel is gaseous at room temperature and explosive and thus difficult and dangerous to store. \\
+
+	\subsubsection{Practical Power Sources}
+
+	Increasing research is needed to develop smaller, lighter, higher voltage and higher capacity batteries due to increasing demands for portable power and environmental sustainability. \\
+
+	\subsection{Electrolytic Cells}
+
+	By supplying external electromotive force to a system, redox reactions which are otherwise not spontaneous at specific conditions can be forced to occur. Reactions are often accompanied with observations of effervescence, color changes and deposition or solution of metal electrodes.
+
+	\subsection{Selective Discharge}
+
+	When power is supplied to a electrolytic cell, the reaction which requires the least amount of power to drive occurs, resulting in only some species of molecules undergoing reaction. Identifying which species is discharged involves examining:
+
+	\begin{itemize}
+		\item The physical state of the electrolyte, where an aqueous electrolyte may allow for the redox of \ch{H2O} rather than a ionic species.
+		\item The reactivity of the electrode, where a reactive electrode is a possible candidate to be reduced 
+		\item The concentrations of present species, where nonstandard concentrations of reactants may affect the reduction potential of half-reactions and thus change which species is selectively discharged
+		\item The actual electrode potentials of the present species
+	\end{itemize}
+
+	Electrodes connected to the negative terminal of a power source are supplied with electrons and cause the reaction with the most positive reduction potential to occur. Electrodes connected to the positive terminal of a power source receive electrons and cause the reaction with the most negative reduction potential to occur.
+
+	\subsection{Faraday's Laws of Electrolysis}
+
+	\scidef{Faraday's Constant}{The Faraday's Constant \(F\) is the amount of charge carried per mole of electrons.}
+
+	\scieqn{Faraday's Constant}{}{F = L e}
+
+	\scidef{Faraday's First Law of Electrolysis}{Faraday's First Law of Electrolysis states that the mass of substance produced or volume of gas liberated is proportional to the amount of charged passed through the cell.}
+
+	\scidef{Faraday's Second Law of Electrolysis}{Faraday's Second Law of Electrolysis states that the amount of charge required to discharge \SI{1}{\mol} of an element depends on the charge of its ion.}
+
+	Using Faraday's Laws of Electrolysis and knowledge of the exact chemical reaction that takes place in a electrolytic cell, the amount of charge passed through and the amount of reaction that has taken place can now be calculated.
+
+	\subsection{Uses of Electrolysis}
+
+	\subsubsection{Anodized Aluminum}
+
+	When current is passed through aluminum electrodes in dilute \ch{H2SO4} electrolyte, \ch{O2} is produced at the cathode, which then can react with \ch{Al} to form corrosion-resistant, electrically insulating and colorable \ch{Al2O3}. \\
+
+	\begin{center}
+		\ch{2 H2O + 2e- -> O2 + 2 OH-} \\
+		\ch{3 O2 + 4Al -> 2 Al2O3}
+	\end{center}
+
+	\subsubsection{Copper Purification}
+
+	In order to purify crude copper which may have \ch{Zn} and \ch{Ag} impurities, an impure copper electrode is used as an anode while a pure copper electrode is used as a cathode in a \ch{CuSO4} electrolyte. \\
+
+	Impurities with a larger \usup{E}{\plimsoll} than \ch{Cu} cannot be dissolved, leaving \ch{Ag} sludge which settles to the bottom of the electrolytic cell. Impurities with a smaller \usup{E}{\plimsoll} tha \ch{Cu} cannot be reformed at the cathode, leaving \ch{Zn2+} ions suspended in the electrolyte.
+
+\end{document}
