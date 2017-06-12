@@ -6,22 +6,36 @@
 
 	\subsection{Combining Resistance}
 
-	\scieqn{Resistance in Series}{}{ R = R_1 + R_2}
+	\scieqn{Resistance in Series}{For multiple resistors \(R_1, R_2 \dots\) connected along each other, their total resistance \(R\) is given by the equation}{ R = R_1 + R_2 + \dots}
 
-	\scieqn{Resistance in Parallel}{}{R = ( R = \frac{1}{R_1} + \frac{1}{R_2})^{-1}}
+	\scieqn{Resistance in Parallel}{For multiple resistors \(R_1, R_2 \dots\) connected beside each other, their total resistance \(R\) is given by the equation}{R = \left( \frac{1}{R_1} + \frac{1}{R_2} + \dots \right)^{-1}}
 
 	\subsection{Potential Divider Circuit}
 
-	\subsection{Current Divider Circuit}
+	\scidef{Potential Divider}{A Potential Divider circuit is an arrangement of two or more resistors connected in series across a voltage supply in order to obtain a usable potential difference that is a fraction of the voltage supply.}
+
+	The output voltage of a potential divider circuit is dependent on the resistance between the terminals of the output. \\
+
+	\scieqn{Potential Difference from Potential Divider}{If a voltage supply of electromotive force \(V\) is connected to two resistors \(R_1\) and \(R_2\), a output terminal across \(R_1\) will have output voltage \(V_O\) given by the equation}{V_O = V \left( \frac{R_1}{R_1+R_2}\right)}
+
+	To obtain various voltages, a variable resistor such as a rheostat with its sliding contact can be used instead of fixed resistors. \\
 
 	\subsection{Potentiometer}
 
-	\scidef{Potentiometer}{A Potentiometer is a circuit component whose resistance can be varied.}
+	\scidef{Potentiometer}{A Potentiometer is a circuit used to measure the magnitude of an unknown electromotive force by passing a current through a known potential divider circuit.}
 
 	\scidef{Galvanometer}{A Galvanometer is a sensor used to determine small flows in current and is used to identify balance lengths where there is no current passing through it, i.e. used to find two points whose potential difference is 0.}
 
 	\scidef{Balance Length}{The Balance Length is the position on a resistance wire where the current passing through a galvanometer attached to that point and another point on an external circuit is zero.}
 
-	\subsubsection{}
+	Given the balance length of a potentiometer setup, two equipotential points are identified and can be used to calculate resistances and potential differences in either circuit. If two parts of the potentiometer circuit have no current passing between them, they can be considered as disconnected circuits. \\
+
+	\subsection{Kirchoff's Laws (Out of syllabus)}
+
+	\scidef{Kirchoff's First Law}{Kirchoff's First Law states that at any point in a circuit there is zero net current flow in and out of that point.}
+
+	\scidef{Kirchoff's Second Law}{Kirchoff's Second Law states that if a closed loop is identified in a circuit, the sum of emf in the loop is equal to the sum of the \(IR\) products across each component in the loop.}
+
+	Given the first law, arbitrary current variables \(I_1, I_2 \dots\) can be assigned to sections of the circuit and can be associated through a series of sums. Once sufficient loops are identified and their \(IR\) products accounted for, the currents, voltages and resistances in a circuit can be easily algebraically solved. \\
 
 \end{document}
