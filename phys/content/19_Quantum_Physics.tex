@@ -1,0 +1,91 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Quantum Physics}
+
+	\subsection{Photoelectric Effect}
+
+	\scidef{Photoelectric Effect}{The Photoelectric Effect is the phenomena where free electrons are emitted from a metal surface when electromagnetic radiation of sufficiently high energy is incident on the surface.}
+
+	Four key observations were made from this experiment:
+
+	\begin{enumerate}
+		\item There exists a minimum threshold frequency \(f_0\) for electrons to be emitted
+		\item No time delay was observed between when the metal was exposed to light and when a current was detected
+		\item Stopping potential \(V_S\) and therefore maximum kinetic energy of electrons was independent of intensity but dependent on frequency
+		\item Current of electrons was proportional to intensity
+	\end{enumerate}
+
+	\subsubsection{Failures of Classical Theory}
+
+	Classical wave theory considers light as a wave, which involves continuous energy transfer which is dependent on the intensity of light. \\
+
+	According to classical wave theory, several contradictory observations from the photoelectric effect experiment are made: \\
+
+	\begin{itemize}
+	\item A light of high intensity but frequency below threshold will theoretically be able to eject electrons due to higher energy transfer, but instead no electrons are ejected.
+	\item A light of high intensity and with sufficient frequency will not increase the stopping potential, despite electrons theoretically having received more energy.
+	\item A light of low intensity and with sufficient frequency will theoretically require some time to absorb sufficient energy to be ejected, but instead electrons are always ejected instantaneously.
+	\end{itemize}
+
+	\subsubsection{Quantum Theory of Light}
+
+	\scidef{Photon}{A Photon is a quantum of electromagnetic energy.}
+
+	\scieqn{Energy of Photon}{The Energy \(E\) of one Photon with frequency \(f\), where \(h\) is Planck's constant, is given by the equation:}{E = hf = h \frac{c}{\lambda}}
+
+	By suggesting that photons of a specific frequency carries and transfers energy in discrete packets of energy \(hf\), the photoelectric effect can be modeled as the result of photons colliding and interacting with electrons in the metal. \\
+
+	As a photon is incident on an electron, it transfers all of its energy to that electron as kinetic energy. Electrons then may collide with other particles in the metal and dissipate energy as heat, or can escape the attractive forces of the metal lattice and be ejected from the metal with remaining kinetic energy, which is then observed as photocurrent. \\
+
+	\scidef{Work Function Energy \(\Phi\)}{The Work Function Energy \(\Phi\) of a metal is the minimum amount of energy required for a free electron to escape from the surface of the metal.}
+
+	\scieqn{Einstein's Photoelectric Equation}{Upon a collision of a photon with energy \(hf\), the kinetic energy \(\frac{1}{2}m_ev^2\) of a resulting photoelectron exiting from a metal of work function \(\Phi\)is determined by the equation}{hf = \Phi + \frac{1}{2}m_ev^2}
+
+	Quantum theory predicts the existence of threshold frequency as this indicates a minimum energy for the formation of a photocurrent, caused by the presence of the work function \(\Phi\). Any photon with energy less than \(\Phi\) is unable to form a free electron with non-zero kinetic energy, where its collided electron will be unable to escape the metal. \\
+
+	According to quantum theory, varying the intensity of a light only changes the number of photons transmitted and does not actually change the amount of energy transferred from one photon to one electron in a single collision. As a result, increasing the intensity of a light source of insufficient frequency will not affect the maximum energy which an electron receives and thus still will not create a photocurrent, and increasing the intensity of a light source of sufficient frequency will only increase the number of electrons in the photocurrent rather than the maximum kinetic energy of the electrons. \\
+
+	\subsection{Wave-particle Duality}
+
+	\scieqn{de Broglie Wavelength}{Any wave or particle with either a  wavelength \(\lambda\) or momentum \(p\) respectively has an effective momentum or wavelength given by the equation:}{\lambda = \frac{h}{p}}
+
+	An object with a large de Broglie wavelength behaves like a wave whereas an object with a small de Broglie wavelength behaves like a wave. As a result, electrons with sufficient kinetic energy have a large enough de Broglie wavelength to follow rules of diffraction and interference, and can be observed under a setup for Electron Diffraction.
+
+	\subsection{Absorption and Emission Spectra}
+
+	When white light is incident on a gas of an element, specific frequencies of light are wholly absorbed by the gas and then radiated in all directions. When a gas is heated, it will only radiate light of specific frequencies. These specific wavelengths which an atom is more able to absorb and emit form the adsorption and emission spectra of a gas. \\
+
+	These special wavelengths of light arise as each atom has specific `energy transitions' of which electrons can move from one stable energy state to another after absorbing or emitting energy (in the form of a photon). \\
+
+	Each atom has several allowed orbits, each with a corresponding number \(n\) and a corresponding energy \(E_i\) of the electron in that orbit. When a photon of sufficient energy collides with an electron, the electron may absorb all of the photons' energy and be excited to a higher energy orbit. Later, if there is a empty orbital in a lower energy orbit, an excited electron may demote itself to the lower energy level while emitting a photon to release said energy. \\
+
+	\scidef{Ground State}{The Ground State of an electron in an atom is the lowest energy level \((n=1)\)possibly held by a stable electron in that atom.}
+
+	\scieqn[gathered]{Transition Energy}{A transition from the initial energy level \(E_i\) to final energy level \(E_f\) involves the emission of a photon with energy \(hf\) OR the absorption of a photon with at least energy \(hf\).}{
+		\text{For Emission:} \\
+		E_i - E_f = hf \\
+		\text{For Adsorption:} \\
+		E_f - E_i \leq hf \\
+	}
+
+	\scidef{Ionization Energy}{The Ionization Energy of an atom is the minimum energy required to remove an electron completely from the atom, from ground state \(n=1\) to the infinite level \(n=\infty\).}
+
+	\subsubsection{X-ray Spectra}
+
+	When high-speed electrons are incident on a metal sheet, high energy X-rays are then emitted. \\
+
+	The graph of relative intensity against wavelength has two key components. The continuous spectrum is a smooth curve that rises from zero, reaches a peak and then approaches zero as it extends to infinity. Two characteristic peaks are also observed, which arise when electrons dislodge electrons in the \(n=1\) orbital of a metal atom, allowing for \(n=2 \rightarrow n=1\) and \(n=3 \rightarrow n=1 \) transitions to occur which then emit X-rays at much higher intensities. \\
+
+	A minimum wavelength exists as this represents the highest possible energy of an emitted photon, which is given off when an approaching electron converts all its energy to a photon in a single collision. Lower energy photons are created in less effective collisions which give rise to the continuous spectrum, but no photon can have a higher energy than the maximum kinetic energy of the approaching electrons. \\
+
+	Since the characteristic peaks are an innate property of the metal, varying the energy and number of incident electrons will not affect the wavelengths of the characteristic peaks. The exact wavelengths of the characteristic peaks can also be used to identify what metal the electrons are incident upon.
+
+	\subsubsection{Heisenberg Uncertainty Principle}
+
+	\scidef{Heisenberg Uncertainty Principle}{The Heisenberg Uncertainty Principle states that for any particle, the error in the simultaneous measurement of its location \(\Delta x\) and its momentum in said direction \(\Delta p_x\) (and therefore wavelength) must be larger or approximately equal to \(h\).}
+
+	\scieqn{Heisenberg Uncertainty Principle}{In a simultaneous measurement of a particle's location and momentum, the uncertainties in the location \(\Delta x\) and momentum \(p_x\) related by the limit:}{\Delta x \Delta p_x \geq h}
+
+\end{document}
