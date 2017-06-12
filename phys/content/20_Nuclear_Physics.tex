@@ -58,18 +58,98 @@
 
 	The highest binding energy per nucleon resides between Fe and Ni nuclei. \\
 
-	\scidef{Nuclear Reaction}{A Nuclear Reaction is a process where two nuclei or subatomic particles collide to form new species of nuclides.}
+	\scidef{Nuclear Reaction}{A Nuclear Reaction is a process where two nuclei or other subatomic particles collide to form new species of nuclides.}
 
 	\scidef{Fission}
 
 	\scidef{Nuclear Fission}{Nuclear Fission is the splitting of a heavy nucleus to two lighter nuclei of approximately the same mass.}
 
+	Splitting heavy parent nuclei releases a large amount of energy as the daughter nuclei are typically more stable. \\
+
+	Nuclear Fission is typically triggered through bombardment of the heavy nuclei with a high-speed neutron and hence require energy input to begin. However, since many fission reactions also produce high-energy neutrons, each reaction can cause additional reactions, increasing the rate of reaction in an exponential fashion in a `chain reaction' which will release large amounts of energy. \\
+
+	Such methods of releasing energy are harnessed for energy production (nuclear energy) and military usage (atomic bombs). \\
+
 	\scidef{Fusion}
+
+	\scidef{Nuclear Fusion}{Nuclear Fusion is the combination of two light nuclei to form a nucleus of greater mass.}
+
+	Combining nuclei of very low mass such has Hydrogen and Helium produce even more energy per nucleon than nuclear fission. \\
+
+	The sun and other stars obtain its energy through the fusion of Hydrogen nuclei, in a reaction scheme known as the p-p cycle:
+
+	\begin{equation*} \begin{aligned}
+		\text{1. Deuterium Formation} & : \quad ^1_1\text{H} + ^1_1\text{H} \rightarrow ^2_1\text{H} + ^2_1\text{e} + \nu \\
+		\text{2. Helium-3 Formation} & : \quad ^2_1\text{H} + ^1_1\text{H} \rightarrow ^3_2\text{He} + \gamma\\
+		\text{3. Helium-4 Formation} & : \quad ^3_2\text{He} + ^3_2\text{He} \rightarrow ^4_2\text{He} + 2^1_1\text{H} \\
+		\text{4. Electron Annihilation} & : \quad ^0_1\text{e} + ^0_{-1}\text{e} \rightarrow 2\gamma \\
+			&	\\
+		\text{Overall Reaction} & : \quad ^1_1\text{H} + ^0_{-1}\text{e} \rightarrow ^4_2\text{He}
+	\end{aligned} \end{equation*}
+
+	\scidef{Neutrino \(\nu\)}{A Neutrino \(\nu\) is a neutral, very small particle of negligible mass (many orders of magnitude less than electrons).}
+
+	Neutrinos are added to the nuclear reactions to account for various inconsistencies in conservation of momentum and nucleon properties such as spin and lepton number. \\
+
+	Though nuclear fusion produces extreme amounts of energy, has a large reserve of source fuel (hydrogen in water) and is much less hazardous than handling heavy nuclei, nuclear fusion reactions require temperatures up to \SI{1E8}{\K} to occur at reasonable rates and is hence unfeasible to be currently used as means of energy production. \\
 
 	\subsection{Radioactivity}
 
+	\scidef{Radioactivity}{Radioactivity is the random spontaneous decay of nucleus to a more stable nucleus, typically involving the emission of \(\alpha\), \(\beta\) and/or \(\gamma\) particles.}
+
+	\scidef{Spontaneity}{A process is spontaneous if it is not affected by external factors such as temperature or pressure.}
+
+	\scidef{Randomness}{A process is random if it cannot be predicted.}
+
+	As for radioactivity, whether a nucleus decays within a time interval cannot be predicted. Nuclides of a single species are assumed to have a constant probability of decaying in a fixed period of time. \\
+
 	\subsubsection{Radioactive Decay}
 
+	\scidef{\(\alpha\)-decay}{\(\alpha\)-decay is the emission of a \(^4_2\text{He}\)helium nucleus (no electrons).}
+
+	\scidef{\(\beta\)-decay}{\(\beta\)-decay is the emission of \(^0_-1\text{e}\)electrons.).}
+
+	\scidef{\(\gamma\)-decay}{\(\gamma\)-decay is the emission of high-energy photons.}
+
+	\scidef{Ionizing Power}{The Ionizing Power of a radioactive decay is the ability of the decay particle to remove electrons from other external atoms. Ionizing power decreases from \(\alpha\) to \(\gamma\) decay.}
+
+	\scidef{Penetrating Power}{The Penetrating Power of a radioactive decay is the ability of the decay particle to pass through material before being absorbed. Penetrating power increases from \(\alpha\) to \(\gamma\) decay.}
+
+	Which form of decay occurred in a reaction can be inferred through inspection of the atomic mass numbers and charges of specific nuclei. \\
+
 	\subsection{Activity and Half-Life}
+
+	\scidef{Law of Radioactive Decay}{The Law of Radioactive Decay states that the rate of decay of a source of radioactive nuclei per unit time is proportional to the total number of nuclei present.}
+
+	\scieqn{Law of Radioactive Decay}{For a sample of \(N\) radioactive nuclei with decay constant \(N\), the rate of decay \(\frac{dN}{dt}\) is given by the equation}{\frac{dN}{dt} = - \lambda N}
+
+	\scidef{Decay Constant \(\lambda\)}{The Decay Constant \(\lambda\) of a nuclide is the probability that a nucleus will decay within a specific duration and has units \si{\becquerel}}
+
+	\scidef{Activity}{The Activity of a radioactive source is the number of nuclear decays that occur per unit time in a source.}
+
+	\scidef{Becquerel}{\SI{1}{\becquerel} is the progression of one radioactive decay reaction per second.}
+
+	\scidef{Half-life}{The Half-life of a radioactive source is the time taken for its population to decrease to half of its previous value.}
+
+	\scieqn{Half-life}{A radioactive nuclei with decay constant \(\lambda\) and half-life \(t_{1/2}\) are related by the equation}{t_{1/2} = \frac{\ln(2)}{\lambda}}
+
+	\scieqn[gathered]{Equations for Radioactive Decay}{For a radioactive source of decay constant \(\lambda\) and initial population \(N_0\); its population \(N\), activity \(A\) at time \(t\) are given by the equations}{
+		N = N_0 e^{-\lambda t} = N_0 \frac{1}{2}^{-t/t_{1/2}} \\
+		A = -\frac{dN}{dt} = \lambda N = A_0 e^{-\lambda t} = A_0 \frac{1}{2}^{-t/t_{1/2}}
+	}
+
+	\subsubsection{Background Radiation}
+
+	\scidef{Background Radiation}{Background Radiation is the ambient radiation in environment which people are exposed to.}
+
+	The largest natural source of background radiation is the presence of airborne Radon \(_{86}\text{Rn}\), among other sources such as cosmic rays and radiation from \(^{14}\text{C}\). The largest artificial source of background radiation comes from medical imaging equipment such as X-ray and CT scan machines. \\
+
+	When measuring the radiation given off by a sample of radioactive matter, the background radiation must be first measured and then used to treat the data to account for extra counts from background radiation.
+
+	\subsubsection{Carbon Dating}
+
+	\(^{14}\text{C}\) is a radioactive isotope of Carbon which has a half-life of 5730 years. Natural carbon samples contain \SI{1.30E-12}{} part C-14 due to nuclear reactions in the upper atmosphere. \\
+
+	Living organisms will maintain this ratio of C-14 to C-12 as carbon is constantly in exchange with the environment. However, once a organism dies its C-14 begins to decay without being replenished. By measuring the radioactivity of a sample of dead matter, the ratio of C-14 to C-12 can be established and hence the duration between its death and now can be calculated. \\
 
 \end{document}

@@ -8,11 +8,58 @@
 
 	\scidef{Alternating Current}{An alternating current is a current which periodically reverses direction of current flow when transmitting power.}
 
-	\scieqn{Biot-Savart Law (not in syllabus)}{The general law for calculation of magnetic field density \(B\) for a wire with path \(L\) and current \(I\) at a point \(r\) is given by the equation}{ B = \frac{\mu_0}{4\pi} \int \frac{I \overrightarrow{dL} \times \hat{r}}{r^2}}
+	\scieqn[gathered]{Sinusoidal Power Source}{A Sinusoidal Power Source with peak current \(I_0\), peak voltage \(V_0\) and frequency \(f\) has instantaneous current \(I\) and voltage \(V\) at time \(t\) given by the equations}{I = I_0 \sin(2\pi f t) \\ V = V_0 \sin(2\pi f t)}
+
+	Keep in mind that power varies at twice the frequency of the current or voltage in a sinusoidal source. \\
+
+	\subsubsection{Root Mean Square}
+
+	\scidef{Root Mean Square Value}{The Root Mean Square value of a quantity of a system with alternating current is the equivalent direct current value where thermal energy is released at the same rate when passed through a resistor.}
+
+	\scieqn{Mathematical Notation for RMS}{For some variable \(X\) which may or may not change with time}{X_{\text{rms}} = \sqrt{\left< X^2\right>}}
+
+	The root mean square (rms) of a function is a single value describing the square root of the mean of the square of the function. The rms value of a system with alternating current is useful as it is a more useful quantification of the `average' voltage or current than its numerical mean. \\
+
+	\scieqn[gathered]{RMS of Sinusoidal Power Source}{The root-mean-square current \(I_{\text{rms}}\) , root-mean-square voltage \(V_{\text{rms}}\) and root-mean-square power \(P_{\text{rms}}\)of a Sinusoidal Power Source with peak current \(I_0\) and peak voltage \(V_0\) is given by the equation}{I_{\text{rms}} = \frac{I}{\sqrt{2}}\\ V_{\text{rms}} = \frac{V}{\sqrt{2}}\\ P_{\text{rms}} = \frac{P}{2}}
+
+	Note that any rms value is independent of the frequency of the system and valid at any point in time.\\
 
 	\subsection{Transformers}
 
-	
+	A Transformer is a device which uses electromagnetic induction to step up or step down the voltage of a power source to a power sink. \\
 
+	Transformers typically comprise two wire coils around a laminated soft iron core. When alternating current is passed through the primary core, magnetic field changes around the iron core. The secondary core experiences the changing magnetic field and produces an electromotive force depending on the ratio of the number of turns of wire in either coil. \\
+
+	\scieqn[gathered]{Ideal Transformer Values}{An ideal transformer with turns \(N_P\) and \(N_S\) have their current \(I\) and potential difference \(V\) related by the equations}{
+		\frac{V_S}{V_P} = \frac{N_S}{N_P} \\
+		V_P I_P = V_S I_S
+	}
+
+	Typical transformers are not ideal:
+	\begin{itemize}
+		\item Primary and secondary coils have non-zero resistance and may lose energy to heat
+		\item Eddy currents may form in the iron core which lead to heat loss. Iron cores are hence laminated by layering up multiple sheets of iron to prevent the formation of such currents.
+		\item Magnetic field lines will not be completely linked across the transformer and will not result in 100\% power transmission.
+	\end{itemize}
+
+	\subsection{Power Transmission}
+
+	Alternating current is more often used to transmit power over long distances:
+	\begin{itemize}
+		\item Alternating current is more easily stepped up or down to various voltages for different uses
+		\item Power transmission at high voltages leads to lesser power losses. Alternating current is hence advantageous in that it is easy to step it up to be transmitted.
+	\end{itemize}
+
+	\subsection{Rectification}
+
+	\scidef{Rectification}{Rectification is the process of turning an alternating current power source to a direct current power source.}
+
+	A alternating current can be half-wave rectified or full-wave rectified using diodes which limit the direction at which current can flow. \\
+
+	\scieqn[gathered]{RMS of Half Wave Rectified Sinusoidal Power Source}{}{
+		I_{\text{rms}} = \frac{I}{2}\\
+		V_{\text{rms}} = \frac{V}{2}\\
+		P_{\text{rms}} = \frac{P}{4}
+	}
 	
 \end{document}
