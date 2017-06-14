@@ -15,6 +15,6 @@ there are going to be typos, there are going to be wrongly written sections, tho
 
 thanks xuanchun for formatting help
 
-thanks peanut, yukun for pointing out bugs
+thanks peanut, yukun, jonas for typo help
 
 thanks yizhou for 不爽
