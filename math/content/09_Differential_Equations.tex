@@ -4,6 +4,28 @@
 
 \section{Differential Equations}
 
-	
+	\subsection{Variable Separable Differential Equations}
+
+	A differential equation is a equation which expresses derivatives of a function in terms of the function itself. Variable Separable Differential Equations are differential equations whose parts in terms of the original function can be removed from the parts which are in terms of other variables. To solve these, separate the equations and then integrate both sides respectively. \\
+
+	\begin{equation*} \begin{aligned}
+		\frac{dy}{dx} & = xy \\
+		\frac{1}{y} \frac{dy}{dx} & = x \\
+		\int \frac{1}{y} dy & = \int x dx \\
+		\ln(y) + c_1 & = \frac{1}{2} x^2 + c_2 \\
+	\end{aligned} \end{equation*}
+
+	Be sure to correctly manipulate constants. Lowercase constants typically denote added or subtracted constants while uppercase constants typically denote constants as coefficients. \\
+
+	\begin{equation*} \begin{aligned}
+		\ln(y) + c_1 & = \frac{1}{2} x^2 + c_2 \\
+		\ln(y) & = \frac{1}{2} x^2 + c_3 \\
+		y & = e^{\frac{1}{2} x^2 + c_3} \\
+		& = C_1e^{\frac{1}{2}} \\
+	\end{aligned} \end{equation*}
+
+	\subsection{Initial Conditions}
+
+	Differentiation is a destructive process. Information is lost when a function is differentiated, such as when the y-intercept of a \(y=mx+c\) graph is no longer known once differentiated. When questions provide initial conditions, known values of \(x\), \(y\) and their derivatives can be substituted to find the actual value of these constants. \\
 
 \end{document}

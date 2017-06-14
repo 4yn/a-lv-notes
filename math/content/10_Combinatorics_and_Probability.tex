@@ -16,13 +16,17 @@
 
 	\[ ^nC_r = \frac{n!}{(n-r)! r!} \]
 
-	\(^nC_r\) gives the number of ways to choose \(r\) objects out of a possible \(n\) objects.
+	\(^nC_r\) gives the number of ways to choose \(r\) objects out of a possible \(n\) objects. \\
 
 	\subsection{P \& C Heuristics}
 
+	\subsubsection{`Group' Method}
+
+	When arranging \(n\) objects, of which \(k\) must placed next to each other, consider the \(k\) objects as one single unit. Arrange the \(n-k+1\) objects, then multiply by the number of ways the \(k\) objects can be arranged among themselves. \\
+
 	\subsubsection{`Slot' Method}
 
-	When arranging \(n\) objects, of which \(k\) cannot be placed next to each other, arrange the remaining \(n-k\) objects and then `slot' each of the \(k\) objects in the gaps between the \(n-k\) objects.
+	When arranging \(n\) objects, of which \(k\) cannot be placed next to each other, arrange the remaining \(n-k\) objects and then `slot' each of the \(k\) objects in the gaps between the \(n-k\) objects. \\
 
 	\subsection{Probability and Search Space}
 
@@ -54,11 +58,15 @@
 
 	Conditional probability considers the probability of an event given that another event has already occurred. \\
 
-	\[\Prob(\text{B} | \text{A}) = \text{Probability that B occurs given that A has occurred} \]
+	\begin{equation*} \begin{gathered}
+		\Prob(\text{B} | \text{A}) \\
+		= \text{Probability that B occurs given that A has occurred} \\
+		= \frac{\Prob(\text{B} \cap \text{A})}{\Prob{A}}
+	\end{gathered} \end{equation*}
 
 	\subsection{Independence}
 
-	Two events are independent if one event occurring does not affect the probability of another from occurring. 
+	Two events are independent if one event occurring does not affect the probability of another from occurring.
 
 	\begin{equation*} \begin{aligned}
 		& \text{A and B are Independent} \\
