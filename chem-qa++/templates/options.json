@@ -1,0 +1,26 @@
+{
+  "packages" : [
+    "geometry",
+    "multicol",
+    "subfiles",
+    "array",
+    "lmodern",
+    "mathtools",
+    "amssymb",
+    "tipa",
+    "textcomp",
+    "gensymb",
+    "pgfplots",
+    "chemformula",
+    "chemfig",
+    "tikzorbital",
+    "siunitx",
+    "tcolorbox",
+    "float",
+    "multirow",
+    "colortbl",
+    "color"],
+  "doctype": "article",
+  "docoptions" : [
+    "a4paper"]
+}
