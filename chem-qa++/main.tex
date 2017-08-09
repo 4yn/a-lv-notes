@@ -38,18 +38,36 @@
 \DeclareSIUnit\atm{atm}
 \DeclareSIUnit\bar{bar}
 
+\setatomsep{7mm}
+
+% \newtcolorbox[auto counter,number within=section]{scireaction}[2][]{
+% 	sharp corners=all,
+% 	breakable=true,
+% 	top = 0.5mm, bottom = 0.5mm,
+% 	left = 0.5mm, right = 0.5mm,
+% 	colback = white,
+% 	title=Definition~\thetcbcounter: #2,
+% 	#1,
+% }
+
+% \newcommand\scirxn[2]{\begin{scireaction}{#1} #2 \end{scireaction}}
+
+% \pretocmd\schemestart{\shorthandoff{-}}{}{}
+% \apptocmd\schemestop{\shorthandon{-}}{}{}
+
+\newcommand\stack[1]{\parbox{5cm}{\centering #1}}
 \begin{document}
 
 \subfile{./templates/header.tex}
 
-% \begin{multicols}{1}
+\begin{multicols}{1}
 
 \subfile{./content/01_Inorganic_Reactions.tex}
 \subfile{./content/02_Inorganic_Tests.tex}
 \subfile{./content/03_Organic_Reactions.tex}
 \subfile{./content/04_Organic_Tests.tex}
 
-% \end{multicols}
+\end{multicols}
 
 \subfile{./templates/footer.tex}
 

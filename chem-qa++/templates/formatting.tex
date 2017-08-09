@@ -14,3 +14,22 @@
 \DeclareSIUnit\atmosphere{atm}
 \DeclareSIUnit\atm{atm}
 \DeclareSIUnit\bar{bar}
+
+\setatomsep{7mm}
+
+% \newtcolorbox[auto counter,number within=section]{scireaction}[2][]{
+% 	sharp corners=all,
+% 	breakable=true,
+% 	top = 0.5mm, bottom = 0.5mm,
+% 	left = 0.5mm, right = 0.5mm,
+% 	colback = white,
+% 	title=Definition~\thetcbcounter: #2,
+% 	#1,
+% }
+
+% \newcommand\scirxn[2]{\begin{scireaction}{#1} #2 \end{scireaction}}
+
+% \pretocmd\schemestart{\shorthandoff{-}}{}{}
+% \apptocmd\schemestop{\shorthandon{-}}{}{}
+
+\newcommand\stack[1]{\parbox{5cm}{\centering #1}}

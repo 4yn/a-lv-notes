@@ -6,8 +6,151 @@
 	
 	\subsection{Organic Reactions, by Reacting Species}
 
-	\subsection{Organic Reactions, by Reactants and Conditions}
+		\subsubsection{Alkanes}
 
-	\subsection{Organic Reactions, by Type of Reaction}
+		\schemestart
+			\chemfig{CH_3-CH_3}
+			\arrow(--){->[\ch{X2},UV light]}[0,2]
+				\chemfig{CH_3-CH_2Cl} \arrow{0}[,0.5] \+ 
+				\chemname{\chemfig{-[:30]-[:-30]-[:30]}}{trace}
+		\schemestop
+
+		\subsubsection{Alkenes}
+
+		\scalebox{1}{ \schemestart
+				\chemfig{-[:30]=[:-30]}
+				\arrow(alkene--.south){->[\ch{X2},dark]}[90,2]
+					\chemfig{-[:30](-[:90]X)-[:-30]-[:30]X}
+				\arrow(@alkene--.south west){->[\ch{X2}, dark, aqueous]}[45,2]
+					\chemname{\chemfig{-[:30](-[:90]OH)-[:-30]-[:30]X}}{major} \+
+					\chemname{\chemfig{-[:30](-[:90]X)-[:-30]-[:30]OH}}{minor}
+				\arrow(@alkene--.west){->[\ch{HX}, dark]}[0,2]
+					\chemname{\chemfig{-[:30](-[:90]X)-[:-30]}}{major} \+
+					\chemname{\chemfig{-[:30]-[:-30]-[:30]X}}{minor}
+				\arrow(@alkene--.north west){->[Cold conc. \ch{H2SO4},][then warm \ch{H2O}]}[-45,2]
+					\chemname{\chemfig{-[:30](-[:90]OH)-[:-30]}}{major} \+
+					\chemname{\chemfig{-[:30]-[:-30]-[:30]OH}}{minor}
+				\arrow(@alkene--.north){->[\ch{H2}, Ni,][heat]}[-90.01,2]
+					\chemfig{-[:30]-[:-30]}
+				\arrow(@alkene--.north east){->[\ch{KMnO4},\ch{H2SO4},][heat]}[-135,2]
+					\chemfig{-[:30]COOH} \+ \chemfig{CO2}
+				\arrow(@alkene--.east){->[\ch{KMnO4},\ch{NaOH},][heat]}[180,2]
+					\chemfig{-[:30]CO\ch{O-}} \+ \ch{CO3^{2-}}
+				\arrow(@alkene--.south east){->[\ch{KMnO4},\ch{H2SO4},][cold]}[135,2]
+					\chemfig{-[:30](-[:90]OH)-[:-30]-[:30]OH}
+		\schemestop }
+
+		\subsubsection{Halogenoalkanes}
+
+		\scalebox{1}{ \schemestart
+				\chemfig{-[:30]-[:-30]-[:30]X}
+				\arrow(rx--.north){->[\ch{NaOH}, aqueous,][heat]}[-90.01,2]
+					\chemfig{-[:30]-[:-30]-[:30]OH}
+				\arrow(@rx--.north){->[\ch{NaOH}, in ethanol,][heat]}[-135,2.5]
+					\chemfig{-[:30]=[:-30]}
+				\arrow(@rx--rxnitrile.west){->[\ch{KCN}][heat]}[0,2]
+					\chemfig{-[:30]-[:-30]-[:30]CN}
+				\arrow(@rxnitrile.north--.south west){->[\ch{HCl}, aqueous,][heat]}[90,2]
+					\chemfig{-[:30]-[:-30]-[:30]COOH}
+				\arrow(@rxnitrile.north east--.south){->[\ch{NaOH}, aqueous,][heat]}[45,2]
+					\chemfig{-[:30]-[:-30]-[:30]CO\ch{O-}}
+				\arrow(@rxnitrile.south--.north){->[\ch{H2}, \ch{Pt}, heat, OR][\ch{LiAlH4}, dry ether, heat]}[-45,2.5]
+					\chemfig{-[:30]-[:-30]-[:30]-[:-30]NH_3}
+				\arrow(@rx--rxnitro){->[\ch{NH3}, ethanol][sealed tube, heat]}[135,2.5]
+					\chemfig{}
+				\arrow(@rxnitro--.north){->[excess \ch{NH3}]}[-90.01,1.5]
+					\chemfig{-[:30]-[:-30]-[:30]NH_3}
+				\arrow(@rxnitro--.west){->[limiting \ch{NH3}]}[0,1.5]
+					\chemfig{N^+(-[:30]-[:-30]-[:30]-[:-30,,,,draw=none]\ch{Cl-})(-[:120]-[:60]-[:120])(-[:-60]-[:-120]-[:-60])(-[:-150]-[:150]-[:-150])}
+		\schemestop }
+
+		\subsubsection{Hydroxy Compounds}
+
+		\scalebox{0.8}{ \schemestart
+				\chemfig{-[:30]-[:-30]-[:30]OH}
+				\arrow(alcohol.north east--alcoholdistill.north west){->[\ch{K2Cr2O7}, \ch{H2SO4}, heat]}[0,2]
+					\chemfig{}
+				\arrow(@alcoholdistill.north--.west){->[immediate distillation]}[45,2.5]
+					\chemfig{-[:30]-[:-30]=[:-90]O}
+				\arrow(@alcoholdistill.north east--carboxacid.north west){->}[0,2]
+					\chemfig{-[:30]-[:-30]COOH}
+				\arrow(@alcohol.south east--@carboxacid.south west){->[][\ch{KMnO4}, \ch{H2SO4}, heat]}
+				\arrow(@alcohol.north--.south){->[conc. \ch{H2SO4}, heat]}[90,2]
+					\chemfig{-[:30]=[:-30]}
+				\arrow(@alcohol.west--.east){->[\ch{R-Cl}, heat]}[180,2]
+					\chemfig{-[:30]-[:-30]-[:30]O-[:-30]R}
+				\arrow(@alcohol.north west--.east){->[\stack{\ch{R-COOH},\\ conc. \ch{H2SO4} heat,}][OR \ch{R-COCl}, rtp]}[135,2.5]
+					\chemfig{-[:30]-[:-30]-[:30]O-[:-30](=[:-90]O)-[:30]R}
+				\arrow(@alcohol.south west--alcoholhalogen.north east){->[halogenation]}[-135,1.5]
+					\chemfig{}
+				\arrow(@alcoholhalogen.west--.east){->[\ch{I2}, \ch{H3PO4}, heat][OR red \ch{P}, \ch{I2}]}[180,2]
+					\chemfig{-[:30]-[:-30]-[:30]I}
+				\arrow(@alcoholhalogen.south west--.north east){->[\ch{Br2}, \ch{H2SO4},][heat OR \ch{PBr3}]}[-135,2.5]
+					\chemfig{-[:30]-[:-30]-[:30]Br}
+				\arrow(@alcoholhalogen.south--.north){->[\ch{HCl}, heat OR][\ch{PCl3}]}[-90.01,2.5]
+					\chemfig{-[:30]-[:-30]-[:30]Cl}
+				\arrow(@alcoholhalogen.south west--.north west){->[\ch{PCl5}][OR \ch{SOCl2}]}[-45,2.5]
+					\chemfig{-[:30]-[:-30]-[:30]Cl} \+ \chemfig{\ch{HCl (g)}}
+				\arrow(@alcohol.south--twoalcohol.north){0}[-90,0.6]
+					\chemfig{-[:30](-[:90]OH)-[:-30]-[:30]}
+				\arrow(@carboxacid.south--ketone.north){0}[-90,0.6]
+					\chemfig{-[:30](=[:90]O)-[:-30]-[:30]}
+				\arrow(@twoalcohol.east--@ketone.west){->[\ch{K2Cr2O7}, \ch{H2SO4}, heat, OR][\ch{KMnO4}, \ch{H2SO4}, heat]}
+				\arrow(@twoalcohol.south east--.south west){->[\ch{I2}, \ch{NaOH},][aqueous, heat]}[-30,2]
+					\chemfig{CHI_3} \+ \chemfig{HO-[:30](=[:90]O)-[:-30]-[:30]}
+		\schemestop }
+
+		\subsubsection{Carbonyl Compounds}
+
+		\scalebox{0.8}{ \schemestart
+			\chemfig{-[:30]-[:-30](=[:-90]O)}
+			\arrow(aldehyde.west--.east){->[\ch{KMnO4}, \ch{H2SO4}, heat, OR][\ch{K2Cr2O7}, \ch{H2SO4}, heat]}[150,3]
+				\chemfig{-[:30]-[:-30](=[:-90]O)-[:30]OH}
+			\arrow(@aldehyde.north east--.north west){->[Tollen's Reagent,][heat]}[30,2.5]
+				\chemname{\ch{Ag}}{Silver Mirror}
+			\arrow(@aldehyde.east--.north west){->[Fehling's Solution,][heat]}[5,2.5]
+				\chemname{\ch{Cu2O}}{Red-brown ppt}
+			\arrow(@aldehyde.south west--reduc.north east){->}[-135,0.7]
+				\chemfig{}
+			\arrow(@reduc.east--afreduc.west){->[\ch{H2}, Ni, heat OR][\stack{\ch{LiAlH4}, dry ether OR \\ \ch{NaBH4}, methanol}]}[180,2.5]
+				\chemfig{}
+			\arrow(@afreduc.north west--.south east){->}[135,0.7]
+				\chemfig{-[:30]-[:-30]-[:30]OH}
+			\arrow(@afreduc.south west--.north east){->}[-135,0.7]
+				\chemfig{-[:30]-[:-30](-[:-90]OH)-[:30]}
+			\arrow(@reduc.south east--ketone.north west){<-}[-45,0.7]
+				\chemfig{-[:30]-[:-30](=[:-90]O)-[:30]}
+			\arrow(@ketone.north east--carbonylhub.south west){->}[45,0.7]
+				\chemfig{}
+			\arrow(@carbonylhub.west--carbonitrile.east){->[\ch{HCN}, trace \ch{KCN}, cold OR][\ch{H2SO4}, \ch{KCN}, cold]}[0,3.5]
+				\chemfig{}
+			\arrow(@carbonitrile.north--.south){->}[90,0.7]	
+				\chemfig{-[:30]-[:-30](-[:-90]OH)-[:30]CN}
+			\arrow(@carbonitrile.south--.north){->}[-90,0.7]
+				\chemfig{-[:30]-[:-30](-[:-90]OH)(-[:90]CN)-[:30]}
+			\arrow(@carbonylhub.south east--.north){->[][2,4-DNPH]}[-60,1.5]
+				\chembelow{\chemfig{[:30]**6(--(-NO2)--(-[:120,,,1]NO2)-(-[:180]N(-[:90]H)-[:180]N=[:180]R)-)}}{orange~ppt}
+			\arrow(@aldehyde.south east--@carbonylhub.north west){->}
+			\arrow(@ketone.south west--.east){->[\ch{I2}, \ch{NaOH},][aqueous, heat]}[-150,2]
+				\chemfig{CHI_3} \+ \chemfig{-[:30]-[:-30](=[:-90]O)-[:30]OH}
+		\schemestop }
+
+		\subsubsection{Carboxylic Acids}
+		\subsubsection{Nitrogen Compounds}
+
+		\subsubsection{Arenes}
+		\subsubsection{Phenols}
+		\subsubsection{Other Aromatic Species}
+
+	\subsection{Organic Reactions, by Reagents and Conditions}
+
+		\subsubsection{Acid Reactions}
+		\subsubsection{Base Reactions}
+
+		\subsubsection{Reduction}
+		\subsubsection{Oxidation}
+
+		\subsubsection{With Cyanides}
+		\subsubsection{With Halogens}
 	
 \end{document}
