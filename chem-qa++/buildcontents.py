@@ -31,7 +31,8 @@ out.write("\n")
 
 out.write("\\begin{document}\n\n")
 
-out.write("\\subfile{./templates/header.tex}\n\n\\begin{multicols}{1}\n\n")
+# out.write("\\subfile{./templates/header.tex}\n\n\\begin{multicols}{2}\n\n")
+out.write("\\subfile{./templates/header.tex}\n\n\n\n")
 
 filedict = defaultdict(list)
 cwdchar = len(os.getcwd())
@@ -57,6 +58,7 @@ for i in filelist:
 	out.write(i)
 	out.write("\n")
 
-out.write("\\end{multicols}\n\n\\subfile{./templates/footer.tex}\n\n")
+# out.write("\\end{multicols}\n\n\\subfile{./templates/footer.tex}\n\n")
+out.write("\\subfile{./templates/footer.tex}\n\n")
 
 out.write("\\end{document}\n")
