@@ -1,0 +1,78 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Linear Regression}
+
+	\subsection{2-Variable Data}
+
+	Previous statistics regarding probability distributions and hypothesis testing typically involve data points with one dimension of quantity, but often there is a use to determine a relation between two different quantities of collected data. The approach of correlation and regression attempts to identify these relationships in a consistent and objective manner while handling statistical interference. \\
+
+	Data collected with two quantities at one point are called bivariate data. Sometimes one quantity may be controlled to be measured at predetermined values. In this scenario, the controlled variable is the `independent' variable and the other is the `dependent' variable. \\
+
+	\subsection{Scatter Plots}
+
+	A scatter plot displays points on a graph where data has been measured, with each set of values varying the x and y coordinates respectively. When drawing scatter plots:
+
+	\begin{itemize}
+		\item Draw and label axis with their variables \(x,y\), arrow pointing towards increasing.
+		\item Mark the minimum and maximum values of each axis and label their values.
+		\item Attempt to maintain the same shape of the trend
+		\item Preserve relative heights of plots, preserve even or uneven spacing and grouping.
+		\item Otherwise, no need to be too precise.
+	\end{itemize}
+
+	A scatter plot is good for how tightly-spaced a group of data are to its best fit line and also the type of relation (linear, quadratic, exponential etc.) it displays.
+
+	\subsection{Product Moment Correlation Coefficient}
+
+	The Product Moment Correlation Coefficient \(r\) is a quantity describing whether a set of bivariate data follows a increasing (\(r \approx 1\)) or decreasing (\(r \approx -1\)) trend. The formula for calculation can be found in MF26, or alternatively calculated through your GC using the ``2-Var Stats'' function. \\
+
+	\(r=1\) indicates a perfect positive linear correlation with all points on the line, \(r=-1\) indicates a perfect negative linear correlation with all points on the line. \(r=0\) indicates no linear correlation, meaning variables could be not related OR have a nonlinear relationship. \\
+
+	The value of \(r^2\)  removes the negative sign on \(r\) and its value used to determine if a relation present. \\
+
+	\subsection{Linear Regression}
+
+	After identifying a linear correlation between a set of bivariate data, the data can then be given a best fit line. The method of Linear Least-Squares Regression is an objective and consistent method to obtain an equation of the form \(y=a+bx\) and calculating the necessary constants \(a\) and \(b\). \\
+
+	The least squares regression of \(y\) on \(x\) assumes that the obtained data has NO error in \(x\) and that all deviation of data points from the best fit are due to errors in \(y\). A linear graph is then fit to the data to minimize the sum of square of all residuals. At a data point \((x_1,y_1)\) and point on the best fit \((x_1, y_1')\), the residual is \(e_1 = y_1'-y_1\) and the sum of squares of residuals is \(\sum e_r^2\). As a result of this approach, \(x\) is the independent variable and \(y\) is the dependent variable. \\
+
+	The process of obtaining this line of best fit is not through trial and error, but rather through selecting a central point and calculating the most suitable gradient to minimize the sum of squares of residuals. For a set of data with points \((x_i,y_i)\), the point \((\bar{x},\bar{y})\) is first selected and the gradient \(b\)is calculated with:
+
+		\[ b = \frac{\sum (x-\bar{x})(y-\bar{y})}{\sum (x-\bar{x})^2}\]
+
+	The linear regression of \(x\) against \(y\) treats \(x\) as the dependent variable and \(y\) as the independent variable. This alternative approach is useful if data given goes against conventions of labeling \(x\) and \(y\), but also in scenarios where neither set of data are reliably controlled. This regression assumes NO error in obtained values of \(y\), and that all deviation of data points from the best fit are due to to errors in \(x\).
+
+	\subsubsection{Linearization}
+
+	Even if two variables are not related by a linear relation of the form \(y=mx+c\), some types of relationships can be manipulated into that form and to find a linear relationship between them. \\
+
+	\begin{equation*} \begin{aligned}
+		y = a x^2 + b & \xRightarrow{X = x^2} y = aX + b \\ & \\
+		\sqrt{y} = \frac{a}{x} + b & \xRightarrow[Y = \sqrt{y}]{X = \frac{1}{x}} Y = aX + b \\ & \\
+		y = ab^x & \iff \ln(y) = \ln(a) + x \ln(b) \\ & \xRightarrow[Y = \ln(y)]{} Y = \ln(a) + x \ln(b) \\ & \\
+		y = ax^b & \iff \ln(y) = \ln(a) + b \ln(x) \\ & \xRightarrow[Y = \ln(y)]{X = \ln(x)} Y = \ln(a) + bX \\
+	\end{aligned} \end{equation*}
+
+	Given a set of data and multiple ways to linearize it, the linearization which obtains a product moment correlation coefficient closes to \(\pm 1\) or the linearization which has a similar shape and trend in gradient is the more suitable one.
+
+	\subsection{Applications of Linear Regression}
+
+	\subsubsection{Determining a Correlation}
+
+	Whether a correlation is present in data can be determined by inspection of its scatter plot and its product moment correlation coefficient. \\
+
+	Scatter plots are used to identify the shape of a relationship and verify if a relation is linear or otherwise. Scatter plots are also effective in identifying outliers in data which may arise due to errors in data collection, after which specific data points can be ignored. \\
+
+	The product moment correlation coefficient is a quantitative measure of how well the data points fit in a linear relation. Calculating values of \(r\) for different methods of linearizing a set of data can help to find the most suitable linearization. \\
+
+	\subsubsection{Predicting Values}
+
+	After obtaining the equation of the linear regression between two values, one can predict and estimate the value of one variable when given the other. \\
+
+	If a set of data is given with a distinct independent variable \(x\) (whether stated in the problem, or if it takes `nice'/whole values in the data given), use the equation obtained from the linear regression of \(y\) on \(x\) to predict future points. \\
+
+	If a set of data is given with no distinct independent variable, the linear regression equation to use depends on what information is given in the prediction. If finding \(y\) for a given \(x\), use the regression of \(y\) against \(x\), otherwise use the regression of \(x\) against \(y\). This corresponds to the approach of calculating the linear regression: when predicting \(y\) for a given \(x\), there is zero error in given value of \(x\) and hence the best regression  to use would be when the data is assumed to have zero error in \(x\), and vice versa.
+
+\end{document}

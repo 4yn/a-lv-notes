@@ -16,7 +16,7 @@
 
  	\[ \E(X) = \int \Prob(X=x) x ~ dx\]
 
- 	The variance of a continuous random variable is obtained in a similar fashion to discrete random variables. \\
+ 	The variance of a continuous random variable is obtained in a similar fashion to discrete random variables.
 
  	\begin{equation*} \begin{aligned}
 		\Var(X) & = \int \Prob(X=x) \times (x - \E(X))^2 ~ dx \\
@@ -26,14 +26,6 @@
 	\subsection{Normal Distribution}
 
 	A normal distribution is a graph of the form \(e^{-x^2}\), with added terms to ensure that its mean and standard deviation is equal to a specified value. Normal distributions are defined as \(X\sim N(\mu,\sigma^2)\) by assigning them a mean and a standard deviation. \\
-
-	\subsection{Standard Normal Distribution}
-
-	The standard normal distribution \(Z\) is a specially defined normal distribution as \(Z \sim N(0,1)\). Other normal random variables can be adjusted in order to equal the standard normal distribution. \\
-
-	\[ Z = \frac{N-\mu}{\sigma} \]
-
-	From this, the calculation of probabilities can be done through the use of data tables or the inverse normal distribution function. \\
 
 	\subsection{Combination of Random Variables}
 
@@ -51,6 +43,14 @@
 		\item Subtracting a normal distribution from another requires subtracting their mean but adding their variances
 		\item Multiplying a random variable by a constant factor \(k\) requires adding its mean with a factor \(k\) and adding its variance with an additional factor of \(k^2\)
 	\end{itemize}
+
+	\subsection{Standard Normal Distribution}
+
+	The standard normal distribution \(Z\) is a specially defined normal distribution as \(Z \sim N(0,1)\). Other normal random variables can be adjusted in order to equal the standard normal distribution, by offsetting \(\bar{X}\) to be centered at \(0\) and then dividing by its standard deviation \(\sigma\).
+
+	\[ Z = \frac{N-\mu}{\sigma} \]
+
+	From this, the calculation of probabilities can be done through the use of data tables or the inverse normal distribution function. \\
 
 	\subsection{Modeling as Normal Distribution}
 
