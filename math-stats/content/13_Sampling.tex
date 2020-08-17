@@ -1,0 +1,36 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Sampling}
+
+	\subsection{Populations and Samples}
+
+	A population is the entire collection of data to be studied. When populations are too large, too fluid/changing to measure at once or the amount of data to be collected is limited, a sample may be taken to represent the distribution of the population instead. \\
+
+	Given a population described by a random variable \(X\), multiple independent observations of that random variable can be used to obtain a sample. From this sample, an approximate of the population's parameters of mean and variance can be obtained. \\
+
+	\subsection{Sample Parameters}
+
+	When a sample of size \(n\) is taken from a population \(X\) with unknown population mean \(\mu\) and unknown population variance \(\sigma^2\), sample mean and sample variance can be obtained. \\
+
+	From the sample parameters, an unbiased estimate of the population mean \(\bar{x}\) and an unbiased estimate of the variance \(s^2\) can be obtained.
+
+	\begin{equation*} \begin{gathered}
+		\bar{x} = \frac{x_1 + x_2 + x_3 + \dots + x_n}{n} = \frac{\sum x}{n} \\
+		s^2 = \frac{1}{n-1} \left[ \sum x^2 - \frac{(\sum x)^2}{n} \right]
+	\end{gathered} \end{equation*}
+
+	\subsection{Sample Mean}
+
+	Different samples of a population may get a different unbiased estimate of mean \(\bar{x}\). As such, the distribution of such sample means can be said to be a random variable \(\bar{X}\), defined as
+
+	\[	\bar{X} = \frac{1}{n} \sum X = \frac{X_1 + X_2 + X_3 + \dots + X_n}{n} \]
+
+	with \(\E(\bar{X}) = \mu\) and \(\Var(\bar{X}) = \frac{\sigma^2}{n}\).
+
+	\subsection{Central Limit Theorem}
+
+	The central limit theorem states that the sample mean from of large sample size \(n \geq 50\), regardless of the distribution of the population, will \emph{approximately} follow a normal distribution with mean \(\mu\) and variance \(\frac{\sigma^2}{n}\). 
+
+\end{document}

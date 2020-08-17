@@ -1,0 +1,66 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Continuous Random Variable}
+
+	\subsection{Continuous Random Variable}
+
+	Unlike discrete random variables, continuous random variables are described by a probability distribution function (p.d.f.). The actual probability of the random variable having a value between a range is its direct integral of the p.d.f. within the range. \\
+
+	A p.d.f., when integrated across the range \((-\infty,\infty)\) should have a total probability of 1. Such a function is said to be normalized. \\
+
+	\subsection{Expectation and Variance}
+
+	The expectation value of a continuous random variable is the integral of the product of its instantaneous value and the probability distribution function at that value.
+
+ 	\[ \E(X) = \int \Prob(X=x) x ~ dx\]
+
+ 	The variance of a continuous random variable is obtained in a similar fashion to discrete random variables.
+
+ 	\begin{equation*} \begin{aligned}
+		\Var(X) & = \int \Prob(X=x) \times (x - \E(X))^2 ~ dx \\
+				& = \E(X^2) - \E(X)^2
+	\end{aligned} \end{equation*}
+
+	\subsection{Normal Distribution}
+
+	A normal distribution is a graph of the form \(e^{-x^2}\), with added terms to ensure that its mean and standard deviation is equal to a specified value. Normal distributions are defined as \(X\sim N(\mu,\sigma^2)\) by assigning them a mean and a standard deviation. \\
+
+	\subsection{Combination of Random Variables}
+
+	\begin{equation*} \begin{gathered}
+		X \sim N(\mu_X,\sigma_X^2) \qquad Y \sim N(\mu_Y,\sigma_Y^2) \\
+		X + c \sim N(\mu_X + c,\sigma_X^2) \\
+		X + Y \sim N(\mu_X + \mu_Y,\sigma_X^2 + \sigma_Y^2) \\
+		X - Y \sim N(\mu_X - \mu_Y,\sigma_X^2 + \sigma_Y^2) \\
+		k_1 X + k_2 Y \sim N(k_1 \mu_X + k_2 \mu_Y,k_1^2 \sigma_X^2 + k_2^2 \sigma_Y^2) \\
+	\end{gathered} \end{equation*}
+
+	\begin{itemize}
+		\item Adding a constant to a normal distribution only adjusts its mean
+		\item Adding two normal distributions adds their means together and adds their variances
+		\item Subtracting a normal distribution from another requires subtracting their mean but adding their variances
+		\item Multiplying a random variable by a constant factor \(k\) requires adding its mean with a factor \(k\) and adding its variance with an additional factor of \(k^2\)
+	\end{itemize}
+
+	\subsection{Standard Normal Distribution}
+
+	The standard normal distribution \(Z\) is a specially defined normal distribution as \(Z \sim N(0,1)\). Other normal random variables can be adjusted in order to equal the standard normal distribution, by offsetting \(\bar{X}\) to be centered at \(0\) and then dividing by its standard deviation \(\sigma\).
+
+	\[ Z = \frac{N-\mu}{\sigma} \]
+
+	From this, the calculation of probabilities can be done through the use of data tables or the inverse normal distribution function. \\
+
+	\subsection{Modeling as Normal Distribution}
+
+	To model a random variable as a normal distribution:
+
+	\begin{itemize}
+		\item Random variable should have bell curve-like distribution
+		\item Random variable should `make sense' with values from \((-\infty,\infty)\), or at least minimize the probability of a nonsensical value
+		\item Multiple observations of the random variable should be independent of each other
+		\item Observations of multiple different random variables should be independent of each other
+	\end{itemize}
+
+\end{document}

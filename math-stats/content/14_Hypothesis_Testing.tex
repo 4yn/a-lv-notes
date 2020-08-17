@@ -1,0 +1,76 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Hypothesis Testing}
+
+	\subsection{Hypotheses}
+
+	A null hypothesis \(H_0 : \mu = k\) is a proposed hypothesis of what property a random variable should hold. \\
+
+	An alternative hypothesis \(H_1 : \mu \neq k\) is a proposed hypothesis which contradicts a null hypothesis, and describes how a null hypothesis will be tested. \\
+
+	The Level of Significance \(\alpha\) of a test is the probability of incorrectly rejecting the null hypothesis, i.e. the the chance a false positive is identified. Uses of \(\alpha\) can range from \(0.000001\) in physical sciences to \(0.05\) in general sciences to \(0.3\) in social sciences. \\
+
+	\subsection{Z-Test}
+
+	A Z-test is a statistical test for the validity of a null hypothesis which follows a normal distribution. \\
+
+	A null hypothesis is first established with its mean \(\mu\) and variance \(\sigma^2 \text{OR} s^2\), either from known data or using an unbiased estimate of a sample. \\
+
+	A sample mean with \(n\) samples and mean \(\bar{x}\) is taken. This sample mean is then compared to the distribution of the null hypothesis with distribution \(X \sim N(\mu,\frac{\sigma^2}{n} )\). \\
+
+	The sample mean is then verified if it lies at the extremities of the null hypothesis' probability distribution, by finding its relative probability (p-value) or finding the critical value at which results then are beyond the level of significance (z-value). \\
+
+	\subsubsection{Syntax for Z-Test}
+
+	\begin{enumerate}
+		\item Define random variables if necessary. \\
+
+			`Let \(X\) be the random variable denoting \underline{\hspace{0.5cm}}.' \\
+
+		\item Hypotheses \(H_0\) and \(H_1\) with their definitions. \\
+
+			`\(H_0 : \mu = \text{\underline{\hspace{0.5cm}}} \quad \text{vs} \quad H_1 : \mu \neq \text{\underline{\hspace{0.5cm}}} \)'; OR \\
+			`\(H_0 : \mu = \text{\underline{\hspace{0.5cm}}} \quad \text{vs} \quad H_1 : \mu > \text{\underline{\hspace{0.5cm}}} \)'; OR \\
+			`\(H_0 : \mu = \text{\underline{\hspace{0.5cm}}} \quad \text{vs} \quad H_1 : \mu < \text{\underline{\hspace{0.5cm}}} \)' \\
+
+		\item Type of test, level of significance. \\
+
+			`Conduct a 2-tailed test at a \(\alpha = \text{\underline{\hspace{0.5cm}\%}}\) level of significance'; OR \\
+			`Conduct a 1-tailed test at a \(\alpha = \text{\underline{\hspace{0.5cm}\%}}\) level of significance' \\
+
+		\item Describe random variable in terms of known and unknown quantities, stating the values of known quantities; state the sample used and its derived quantities.\\ 
+
+			If variance is given: 
+
+			`Under \(H_0\), \(\bar{X} \sim N \left( \mu, \frac{\sigma^2}{n} \right) \) where \(\mu = \text{\underline{\hspace{0.5cm}}}\) and \(\sigma^2 = \text{\underline{\hspace{0.5cm}}} \). \\ From sample: \(\bar{x} = \text{\underline{\hspace{0.5cm}}}\), \(n = \text{\underline{\hspace{0.5cm}}}\)' \\
+
+			If variance is estimated from sample: 
+
+			`Under \(H_0\), \(\bar{X} \sim N \left( \mu, \frac{s^2}{n} \right) \) where \(\mu = \text{\underline{\hspace{0.5cm}}}\). \\ From sample: \(\bar{x} = \text{\underline{\hspace{0.5cm}}}\), \(n = \text{\underline{\hspace{0.5cm}}}\), \(s^2 = \text{\underline{\hspace{0.5cm}}}\),'\\
+
+		\item Calculate p-value or z-value and compare to level of significance. \\
+
+			p-value approach: calculate the area of the probability distribution between the extremities and \(\bar{x}\), then compare to level of significance.
+
+			1-tailed: `\(\text{p-value} = \Prob(\bar{X} < \bar{x}) = \text{\underline{\hspace{0.5cm}}}\)'\\
+			2-tailed: `\(\text{p-value} = \Prob(\bar{X} < \bar{x}) \times 2 = \text{\underline{\hspace{0.5cm}}}\)' \\
+			In 2-tailed tests, p-value is two times the probability calculated as two `tails' of probability are compared with \(\alpha\), do NOT halve \(\alpha\) instead. \\
+			End with comparing to \(\alpha\), writing less or greater than. \\
+
+			z-value approach: find the `critical value' corresponding to \(\alpha\) and the standard normal distribution \(Z\), then transform to the given distribution \(\bar{X}\) and compare with \(\bar{x}\). \\
+			1-tailed: `\(\text{z-value} = \Prob(Z < \frac{c - \mu}{\sigma}) = \alpha, c = \text{\underline{\hspace{0.5cm}}}\)'\\
+			2-tailed: `\(\text{z-value} = \Prob(Z < \frac{c - \mu}{\sigma}) = \frac{\alpha}{2}, c = \text{\underline{\hspace{0.5cm}}}\)'\\
+			In 2-tailed tests, z-value is calculated with \(\alpha\) divided by 2 because the probability is distributed across two tails. \\
+			End with comparing to \(\bar{x}\), writing less or greater than. \\
+
+		\item Conclude test with context. \\
+
+			`Reject \(H_0\) because there is sufficient evidence at a \underline{\hspace{0.5cm}}\% level of significance to conclude that \underline{\hspace{0.7cm}} '; OR \\
+
+			`Reject \(H_0\) because there is insufficient evidence at a \underline{\hspace{0.5cm}}\% level of significance to conclude that \underline{\hspace{0.7cm}} ' \\
+
+	\end{enumerate}
+
+\end{document}

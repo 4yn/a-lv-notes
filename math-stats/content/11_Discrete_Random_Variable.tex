@@ -1,0 +1,46 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Discrete Random Variable}
+
+	\subsection{Probability Distribution}
+
+	A discrete random variable \(X\) (or denoted by other capital letters) is a variable which can take a finite and distinct set of values. Its probability distribution is a description of the probability that it takes some value. 
+
+	\begin{center}
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			\(x\)        & 1   & 2   & ... & 5   \\ \hline
+			\(\Prob(X = x)\) & 0.2 & 0.3 &     & 0.1 \\ \hline
+		\end{tabular}
+	\end{center}
+
+	\subsection{Expectation and Variance}
+
+ 	The expectation value of a discrete random variable is the sum of the products of its possible values and the probability for it to be some value.
+
+ 	\[ \E(X) = \sum_x \Prob(X=x) \times x\]
+
+ 	The variance of a discrete random variable is a quantification of how spread out are the possible values of \(X\) from its mean. 
+
+ 	\begin{equation*} \begin{aligned}
+		\Var(X) & = \sum_x \Prob(X=x) \times (x - \E(X))^2 \\
+				& = \E(X^2) - \E(X)^2
+	\end{aligned} \end{equation*}
+
+	The standard deviation \(\sigma\) of a discrete random variable is another representation of spread from its mean, but more accurate to the scale of the original random variable.
+
+	\[\sigma = \sqrt{\Var(X)}\]
+
+	\subsection{Binomial Distribution}
+
+	A binomial distribution \(X\sim B(n,p)\) is the probability distribution describing the number of successful trials over \(n\) total trials, each with a probability of success \(p\).
+
+	\begin{equation*} \begin{gathered}
+		\Prob(X=x) = ^nC_x \times p^x \times (1-p)^{n-x} \\
+		\E(X) = n p \\
+		\Var(X) = n p (1-p)
+	\end{gathered} \end{equation*}
+
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass[../main]{subfiles}
+
+\begin{document}
+
+\section{Combinatorics and Probability}
+
+	\subsection{Permutations and Combinations}
+
+	\[ ^nP_r = \frac{n!}{(n-r)!} \]
+
+	\(^nP_r\) gives the number of ways to order \(r\) objects out of a possible \(n\) objects. \\
+
+	If a group of objects to be ordered contains \(k_1, k_2 \dots \) similar objects, divide the number of permutations by \(k_1! k_2! \dots\). \\
+
+	If \(n\) objects are placed in a ring, find the number of different ways to organize the \(n\) objects in a line and then divide by \(n\) as each permutation is overcounted for each \(n\) possible rotations. 
+
+	\[ ^nC_r = \frac{n!}{(n-r)! r!} \]
+
+	\(^nC_r\) gives the number of ways to choose \(r\) objects out of a possible \(n\) objects. \\
+
+	\subsection{P \& C Heuristics}
+
+	\subsubsection{`Group' Method}
+
+	When arranging \(n\) objects, of which \(k\) must placed next to each other, consider the \(k\) objects as one single unit. Arrange the \(n-k+1\) objects, then multiply by the number of ways the \(k\) objects can be arranged among themselves. \\
+
+	\subsubsection{`Slot' Method}
+
+	When arranging \(n\) objects, of which \(k\) cannot be placed next to each other, arrange the remaining \(n-k\) objects and then `slot' each of the \(k\) objects in the gaps between the \(n-k\) objects. \\
+
+	\subsection{Probability and Search Space}
+
+	For a number of events which have equal chance to occur, the function \(P\) represents the fraction of cases where this condition is true.
+
+	\[ \Prob(\text{condition}) = \frac{\text{Cases where condition is true}}{\text{Count of all possible cases}}\]
+
+	As a result, \(\Prob(\text{Guaranteed true condition}) = 1 \) and \(\Prob(\text{Guaranteed false condition}) = 0 \). \\
+
+	\subsection{Inverse, Unions and Intersections}
+
+	The probability of multiple conditions can be compounded using their Inverse, Unions and Intersections. \\
+
+	The inverse \(\text{A'}\) of an event is the set of events which do not appear in the event A. \\
+
+	The union \(\text{A}\cup\text{B}\) of two events is the set of events which appear at least once in A or B. \\
+
+	The intersection \(\text{A}\cap\text{B}\) of two events is the set of events which appear in both A and B. \\
+
+	Two events are mutually exclusive if the intersection between the two events is empty.
+
+	\begin{equation*} \begin{gathered}
+		\Prob(\text{A}) = 1 - \Prob(\text{A'}) \\
+		\Prob(\text{A}\cup\text{B}) = \Prob(\text{A}) + \Prob(\text{B}) - \Prob(\text{A}\cap\text{B}) \\
+		\Prob(\text{A}) = \Prob(\text{A}|\text{B}) + \Prob(\text{A}|\text{B'}) \\
+	\end{gathered} \end{equation*}
+
+	\subsection{Conditional Probability}
+
+	Conditional probability considers the probability of an event given that another event has already occurred.
+
+	\begin{equation*} \begin{gathered}
+		\Prob(\text{B} | \text{A}) \\
+		= \text{Probability that B occurs given that A has occurred} \\
+		= \frac{\Prob(\text{B} \cap \text{A})}{\Prob{A}}
+	\end{gathered} \end{equation*}
+
+	\subsection{Independence}
+
+	Two events are independent if one event occurring does not affect the probability of another from occurring.
+
+	\begin{equation*} \begin{aligned}
+		& \text{A and B are Independent} \\
+		& \iff \Prob(\text{B} | \text{A}) = \Prob(\text{B}) \\
+		& \iff \Prob(\text{A} | \text{B}) = \Prob(\text{A}) \\
+		& \iff \Prob(\text{A} \cap \text{B}) = \Prob(\text{A}) \Prob(\text{B}) \\
+	\end{aligned} \end{equation*}
+
+\end{document}
